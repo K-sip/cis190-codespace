@@ -1,0 +1,24 @@
+1. Display help about the ls command while at the command line. Give your command.
+	man ls
+	h
+2. Use the man page to determine how to make "ls" display long listings with file sizes in human-readable format. Give your command. 
+	ls -l
+3. Read the man page for the mkdir command. Give the command and describe how to exit the man page.
+	q to exit
+4. Read the man page for the mkdir command again and this time search for "parent" in that man page. Give the command you used to search for parent.
+	/parent 
+5. Reopen the man page for mkdir then suspend that process (This is a review command from last week). Give the command to suspend.
+	ctrl z
+6. Now you are back at the command line, give the command to show suspended jobs. Give the command.
+	jobs  
+7. Give the command to restart your suspended job.
+	fg 1 
+8. Run the command "ls ~/home" with superuser privileges. Give the command and your answer. 
+	Sudo ls ~/home
+9. Describe how to select a strong password.
+	At least fifteen (15) characters in length. Does not contain your user name, real name, organization name, family member's names or names of your pets. Does not contain your birth 	date. Does not contain a complete dictionary word. Is significantly different from your previous password. Should contain three (3) of the following character types:
+	Lowercase Alphabetical (a, b, c, etc.)
+	Uppercase Alphabetical (A, B, C, etc.)
+	Numerics (0, 1, 2, etc.)
+	Special Characters (@, %, !, etc.)
+10. After creating your file to test and make sure your file is in the correct location run "less /workspaces/cis190_codespace/labs/cis190_lab2.txt" and the less paging utility should open your file. If you get an error then check to see where you went wrong in the naming or location of your file.
