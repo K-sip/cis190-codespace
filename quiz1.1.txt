@@ -1,0 +1,31 @@
+1.What does a ~ represent in a file path? 
+	Home directory of the current user.
+2.What is an absolute path and how can you determine if a path is an absolute path.
+	An absolute path starts with the root directory, you can determine if the path is absolute if it starts with the name of the root directory.
+3.Where does a relative path start from on the file system?
+	A relative path starts from the current directory.
+4.Give the command to use the ls utility to display the contents of your ~/Downloads directory using a relative path while working in your ~/Documents/cis190 directory.
+	ls ~/Documents or ../ (use the absolute path for the desired directory or ../ to make the list relative to one directory up from the current directory)
+5.Give the command to use the ls utility to display the contents of a sub-directory called “test” inside of your current location using a relative path.
+	ls /test (use the relative path for the desired directory)
+6.Give the command to use the ls utility to display the contents of a directory named Desktop inside of the your home directory using an absolute path.
+	ls ~/Desktop (use the absolute path for the desired directory)
+7.Why do Unix/Linux utilities have a singular purpose? 
+	So each utility can be modular, allowing them to be used in conjunction to make power combinations.
+8.What is the best command to run to verify that this file is in the proper location and has the contents you intended?
+	"less" command followed by the relative or absolute path where you believe the file is located. If you are in the directory typing out part of the name and using tab to complete it is a good way of verifying the file name.
+9.Copy the following text from this quiz and paste it inside your file.
+Put your answers to the questions on the next line after the question and indented over to the right:
+
+	a.How do you get your previous command to appear on the command line without retyping it? 
+		Press the up arrow.	
+	b.Using a relative path what would the command be to show the contents of a directory one level higher than your current location?
+	 	ls ../
+	c.Using an absolute path (not using the tilde shortcut) give the command to open a file in your home directory called SampleFile.txt with the vi editor. 
+ 		vi /(home directory name home, workspaces, etc)/SampleFile.txt
+	d.What is the command to display the manual page for the less paging utility? 
+		man less
+	e.What is the command to search forward through the manual page for the string “input”
+		/input
+	i.What is the command to find the next match for your search?
+		n 	
