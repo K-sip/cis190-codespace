@@ -1,0 +1,35 @@
+cd ~
+cd ..
+sudo su
+mkdir 
+cd
+touch
+touch {x,y,z}.cfg
+ls
+tree
+
+1.Answer: cd /data/aircraft/configurations/mq-9
+2.Answer: cd xq-67a
+3.Answer: mv n345qr.cfg mq-1c
+4.Answer: mv n678st.cfg Mojave
+5.Answer: mkdir /data/aircraft/backup
+	  cp -r /data/aircraft/configurations/. /data/aircraft/backup
+6.Answer: ls -i /data/aircraft/configurations/mq-20/
+7.Answer: rmdir only works on a directory that is empty
+8.Answer: mkdir /data/aircraft/locations
+9.Answer: cd /data/aircraft/configurations
+	  ln -s xq-67a /data/aircraft/locations/xq-67a
+	  ln -s mq-1c /data/aircraft/locations/mq-1c
+	  ln -s mq-9 /data/aircraft/locations/mq-9
+10.Answer: cd configurations/mojave/
+11.Answer: cp /data/aircraft/configurations/mq-9/n112op.cfg /data/aircraft/backup/
+12.Answer: du /data/aircraft/configurations/
+13.Answer: mv /data/aircraft/configurations/mq-9/n890mn.cfg /data/aircraft/configurations/mq-20
+14.Answer: ln -s /data/aircraft/configurations/mq-1c/n101gh.cfg /data/aircraft/locations/
+15.Answer: cd /data/aircraft/configurations/mq-1c/
+16.Answer: rm /data/aircraft/locations/xq-67a 
+17.Answer: touch /data/aircraft/configurations/mojave/n567kl.cfg
+18.Answer: du /data/aircraft/
+19.Answer: mkdir /data/aircraft/configurations/mq-9/test
+	   rmdir /data/aircraft/configurations/mq-9/test
+20.Answer: mv /data/aircraft/configurations/xq-67a/index.cfg /data/aircraft/configurations/xq-67a/main.cfg
