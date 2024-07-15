@@ -1,0 +1,678 @@
+Script started on 2024-07-15 05:56:32+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="170" LINES="69"]
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ wget https://boss.vvc.edu/tonning/classes/cis190/resources/lab04.tgz
+--2024-07-15 05:57:46--  https://boss.vvc.edu/tonning/classes/cis190/resources/lab04.tgz
+Resolving boss.vvc.edu (boss.vvc.edu)... 207.233.102.33
+Connecting to boss.vvc.edu (boss.vvc.edu)|207.233.102.33|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12526 (12K) [application/octet-stream]
+Saving to: ‘lab04.tgz’
+
+lab04.tgz                                    0%[                                                                                       ]       0  --.-KB/s               lab04.tgz                                  100%[======================================================================================>]  12.23K  --.-KB/s    in 0.01s   
+
+2024-07-15 05:57:46 (948 KB/s) - ‘lab04.tgz’ saved [12526/12526]
+
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ tar ztrf lab04.tgz [1P[C[C[C[C[C[C[C[C[C[C[C
+configs/
+configs/n567kl/
+configs/n123ab/
+configs/tailnumbers.txt
+configs/n678st/
+configs/n112op/
+configs/n223wx/
+configs/n101gh/
+configs/n789ef/
+configs/n234ij/
+configs/n890mn/
+configs/n456cd/
+configs/n456cd/config_4.ini
+configs/n456cd/config_5.ini
+configs/n456cd/config_2.ini
+configs/n456cd/config_3.ini
+configs/n456cd/config_1.ini
+configs/n890mn/config_4.ini
+configs/n890mn/config_5.ini
+configs/n890mn/config_2.ini
+configs/n890mn/config_3.ini
+configs/n890mn/config_1.ini
+configs/n234ij/config_4.ini
+configs/n234ij/config_5.ini
+configs/n234ij/config_2.ini
+configs/n234ij/config_3.ini
+configs/n234ij/config_1.ini
+configs/n789ef/config_4.ini
+configs/n789ef/config_5.ini
+configs/n789ef/config_2.ini
+configs/n789ef/config_3.ini
+configs/n789ef/config_1.ini
+configs/n101gh/config_4.ini
+configs/n101gh/config_5.ini
+configs/n101gh/config_2.ini
+configs/n101gh/config_3.ini
+configs/n101gh/config_1.ini
+configs/n101gh/config_1a.ini
+configs/n223wx/config_4.ini
+configs/n223wx/config_5.ini
+configs/n223wx/config_2.ini
+configs/n223wx/config_3.ini
+configs/n223wx/config_1.ini
+configs/n112op/config_4.ini
+configs/n112op/config_5.ini
+configs/n112op/config_2.ini
+configs/n112op/config_3.ini
+configs/n112op/config_1.ini
+configs/n678st/config_4.ini
+configs/n678st/config_5.ini
+configs/n678st/config_2.ini
+configs/n678st/config_3.ini
+configs/n678st/config_1.ini
+configs/n123ab/config_4.ini
+configs/n123ab/config_5.ini
+configs/n123ab/config_2.ini
+configs/n123ab/config_3.ini
+configs/n123ab/config_1.ini
+configs/n567kl/config_4.ini
+configs/n567kl/config_5.ini
+configs/n567kl/config_2.ini
+configs/n567kl/config_3.ini
+configs/n567kl/config_1.ini
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ tar zxf lab04.tgz 
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mconfigs[0m  [01;31mlab04.tgz[0m  typescript
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls configs/
+[0m[01;34mn101gh[0m  [01;34mn112op[0m  [01;34mn123ab[0m  [01;34mn223wx[0m  [01;34mn234ij[0m  [01;34mn456cd[0m  [01;34mn567kl[0m  [01;34mn678st[0m  [01;34mn789ef[0m  [01;34mn890mn[0m  tailnumbers.txt
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls -l configs/
+total 44
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [0m[01;34mn101gh[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn112op[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn123ab[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn223wx[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn234ij[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul  5 17:54 [01;34mn456cd[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn567kl[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn678st[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn789ef[0m
+drwxr-xr-x+ 2 codespace codespace 4096 Jul 15 06:01 [01;34mn890mn[0m
+-rw-r--r--  1 codespace codespace  287 Jul  5 17:51 tailnumbers.txt
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ mk dir[K[K[K[Kdir /data/aircraft/n223wx[1@s[1@u[1@d[1@o[1@ 
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ cp [K[K[Kcd configs/
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mn101gh[0m  [01;34mn112op[0m  [01;34mn123ab[0m  [01;34mn223wx[0m  [01;34mn234ij[0m  [01;34mn456cd[0m  [01;34mn567kl[0m  [01;34mn678st[0m  [01;34mn789ef[0m  [01;34mn890mn[0m  tailnumbers.txt
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ cp n233wx/config_1.i[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd n223wx/
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ ls-l
+bash: ls-l: command not found
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ ls -l
+total 20
+-rw-r--r-- 1 codespace codespace 806 Jul  5 16:24 config_1.ini
+-rw-r--r-- 1 codespace codespace 806 Jul  5 16:26 config_2.ini
+-rw-r--r-- 1 codespace codespace 807 Jul  5 16:24 config_3.ini
+-rw-r--r-- 1 codespace codespace 816 Jul  5 16:24 config_4.ini
+-rw-r--r-- 1 codespace codespace 813 Jul  5 16:24 config_5.ini
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ cp config_1.ini [K /data/aircraft/n223wx/
+cp: cannot create regular file '/data/aircraft/n223wx/config_1.ini': Permission denied
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ cp config_1.ini /data/aircraft/n223wx/[1@s[1@u[1@d[1@o[1@ 
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ sudo cp config_1.ini /data/aircraft/n223wx/[1P[1@2
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ diff /data/aircraft//n223wx/confi_1[K[Kg_1.ini da[K[K/data/aircraft/n223wx/config_2.ini | less
+[?1049h[22;0;0t[?1h=2c2
+< mission_id = MISS-7913
+---
+> mission_id = MISS-7914
+9,10c9,10
+< max_altitude = 40000
+< max_speed = 500
+---
+> max_altitude = 30000
+> max_speed = 200
+24,25c24,25
+< log_level = DEBUG
+< log_file = /data/logs/n223wx-MISS-7913.log
+---
+> log_level = ERROR
+> log_file = /data/logs/n223wx-MISS-7914.log
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ diff /data/aircraft//n223wx/config_1.ini /data/aircraft/n223wx/config_2.ini | less[K[K[K[K[K[K[K
+2c2
+< mission_id = MISS-7913
+---
+> mission_id = MISS-7914
+9,10c9,10
+< max_altitude = 40000
+< max_speed = 500
+---
+> max_altitude = 30000
+> max_speed = 200
+24,25c24,25
+< log_level = DEBUG
+< log_file = /data/logs/n223wx-MISS-7913.log
+---
+> log_level = ERROR
+> log_file = /data/logs/n223wx-MISS-7914.log
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ file n890mn/config_1.ini 
+n890mn/config_1.ini: bzip2 compressed data, block size = 900k
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ bzcat/[K /[Kn890mn/config_1ini[K[K[K.ini | less
+[?1049h[22;0;0t[?1h=[mission]
+mission_id = MISS-5158
+objective = Engagement
+start_time = 12:45
+duration_minutes = 180
+
+[drone]
+tail_number = n890mn
+max_altitude = 10000
+max_speed = 250
+payload_capacity = 550
+
+[camera]
+resolution = 720p
+frame_rate = 30
+infrared = True
+lidar = True
+
+[communication]
+frequency = 3.28
+encryption = AES-128
+
+[logging]
+log_level = ERROR
+log_file = /data/logs/n890mn-MISS-5158.log
+
+[waypoints]
+waypoint_1 = 84.980788, -86.016524, 1533
+waypoint_2 = 81.807711, -138.487072, 1263
+waypoint_3 = -37.341804, -58.442351, 130
+waypoint_4 = 11.15891, 155.133732, 1234
+waypoint_5 = -31.33362, 168.860799, 465
+waypoint_6 = -18.869568, 25.004442, 1343
+waypoint_7 = -88.376913, 163.880079, 1261
+waypoint_8 = -43.837074, 145.609756, 531
+waypoint_9 = -74.808728, 137.050896, 1091
+waypoint_10 = 47.512843, 154.162226, 424
+
+[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ bzcat n890mn/config_1.ini | less[K[K[K[K[K[K[K
+[mission]
+mission_id = MISS-5158
+objective = Engagement
+start_time = 12:45
+duration_minutes = 180
+
+[drone]
+tail_number = n890mn
+max_altitude = 10000
+max_speed = 250
+payload_capacity = 550
+
+[camera]
+resolution = 720p
+frame_rate = 30
+infrared = True
+lidar = True
+
+[communication]
+frequency = 3.28
+encryption = AES-128
+
+[logging]
+log_level = ERROR
+log_file = /data/logs/n890mn-MISS-5158.log
+
+[waypoints]
+waypoint_1 = 84.980788, -86.016524, 1533
+waypoint_2 = 81.807711, -138.487072, 1263
+waypoint_3 = -37.341804, -58.442351, 130
+waypoint_4 = 11.15891, 155.133732, 1234
+waypoint_5 = -31.33362, 168.860799, 465
+waypoint_6 = -18.869568, 25.004442, 1343
+waypoint_7 = -88.376913, 163.880079, 1261
+waypoint_8 = -43.837074, 145.609756, 531
+waypoint_9 = -74.808728, 137.050896, 1091
+waypoint_10 = 47.512843, 154.162226, 424
+
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ grep mission n233wx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd n223wx/
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ grep m[K-rni mission
+[35m[Kconfig_1.ini[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[[01;31m[Kmission[m[K]
+[35m[Kconfig_1.ini[m[K[36m[K:[m[K[32m[K2[m[K[36m[K:[m[K[01;31m[Kmission[m[K_id = MISS-7913
+[35m[Kconfig_4.ini[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[[01;31m[Kmission[m[K]
+[35m[Kconfig_4.ini[m[K[36m[K:[m[K[32m[K2[m[K[36m[K:[m[K[01;31m[Kmission[m[K_id = MISS-1386
+[35m[Kconfig_2.ini[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[[01;31m[Kmission[m[K]
+[35m[Kconfig_2.ini[m[K[36m[K:[m[K[32m[K2[m[K[36m[K:[m[K[01;31m[Kmission[m[K_id = MISS-7914
+[35m[Kconfig_3.ini[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[[01;31m[Kmission[m[K]
+[35m[Kconfig_3.ini[m[K[36m[K:[m[K[32m[K2[m[K[36m[K:[m[K[01;31m[Kmission[m[K_id = MISS-9994
+[35m[Kconfig_5.ini[m[K[36m[K:[m[K[32m[K1[m[K[36m[K:[m[K[[01;31m[Kmission[m[K]
+[35m[Kconfig_5.ini[m[K[36m[K:[m[K[32m[K2[m[K[36m[K:[m[K[01;31m[Kmission[m[K_id = MISS-2626
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n223wx [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ cd n456cd/
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ head 10 config_2.ini 
+head: cannot open '10' for reading: No such file or directory
+==> config_2.ini <==
+[mission]
+mission_id = MISS-8258
+objective = Engagement
+start_time = 20:15
+duration_minutes = 210
+
+[drone]
+tail_number = n456cd
+max_altitude = 20000
+max_speed = 400
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ head 10 config_2.ini [1P[1P[1P[1P[1@t[1@a[1@i[1@l
+tail: cannot open '10' for reading: No such file or directory
+==> config_2.ini <==
+waypoint_2 = 32.112778, -12.041067, 393
+waypoint_3 = -67.216556, 15.735837, 493
+waypoint_4 = 86.718933, -167.632601, 805
+waypoint_5 = -61.850368, 94.285816, 1970
+waypoint_6 = -42.423122, -34.781124, 1191
+waypoint_7 = 74.349059, 126.832959, 841
+waypoint_8 = -62.28365, -29.046736, 725
+waypoint_9 = 41.232856, 63.482861, 638
+waypoint_10 = 17.614067, 81.488661, 1156
+
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ tail 10 config_2.ini head[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@1
+head: cannot open '10' for reading: No such file or directory
+==> config_1.ini <==
+[mission]
+mission_id = MISS-3634
+objective = Patrol
+start_time = 17:45
+duration_minutes = 360
+
+[drone]
+tail_number = n456cd
+max_altitude = 50000
+max_speed = 400
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ head 10 config_1.ini tail 10 config_2[C[C[C[C[C
+tail: cannot open '10' for reading: No such file or directory
+==> config_2.ini <==
+waypoint_2 = 32.112778, -12.041067, 393
+waypoint_3 = -67.216556, 15.735837, 493
+waypoint_4 = 86.718933, -167.632601, 805
+waypoint_5 = -61.850368, 94.285816, 1970
+waypoint_6 = -42.423122, -34.781124, 1191
+waypoint_7 = 74.349059, 126.832959, 841
+waypoint_8 = -62.28365, -29.046736, 725
+waypoint_9 = 41.232856, 63.482861, 638
+waypoint_10 = 17.614067, 81.488661, 1156
+
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ m[Ksudo mkdir /data/aircraft/n456cd
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ mode[K[K[Kv config_3.ini /data/aircraft/n456cd/[1@s[1@u[1@d[1@o[1@ 
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ ;s[K[Kls
+[0m[01;34mn101gh[0m  [01;34mn112op[0m  [01;34mn123ab[0m  [01;34mn223wx[0m  [01;34mn234ij[0m  [01;34mn456cd[0m  [01;34mn567kl[0m  [01;34mn678st[0m  [01;34mn789ef[0m  [01;34mn890mn[0m  tailnumbers.txt
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ sort tailnumbers.txt 
+n101gh
+n101gh
+n101gh
+n101gh
+n112op
+n112op
+n112op
+n112op
+n112op
+n123ab
+n223wx
+n223wx
+n223wx
+n223wx
+n234ij
+n234ij
+n234ij
+n234ij
+n456cd
+n456cd
+n456cd
+n456cd
+n456cd
+n456cd
+n456cd
+n567kl
+n567kl
+n567kl
+n678st
+n678st
+n678st
+n678st
+n678st
+n789ef
+n789ef
+n789ef
+n789ef
+n890mn
+n890mn
+n890mn
+n890mn
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ uniq tailnumbers.txt | sort
+n101gh
+n112op
+n123ab
+n223wx
+n234ij
+n456cd
+n567kl
+n678st
+n789ef
+n890mn
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ cd n456cd/
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ bzip2 config_1.ini 
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ ls -[K[K[K[Kfile config_1.ini.bz2 
+config_1.ini.bz2: bzip2 compressed data, block size = 900k
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ bunzip2 config_1.ini.bz2 
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ file config_1.ini 
+config_1.ini: ASCII text
+[0;32m@K-sip [0m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ cd //[K[K,,
+bash: cd: ,,: No such file or directory
+[0;32m@K-sip [1;31m➜ [1;34m.../labs/lab04/configs/n456cd [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/lab04/configs [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ tag[Kr zcf config.tgz configs[1@s[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K.data[K[K[K[K[K/data/tm[K[K[K[K[K[K[Ktmp/configs[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/tmp/configs.tgz configs
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls /tmp/
+[0m[34;42mcodespaces_logs[0m  dockerd.log  [01;35mvscode-git-5728a6d08c.sock[0m                            [01;35mvscode-ipc-cd2b5170-43b2-4e42-a69c-12604df370a4.sock[0m
+[01;31mconfigs.tgz[0m      sshd.log     [01;35mvscode-ipc-9504443d-4c3f-45dc-a099-4c7fab3e5928.sock[0m  [01;35mvscode-ipc-e4fe3927-5403-47f4-896f-7ca56c2157dd.sock[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls /tmp/tar zcf /tmp/configs.tgz configs[1@n[1@e[1@w[1@ [1P
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ rm /tmp/configs.tgz 
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls /tmp/
+[0m[34;42mcodespaces_logs[0m  [01;31mnewconfigs.tgz[0m  [01;35mvscode-git-5728a6d08c.sock[0m                            [01;35mvscode-ipc-cd2b5170-43b2-4e42-a69c-12604df370a4.sock[0m
+dockerd.log      sshd.log        [01;35mvscode-ipc-9504443d-4c3f-45dc-a099-4c7fab3e5928.sock[0m  [01;35mvscode-ipc-e4fe3927-5403-47f4-896f-7ca56c2157dd.sock[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ tar zxf /tmp/newconfigs.tgz /tm[K[K[K[K
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls /tmp/
+[0m[34;42mcodespaces_logs[0m  [01;31mnewconfigs.tgz[0m  [01;35mvscode-git-5728a6d08c.sock[0m                            [01;35mvscode-ipc-cd2b5170-43b2-4e42-a69c-12604df370a4.sock[0m
+dockerd.log      sshd.log        [01;35mvscode-ipc-9504443d-4c3f-45dc-a099-4c7fab3e5928.sock[0m  [01;35mvscode-ipc-e4fe3927-5403-47f4-896f-7ca56c2157dd.sock[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ locate gzip
+bash: locate: command not found
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ locate gzip2
+bash: locate: command not found
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ find gzip
+find: ‘gzip’: No such file or directory
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ find gzip2
+find: ‘gzip2’: No such file or directory
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ locate gzi[[Kp
+bash: locate: command not found
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ sudo locate gzip
+sudo: locate: command not found
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ locate gzip /data/
+bash: locate: command not found
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ ls /data/[K[K[K[K[Kdata
+[0m[01;34maircraft[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ /ls [K[K[K[Kls /usr/
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib32[0m  [01;34mlib64[0m  [01;34mlibexec[0m  [01;34mlibx32[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ /ls /usr/bin/
+bash: /ls: No such file or directory
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ /ls /usr/bin/[1P
+ [0m[01;36mFileCheck-10[0m                         [01;32mdu[0m                       [01;36mlldb-instr-10[0m                      [01;36mnisdomainname[0m               [01;36msystemd[0m
+ [01;36mX11[0m                                  [01;32mdumpsexp[0m                 [40;31;01mlldb-mi[0m                            [01;32mnl[0m                          [01;32msystemd-analyze[0m
+[01;32m'['[0m                                   [01;36mdwp[0m                      [01;36mlldb-server[0m                        [01;36mnm[0m                          [01;32msystemd-ask-password[0m
+ [01;36maclocal[0m                              [01;32mecho[0m                     [01;36mlldb-server-10[0m                     [01;32mnohup[0m                       [01;32msystemd-cat[0m
+ [01;32maclocal-1.16[0m                         [01;36medit[0m                     [01;36mlldb-vscode-10[0m                     [01;36mnot-10[0m                      [01;32msystemd-cgls[0m
+ [01;32madd-apt-repository[0m                   [01;36meditor[0m                   [01;36mlli[0m                                [01;32mnproc[0m                       [01;32msystemd-cgtop[0m
+ [01;32maddpart[0m                              [01;32megrep[0m                    [01;36mlli-10[0m                             [01;32mnroff[0m                       [01;32msystemd-delta[0m
+ [01;36maddr2line[0m                            [01;36melfedit[0m                  [01;36mlli-child-target-10[0m                [01;32mnsenter[0m                     [01;32msystemd-detect-virt[0m
+ [01;36mapropos[0m                              [01;32menc2xs[0m                   [01;36mllvm-PerfectShuffle[0m                [01;32mnspr-config[0m                 [01;32msystemd-escape[0m
+ [01;32mapt[0m                                  [01;32mencguess[0m                 [01;36mllvm-PerfectShuffle-10[0m             [01;32mnss-config[0m                  [01;32msystemd-id128[0m
+ [01;36mapt-add-repository[0m                   [01;32menv[0m                      [01;36mllvm-addr2line-10[0m                  [01;32mnstat[0m                       [01;32msystemd-inhibit[0m
+ [01;32mapt-cache[0m                            [01;32menvsubst[0m                 [01;36mllvm-ar[0m                            [01;32mnumfmt[0m                      [01;32msystemd-machine-id-setup[0m
+ [01;32mapt-cdrom[0m                            [01;32meqn[0m                      [01;36mllvm-ar-10[0m                         [01;36mobj2yaml[0m                    [01;32msystemd-mount[0m
+ [01;32mapt-config[0m                           [01;32merrno[0m                    [01;36mllvm-as[0m                            [01;36mobj2yaml-10[0m                 [01;32msystemd-notify[0m
+ [01;32mapt-extracttemplates[0m                 [01;36mex[0m                       [01;36mllvm-as-10[0m                         [01;36mobjcopy[0m                     [01;32msystemd-path[0m
+ [01;32mapt-ftparchive[0m                       [01;32mexpand[0m                   [01;36mllvm-bcanalyzer[0m                    [01;36mobjdump[0m                     [01;36msystemd-resolve[0m
+ [01;32mapt-get[0m                              [30;43mexpiry[0m                   [01;36mllvm-bcanalyzer-10[0m                 [01;32mod[0m                          [01;32msystemd-run[0m
+ [01;32mapt-key[0m                              [01;32mexpr[0m                     [01;36mllvm-c-test[0m                        [01;32modbcinst[0m                    [01;32msystemd-socket-activate[0m
+ [01;32mapt-mark[0m                             [01;32mfactor[0m                   [01;36mllvm-c-test-10[0m                     [01;32mopenssl[0m                     [01;32msystemd-stdio-bridge[0m
+ [01;32mapt-sortpkgs[0m                         [01;32mfaillog[0m                  [01;36mllvm-cat[0m                           [01;36mopt[0m                         [01;32msystemd-sysusers[0m
+ [01;36mar[0m                                   [01;32mfallocate[0m                [01;36mllvm-cat-10[0m                        [01;36mopt-10[0m                      [01;32msystemd-tmpfiles[0m
+ [01;32march[0m                                 [01;32mfalse[0m                    [01;36mllvm-cfi-verify[0m                    [01;36mpager[0m                       [01;32msystemd-tty-ask-password-agent[0m
+ [01;36mas[0m                                   [01;32mfc-cache[0m                 [01;36mllvm-cfi-verify-10[0m                 [01;32mparallel[0m                    [01;36msystemd-umount[0m
+ [01;36masan_symbolize[0m                       [01;32mfc-cat[0m                   [01;36mllvm-config[0m                        [01;32mpartx[0m                       [01;32mtabs[0m
+ [01;32masan_symbolize-10[0m                    [01;32mfc-conflist[0m              [01;36mllvm-config-10[0m                     [37;41mpasswd[0m                      [01;32mtac[0m
+ [01;32mautoconf[0m                             [01;32mfc-list[0m                  [01;36mllvm-cov[0m                           [01;32mpaste[0m                       [01;32mtail[0m
+ [01;32mautoheader[0m                           [01;32mfc-match[0m                 [01;36mllvm-cov-10[0m                        [01;32mpatch[0m                       [01;32mtar[0m
+ [01;32mautom4te[0m                             [01;32mfc-pattern[0m               [01;36mllvm-cvtres[0m                        [01;32mpathchk[0m                     [01;32mtaskset[0m
+ [01;36mautomake[0m                             [01;32mfc-query[0m                 [01;36mllvm-cvtres-10[0m                     [01;32mpcre-config[0m                 [01;32mtbl[0m
+ [01;32mautomake-1.16[0m                        [01;32mfc-scan[0m                  [01;36mllvm-cxxdump[0m                       [01;32mpcre2-config[0m                [01;36mtclsh[0m
+ [01;32mautoreconf[0m                           [01;32mfc-validate[0m              [01;36mllvm-cxxdump-10[0m                    [01;36mpdb3[0m                        [01;32mtclsh8.6[0m
+ [01;32mautoscan[0m                             [01;32mfgrep[0m                    [01;36mllvm-cxxfilt[0m                       [01;36mpdb3.8[0m                      [01;32mtcltk-depends[0m
+ [01;32mautoupdate[0m                           [01;32mfile[0m                     [01;36mllvm-cxxfilt-10[0m                    [01;32mpee[0m                         [01;32mtee[0m
+ [01;36mawk[0m                                  [01;32mfincore[0m                  [01;36mllvm-cxxmap-10[0m                     [01;32mpeekfd[0m                      [01;32mtempfile[0m
+ [01;32mb2sum[0m                                [01;32mfind[0m                     [01;36mllvm-diff[0m                          [01;32mperl[0m                        [01;32mtest[0m
+ [01;32mbase32[0m                               [01;32mfindmnt[0m                  [01;36mllvm-diff-10[0m                       [01;32mperl5.30-x86_64-linux-gnu[0m   [01;32mtic[0m
+ [01;32mbase64[0m                               [01;32mfish[0m                     [01;36mllvm-dis[0m                           [01;32mperl5.30.0[0m                  [01;32mtimedatectl[0m
+ [01;32mbasename[0m                             [01;32mfish_indent[0m              [01;36mllvm-dis-10[0m                        [01;32mperlbug[0m                     [01;32mtimeout[0m
+ [01;32mbash[0m                                 [01;32mfish_key_reader[0m          [01;36mllvm-dlltool[0m                       [01;32mperldoc[0m                     [01;32mtload[0m
+ [01;32mbashbug[0m                              [01;32mflock[0m                    [01;36mllvm-dlltool-10[0m                    [01;32mperlivp[0m                     [01;32mtoe[0m
+ [01;32mbc[0m                                   [01;32mfmt[0m                      [01;36mllvm-dwarfdump[0m                     [01;32mperlthanks[0m                  [01;32mtop[0m
+ [01;32mbison[0m                                [01;32mfold[0m                     [01;36mllvm-dwarfdump-10[0m                  [01;32mpg_config[0m                   [01;32mtouch[0m
+ [01;32mbison.yacc[0m                           [01;32mfree[0m                     [01;36mllvm-dwp[0m                           [01;32mpgrep[0m                       [01;32mtput[0m
+ [01;32mbootctl[0m                              [01;36mfrom[0m                     [01;36mllvm-dwp-10[0m                        [01;32mpic[0m                         [01;32mtr[0m
+ [01;32mbsd-from[0m                             [01;32mfunzip[0m                   [01;36mllvm-elfabi-10[0m                     [01;36mpico[0m                        [01;32mtree[0m
+ [30;43mbsd-write[0m                            [01;32mfuser[0m                    [01;36mllvm-exegesis[0m                      [01;32mpiconv[0m                      [01;32mtroff[0m
+ [01;36mbugpoint[0m                             [01;36mg++[0m                      [01;36mllvm-exegesis-10[0m                   [01;36mpidof[0m                       [01;32mtrue[0m
+ [01;36mbugpoint-10[0m                          [01;36mg++-9[0m                    [01;36mllvm-extract[0m                       [01;32mpigz[0m                        [01;32mtruncate[0m
+ [01;32mbunzip2[0m                              [01;32mgapplication[0m             [01;36mllvm-extract-10[0m                    [01;36mpinentry[0m                    [01;32mts[0m
+ [01;32mbusctl[0m                               [01;32mgawk[0m                     [01;36mllvm-ifs-10[0m                        [01;32mpinentry-curses[0m             [01;32mtset[0m
+ [01;32mbzcat[0m                                [01;36mgcc[0m                      [01;36mllvm-install-name-tool-10[0m          [01;32mpinky[0m                       [01;32mtsort[0m
+ [01;36mbzcmp[0m                                [01;36mgcc-9[0m                    [01;36mllvm-jitlink-10[0m                    [01;32mpip[0m                         [01;32mtty[0m
+ [01;32mbzdiff[0m                               [01;36mgcc-ar[0m                   [01;36mllvm-lib[0m                           [01;32mpip3[0m                        [01;32mtzselect[0m
+ [01;36mbzegrep[0m                              [01;36mgcc-ar-9[0m                 [01;36mllvm-lib-10[0m                        [01;32mpkaction[0m                    [01;32mucf[0m
+ [01;32mbzexe[0m                                [01;36mgcc-nm[0m                   [01;36mllvm-link[0m                          [01;32mpkcheck[0m                     [01;32mucfq[0m
+ [01;36mbzfgrep[0m                              [01;36mgcc-nm-9[0m                 [01;36mllvm-link-10[0m                       [37;41mpkexec[0m                      [01;32mucfr[0m
+ [01;32mbzgrep[0m                               [01;36mgcc-ranlib[0m               [01;36mllvm-lipo-10[0m                       [01;32mpkg-config[0m                  [01;32muconv[0m
+ [01;32mbzip2[0m                                [01;36mgcc-ranlib-9[0m             [01;36mllvm-lto[0m                           [01;32mpkgdata[0m                     [01;32mul[0m
+ [01;32mbzip2recover[0m                         [01;32mgcore[0m                    [01;36mllvm-lto-10[0m                        [01;36mpkill[0m                       [37;41mumount[0m
+ [01;36mbzless[0m                               [01;36mgcov[0m                     [01;36mllvm-lto2[0m                          [01;32mpkttyagent[0m                  [01;32muname[0m
+ [01;32mbzmore[0m                               [01;36mgcov-9[0m                   [01;36mllvm-lto2-10[0m                       [01;32mpl2pm[0m                       [01;32muncompress[0m
+ [01;36mc++[0m                                  [01;36mgcov-dump[0m                [01;36mllvm-mc[0m                            [01;32mpldd[0m                        [01;32munexpand[0m
+ [01;36mc++filt[0m                              [01;36mgcov-dump-9[0m              [01;36mllvm-mc-10[0m                         [01;32mpmap[0m                        [01;32muniq[0m
+ [01;36mc89[0m                                  [01;36mgcov-tool[0m                [01;36mllvm-mca[0m                           [01;32mpod2html[0m                    [01;32munix2dos[0m
+ [01;32mc89-gcc[0m                              [01;36mgcov-tool-9[0m              [01;36mllvm-mca-10[0m                        [01;32mpod2man[0m                     [01;36munix2mac[0m
+ [01;36mc99[0m                                  [01;32mgdb[0m                      [01;36mllvm-modextract[0m                    [01;32mpod2text[0m                    [01;32munlink[0m
+ [01;32mc99-gcc[0m                              [01;32mgdb-add-index[0m            [01;36mllvm-modextract-10[0m                 [01;32mpod2usage[0m                   [01;36munlzma[0m
+ [01;32mc_rehash[0m                             [01;32mgdbserver[0m                [01;36mllvm-mt[0m                            [01;32mpodchecker[0m                  [01;32munpigz[0m
+ [01;36mcal[0m                                  [01;32mgdbtui[0m                   [01;36mllvm-mt-10[0m                         [01;32mpodselect[0m                   [01;32munshare[0m
+ [01;32mcalendar[0m                             [01;32mgdbus[0m                    [01;36mllvm-nm[0m                            [01;32mpr[0m                          [01;36munxz[0m
+ [01;32mcallgrind_annotate[0m                   [01;32mgdbus-codegen[0m            [01;36mllvm-nm-10[0m                         [01;32mpreconv[0m                     [01;32munzip[0m
+ [01;32mcallgrind_control[0m                    [01;32mgenbrk[0m                   [01;36mllvm-objcopy[0m                       [01;36mprint[0m                       [01;32munzipsfx[0m
+ [01;36mcaptoinfo[0m                            [01;32mgencat[0m                   [01;36mllvm-objcopy-10[0m                    [01;32mprintenv[0m                    [01;32mupdate-alternatives[0m
+ [01;32mcat[0m                                  [01;32mgencfu[0m                   [01;36mllvm-objdump[0m                       [01;32mprinterbanner[0m               [01;32mupdate-mime-database[0m
+ [01;32mcatchsegv[0m                            [01;32mgencnval[0m                 [01;36mllvm-objdump-10[0m                    [01;32mprintf[0m                      [01;32muptime[0m
+ [01;32mcatman[0m                               [01;32mgendict[0m                  [01;36mllvm-opt-report[0m                    [01;32mprlimit[0m                     [01;32musers[0m
+ [01;32mcautious-launcher[0m                    [01;32mgenrb[0m                    [01;36mllvm-opt-report-10[0m                 [01;32mprove[0m                       [01;32mutmpdump[0m
+ [01;36mcc[0m                                   [01;36mgeqn[0m                     [01;36mllvm-pdbutil[0m                       [01;32mprtstat[0m                     [01;32mvalgrind[0m
+ [01;32mccache-swig3.0[0m                       [01;32mgetconf[0m                  [01;36mllvm-pdbutil-10[0m                    [01;32mps[0m                          [01;32mvalgrind-di-server[0m
+ [01;32mcg_annotate[0m                          [01;32mgetent[0m                   [01;36mllvm-profdata[0m                      [01;32mpslog[0m                       [01;32mvalgrind-listener[0m
+ [01;32mcg_diff[0m                              [01;32mgetopt[0m                   [01;36mllvm-profdata-10[0m                   [01;32mpstree[0m                      [01;32mvalgrind.bin[0m
+ [01;32mcg_merge[0m                             [01;32mgettext[0m                  [01;36mllvm-ranlib[0m                        [01;36mpstree.x11[0m                  [01;32mvdir[0m
+ [30;43mchage[0m                                [01;32mgettext.sh[0m               [01;36mllvm-ranlib-10[0m                     [01;32mptar[0m                        [01;36mverify-uselistorder[0m
+ [01;36mchardet3[0m                             [01;32mgettextize[0m               [01;36mllvm-rc[0m                            [01;32mptardiff[0m                    [01;36mverify-uselistorder-10[0m
+ [01;32mchardetect3[0m                          [01;32mgh[0m                       [01;36mllvm-rc-10[0m                         [01;32mptargrep[0m                    [01;32mvgdb[0m
+ [01;32mchattr[0m                               [01;32mgio[0m                      [01;36mllvm-readelf[0m                       [01;32mptx[0m                         [01;36mvi[0m
+ [01;32mchcon[0m                                [01;36mgio-querymodules[0m         [01;36mllvm-readelf-10[0m                    [01;32mpwd[0m                         [01;32mvidir[0m
+ [37;41mchfn[0m                                 [01;32mgit[0m                      [01;36mllvm-readobj[0m                       [01;32mpwdx[0m                        [01;36mview[0m
+ [01;32mchgrp[0m                                [01;32mgit-lfs[0m                  [01;36mllvm-readobj-10[0m                    [01;32mpy3clean[0m                    [01;36mvim[0m
+ [01;32mchmod[0m                                [01;36mgit-receive-pack[0m         [01;36mllvm-reduce-10[0m                     [01;32mpy3compile[0m                  [01;32mvim.basic[0m
+ [01;32mchoom[0m                                [01;32mgit-shell[0m                [01;36mllvm-rtdyld[0m                        [01;36mpy3versions[0m                 [01;32mvim.tiny[0m
+ [01;32mchown[0m                                [01;36mgit-upload-archive[0m       [01;36mllvm-rtdyld-10[0m                     [01;36mpydoc3[0m                      [01;36mvimdiff[0m
+ [01;32mchronic[0m                              [01;36mgit-upload-pack[0m          [01;36mllvm-size[0m                          [01;32mpydoc3.8[0m                    [01;32mvimtutor[0m
+ [01;32mchrt[0m                                 [01;32mglib-compile-resources[0m   [01;36mllvm-size-10[0m                       [01;36mpygettext3[0m                  [01;32mvipe[0m
+ [37;41mchsh[0m                                 [01;36mglib-compile-schemas[0m     [01;36mllvm-split[0m                         [01;32mpygettext3.8[0m                [01;32mvmstat[0m
+ [01;32mcksum[0m                                [01;32mglib-genmarshal[0m          [01;36mllvm-split-10[0m                      [01;32mpygmentize[0m                  [01;36mw[0m
+ [01;36mclang[0m                                [01;32mglib-gettextize[0m          [01;36mllvm-stress[0m                        [01;36mpython3[0m                     [01;32mw.procps[0m
+ [01;36mclang++[0m                              [01;32mglib-mkenums[0m             [01;36mllvm-stress-10[0m                     [01;36mpython3-config[0m              [01;32mwall[0m
+ [01;36mclang++-10[0m                           [01;32mgobject-query[0m            [01;36mllvm-strings[0m                       [01;32mpython3.8[0m                   [01;32mwatch[0m
+ [01;36mclang-10[0m                             [01;36mgold[0m                     [01;36mllvm-strings-10[0m                    [01;36mpython3.8-config[0m            [01;32mwatchgnupg[0m
+ [01;36mclang-cpp-10[0m                         [37;41mgpasswd[0m                  [01;36mllvm-strip[0m                         [01;36mranlib[0m                      [01;32mwc[0m
+ [01;32mclear[0m                                [01;32mgpg[0m                      [01;36mllvm-strip-10[0m                      [01;36mrbash[0m                       [01;32mwdctl[0m
+ [01;32mclear_console[0m                        [01;32mgpg-agent[0m                [01;36mllvm-symbolizer[0m                    [01;36mrcp[0m                         [01;32mwget[0m
+ [01;32mcmake[0m                                [01;32mgpg-connect-agent[0m        [01;36mllvm-symbolizer-10[0m                 [01;32mrdma[0m                        [01;32mwhatis[0m
+ [01;32mcmp[0m                                  [01;32mgpg-error-config[0m         [01;36mllvm-tblgen[0m                        [01;32mre2c[0m                        [01;32mwhereis[0m
+ [01;32mcol[0m                                  [01;32mgpg-wks-server[0m           [01;36mllvm-tblgen-10[0m                     [01;36mreadelf[0m                     [01;32mwhich[0m
+ [01;32mcolcrt[0m                               [01;32mgpg-zip[0m                  [01;36mllvm-undname[0m                       [01;32mreadlink[0m                    [01;32mwho[0m
+ [01;32mcolrm[0m                                [01;36mgpg2[0m                     [01;36mllvm-undname-10[0m                    [01;32mrealpath[0m                    [01;32mwhoami[0m
+ [01;32mcolumn[0m                               [01;32mgpgcompose[0m               [01;36mllvm-xray[0m                          [01;32mrecode-sr-latin[0m             [01;36mwish[0m
+ [01;32mcombine[0m                              [01;32mgpgconf[0m                  [01;36mllvm-xray-10[0m                       [01;32mrename.ul[0m                   [01;32mwish8.6[0m
+ [01;32mcomm[0m                                 [01;32mgpgparsemail[0m             [01;32mln[0m                                 [01;32mrenice[0m                      [01;36mwrite[0m
+ [01;36mcompose[0m                              [01;32mgpgrt-config[0m             [01;32mlnstat[0m                             [01;36mreset[0m                       [01;36mwww-browser[0m
+ [01;32mcontainerd[0m                           [01;32mgpgsm[0m                    [01;32mlocale[0m                             [01;32mresizepart[0m                  [01;36mx86_64[0m
+ [01;32mcontainerd-shim[0m                      [01;32mgpgsplit[0m                 [01;32mlocale-check[0m                       [01;32mresolvectl[0m                  [01;32mx86_64-linux-gnu-addr2line[0m
+ [01;32mcontainerd-shim-runc-v1[0m              [01;32mgpgtar[0m                   [01;32mlocalectl[0m                          [01;32mrev[0m                         [01;32mx86_64-linux-gnu-ar[0m
+ [01;32mcontainerd-shim-runc-v2[0m              [01;32mgpgv[0m                     [01;32mlocaledef[0m                          [01;32mrgrep[0m                       [01;32mx86_64-linux-gnu-as[0m
+ [01;32mcontainerd-stress[0m                    [01;36mgpic[0m                     [01;32mlogger[0m                             [01;36mrlogin[0m                      [01;32mx86_64-linux-gnu-c++filt[0m
+ [01;32mcorelist[0m                             [01;36mgprof[0m                    [01;32mlogin[0m                              [01;32mrm[0m                          [01;36mx86_64-linux-gnu-cpp[0m
+ [01;36mcount-10[0m                             [01;32mgrep[0m                     [01;32mloginctl[0m                           [01;32mrmdir[0m                       [01;32mx86_64-linux-gnu-cpp-9[0m
+ [01;32mcp[0m                                   [01;32mgresource[0m                [01;32mlogname[0m                            [01;36mrnano[0m                       [01;32mx86_64-linux-gnu-dwp[0m
+ [01;32mcpack[0m                                [01;32mgroff[0m                    [01;32mlook[0m                               [01;32mroutef[0m                      [01;32mx86_64-linux-gnu-elfedit[0m
+ [01;32mcpan[0m                                 [01;32mgrog[0m                     [01;32mlorder[0m                             [01;32mroutel[0m                      [01;36mx86_64-linux-gnu-g++[0m
+ [01;32mcpan5.30-x86_64-linux-gnu[0m            [01;32mgrops[0m                    [01;32mls[0m                                 [01;32mrpcgen[0m                      [01;32mx86_64-linux-gnu-g++-9[0m
+ [01;36mcpp[0m                                  [01;32mgrotty[0m                   [01;32mlsattr[0m                             [01;36mrrsync[0m                      [01;36mx86_64-linux-gnu-gcc[0m
+ [01;36mcpp-9[0m                                [01;32mgroups[0m                   [01;32mlsb_release[0m                        [01;36mrsh[0m                         [01;32mx86_64-linux-gnu-gcc-9[0m
+ [01;32mcppcheck[0m                             [01;32mgsettings[0m                [01;32mlsblk[0m                              [01;32mrsync[0m                       [01;36mx86_64-linux-gnu-gcc-ar[0m
+ [01;32mcppcheck-htmlreport[0m                  [01;36mgtbl[0m                     [01;32mlscpu[0m                              [01;36mrtstat[0m                      [01;32mx86_64-linux-gnu-gcc-ar-9[0m
+ [01;32mcsplit[0m                               [01;32mgtester[0m                  [01;32mlsipc[0m                              [01;32mrun-mailcap[0m                 [01;36mx86_64-linux-gnu-gcc-nm[0m
+ [01;32mctest[0m                                [01;32mgtester-report[0m           [01;32mlslocks[0m                            [01;32mrun-parts[0m                   [01;32mx86_64-linux-gnu-gcc-nm-9[0m
+ [01;32mctr[0m                                  [01;32mgtk-update-icon-cache[0m    [01;32mlslogins[0m                           [01;32mrunc[0m                        [01;36mx86_64-linux-gnu-gcc-ranlib[0m
+ [01;36mctstat[0m                               [01;32mgunzip[0m                   [01;32mlsmem[0m                              [01;32mruncon[0m                      [01;32mx86_64-linux-gnu-gcc-ranlib-9[0m
+ [01;32mcurl[0m                                 [01;32mgzexe[0m                    [01;32mlsns[0m                               [01;36mrview[0m                       [01;36mx86_64-linux-gnu-gcov[0m
+ [01;32mcurl-config[0m                          [01;32mgzip[0m                     [01;32mlsof[0m                               [01;36mrvim[0m                        [01;32mx86_64-linux-gnu-gcov-9[0m
+ [01;32mcut[0m                                  [01;32mh2ph[0m                     [01;32mlspgpot[0m                            [01;36mrzsh[0m                        [01;36mx86_64-linux-gnu-gcov-dump[0m
+ [01;32mcvtsudoers[0m                           [01;32mh2xs[0m                     [01;32mlynx[0m                               [01;36msanstats[0m                    [01;32mx86_64-linux-gnu-gcov-dump-9[0m
+ [01;32mdash[0m                                 [01;36mhd[0m                       [01;36mlzcat[0m                              [01;36msanstats-10[0m                 [01;36mx86_64-linux-gnu-gcov-tool[0m
+ [01;32mdate[0m                                 [01;32mhead[0m                     [01;36mlzcmp[0m                              [01;32msavelog[0m                     [01;32mx86_64-linux-gnu-gcov-tool-9[0m
+ [01;32mdbus-cleanup-sockets[0m                 [01;32mhelpztags[0m                [01;36mlzdiff[0m                             [01;32mscp[0m                         [01;36mx86_64-linux-gnu-gold[0m
+ [01;32mdbus-daemon[0m                          [01;32mhexdump[0m                  [01;36mlzegrep[0m                            [01;32mscript[0m                      [01;32mx86_64-linux-gnu-gprof[0m
+ [01;32mdbus-monitor[0m                         [01;32mhmac256[0m                  [01;36mlzfgrep[0m                            [01;32mscriptreplay[0m                [01;36mx86_64-linux-gnu-ld[0m
+ [01;32mdbus-run-session[0m                     [01;32mhostid[0m                   [01;36mlzgrep[0m                             [01;32msdiff[0m                       [01;32mx86_64-linux-gnu-ld.bfd[0m
+ [01;32mdbus-send[0m                            [01;32mhostname[0m                 [01;36mlzless[0m                             [01;32msed[0m                         [01;32mx86_64-linux-gnu-ld.gold[0m
+ [01;32mdbus-update-activation-environment[0m   [01;32mhostnamectl[0m              [01;36mlzma[0m                               [01;36msee[0m                         [01;32mx86_64-linux-gnu-nm[0m
+ [01;32mdbus-uuidgen[0m                         [01;32mhtop[0m                     [01;32mlzmainfo[0m                           [01;32mselect-editor[0m               [01;32mx86_64-linux-gnu-objcopy[0m
+ [01;32mdd[0m                                   [01;36mi386[0m                     [01;36mlzmore[0m                             [01;32msensible-browser[0m            [01;32mx86_64-linux-gnu-objdump[0m
+ [01;32mdeb-systemd-helper[0m                   [01;32miconv[0m                    [01;32mm4[0m                                 [01;32msensible-editor[0m             [01;36mx86_64-linux-gnu-pkg-config[0m
+ [01;32mdeb-systemd-invoke[0m                   [01;32micuinfo[0m                  [01;36mmac2unix[0m                           [01;32msensible-pager[0m              [01;36mx86_64-linux-gnu-python3-config[0m
+ [01;32mdebconf[0m                              [01;32mid[0m                       [01;32mmake[0m                               [01;32mseq[0m                         [01;32mx86_64-linux-gnu-python3.8-config[0m
+ [01;32mdebconf-apt-progress[0m                 [01;32mifdata[0m                   [01;32mmake-first-existing-target[0m         [01;32msetarch[0m                     [01;32mx86_64-linux-gnu-ranlib[0m
+ [01;32mdebconf-communicate[0m                  [01;32mifnames[0m                  [01;32mmakeconv[0m                           [01;32msetpriv[0m                     [01;32mx86_64-linux-gnu-readelf[0m
+ [01;32mdebconf-copydb[0m                       [01;32mifne[0m                     [01;32mman[0m                                [01;32msetsid[0m                      [01;32mx86_64-linux-gnu-size[0m
+ [01;32mdebconf-escape[0m                       [01;32minfocmp[0m                  [01;32mman-recode[0m                         [01;32msetterm[0m                     [01;32mx86_64-linux-gnu-strings[0m
+ [01;32mdebconf-set-selections[0m               [01;36minfotocap[0m                [01;32mmandb[0m                              [01;32msftp[0m                        [01;32mx86_64-linux-gnu-strip[0m
+ [01;32mdebconf-show[0m                         [01;32minotifywait[0m              [01;32mmanpath[0m                            [01;36msg[0m                          [01;32mx86_64-pc-linux-gnu-pkg-config[0m
+ [01;32mdelpart[0m                              [01;32minotifywatch[0m             [01;32mmawk[0m                               [01;36msh[0m                          [01;32mxargs[0m
+ [01;32mderb[0m                                 [01;32minstall[0m                  [01;32mmcookie[0m                            [01;32msha1sum[0m                     [01;32mxgettext[0m
+ [01;32mdf[0m                                   [01;32minstmodsh[0m                [01;32mmd5sum[0m                             [01;32msha224sum[0m                   [01;32mxml2-config[0m
+ [01;32mdh_autotools-dev_restoreconfig[0m       [01;32mionice[0m                   [01;36mmd5sum.textutils[0m                   [01;32msha256sum[0m                   [01;32mxmlsec1-config[0m
+ [01;32mdh_autotools-dev_updateconfig[0m        [01;32mip[0m                       [01;32mmesg[0m                               [01;32msha384sum[0m                   [01;32mxsel[0m
+ [01;32mdh_bash-completion[0m                   [01;32mipcmk[0m                    [01;32mmigrate-pubring-from-classic-gpg[0m   [01;32msha512sum[0m                   [01;32mxslt-config[0m
+ [01;32mdialog[0m                               [01;32mipcrm[0m                    [01;32mmispipe[0m                            [01;32mshasum[0m                      [01;32mxsubpp[0m
+ [01;32mdiff[0m                                 [01;32mipcs[0m                     [01;32mmkdir[0m                              [01;32mshred[0m                       [01;32mxtail[0m
+ [01;32mdiff3[0m                                [01;36miptables-xml[0m             [01;32mmkfifo[0m                             [01;32mshuf[0m                        [01;32mxxd[0m
+ [01;32mdir[0m                                  [01;32mischroot[0m                 [01;32mmknod[0m                              [01;36msize[0m                        [01;32mxz[0m
+ [01;32mdircolors[0m                            [01;32misutf8[0m                   [01;32mmktemp[0m                             [01;32mskill[0m                       [01;36mxzcat[0m
+ [01;32mdirmngr[0m                              [01;32mjoin[0m                     [01;32mmore[0m                               [01;32mslabtop[0m                     [01;36mxzcmp[0m
+ [01;32mdirmngr-client[0m                       [01;32mjournalctl[0m               [37;41mmount[0m                              [01;32msleep[0m                       [01;32mxzdiff[0m
+ [01;32mdirname[0m                              [01;32mjq[0m                       [01;32mmountpoint[0m                         [01;36mslogin[0m                      [01;36mxzegrep[0m
+ [01;32mdmesg[0m                                [01;32mjson_pp[0m                  [01;32mmpicalc[0m                            [01;36msnice[0m                       [01;36mxzfgrep[0m
+ [01;36mdnsdomainname[0m                        [01;32mkbxutil[0m                  [01;32mms_print[0m                           [01;32msoelim[0m                      [01;32mxzgrep[0m
+ [01;32mdocker[0m                               [01;32mkernel-install[0m           [01;32mmsgattrib[0m                          [01;32msort[0m                        [01;32mxzless[0m
+ [01;32mdocker-proxy[0m                         [01;32mkill[0m                     [01;32mmsgcat[0m                             [01;32msotruss[0m                     [01;32mxzmore[0m
+ [01;32mdockerd[0m                              [01;32mkillall[0m                  [01;32mmsgcmp[0m                             [01;32msplain[0m                      [01;36myacc[0m
+ [01;36mdomainname[0m                           [01;32mlast[0m                     [01;32mmsgcomm[0m                            [01;32msplit[0m                       [01;36myaml-bench-10[0m
+ [01;32mdos2unix[0m                             [01;36mlastb[0m                    [01;32mmsgconv[0m                            [01;32msponge[0m                      [01;36myaml2obj[0m
+ [01;32mdpkg[0m                                 [01;32mlastlog[0m                  [01;32mmsgen[0m                              [01;32msprof[0m                       [01;36myaml2obj-10[0m
+ [01;32mdpkg-architecture[0m                    [01;32mlcf[0m                      [01;32mmsgexec[0m                            [01;32msqldiff[0m                     [01;36myarn[0m
+ [01;32mdpkg-buildflags[0m                      [01;32mlckdo[0m                    [01;32mmsgfilter[0m                          [01;32msqlite3[0m                     [01;36myarnpkg[0m
+ [01;32mdpkg-buildpackage[0m                    [01;36mld[0m                       [01;32mmsgfmt[0m                             [01;32mss[0m                          [01;32myes[0m
+ [01;32mdpkg-checkbuilddeps[0m                  [01;36mld.bfd[0m                   [01;32mmsggrep[0m                            [01;32mssh[0m                         [01;36mypdomainname[0m
+ [01;32mdpkg-deb[0m                             [01;36mld.gold[0m                  [01;32mmsginit[0m                            [01;32mssh-add[0m                     [01;32mzcat[0m
+ [01;32mdpkg-distaddfile[0m                     [01;32mldd[0m                      [01;32mmsgmerge[0m                           [30;43mssh-agent[0m                   [01;32mzcmp[0m
+ [01;32mdpkg-divert[0m                          [01;32mless[0m                     [01;32mmsgunfmt[0m                           [01;32mssh-argv0[0m                   [01;32mzdiff[0m
+ [01;32mdpkg-genbuildinfo[0m                    [01;32mlessecho[0m                 [01;32mmsguniq[0m                            [01;32mssh-copy-id[0m                 [01;32mzdump[0m
+ [01;32mdpkg-genchanges[0m                      [01;36mlessfile[0m                 [01;32mmtrace[0m                             [01;32mssh-keygen[0m                  [01;32mzegrep[0m
+ [01;32mdpkg-gencontrol[0m                      [01;32mlesskey[0m                  [01;32mmv[0m                                 [01;32mssh-keyscan[0m                 [01;32mzfgrep[0m
+ [01;32mdpkg-gensymbols[0m                      [01;32mlesspipe[0m                 [01;32mmysql_config[0m                       [01;32mstat[0m                        [01;32mzforce[0m
+ [01;32mdpkg-maintscript-helper[0m              [01;32mlexgrog[0m                  [01;32mnamei[0m                              [01;32mstdbuf[0m                      [01;32mzgrep[0m
+ [01;32mdpkg-mergechangelogs[0m                 [01;32mlibgcrypt-config[0m         [01;32mnano[0m                               [01;32mstrace[0m                      [01;32mzip[0m
+ [01;32mdpkg-name[0m                            [01;32mlibnetcfg[0m                [01;36mnawk[0m                               [01;32mstrace-log-merge[0m            [01;32mzipcloak[0m
+ [01;32mdpkg-parsechangelog[0m                  [01;36mlibpng-config[0m            [01;32mncal[0m                               [01;36mstrings[0m                     [01;32mzipdetails[0m
+ [01;32mdpkg-query[0m                           [01;32mlibpng16-config[0m          [01;32mncdu[0m                               [01;36mstrip[0m                       [01;32mzipgrep[0m
+ [01;32mdpkg-scanpackages[0m                    [01;32mlibtoolize[0m               [01;36mncurses5-config[0m                    [01;32mstty[0m                        [01;32mzipinfo[0m
+ [01;32mdpkg-scansources[0m                     [01;32mlink[0m                     [01;32mncurses6-config[0m                    [37;41msu[0m                          [01;32mzipnote[0m
+ [01;32mdpkg-shlibdeps[0m                       [01;36mlinux32[0m                  [01;36mncursesw5-config[0m                   [37;41msudo[0m                        [01;32mzipsplit[0m
+ [01;32mdpkg-source[0m                          [01;36mlinux64[0m                  [01;32mncursesw6-config[0m                   [01;36msudoedit[0m                    [01;32mzless[0m
+ [01;32mdpkg-split[0m                           [01;36mllc[0m                      [01;32mneqn[0m                               [01;32msudoreplay[0m                  [01;32mzmore[0m
+ [01;32mdpkg-statoverride[0m                    [01;36mllc-10[0m                   [01;32mnetstat[0m                            [01;32msum[0m                         [01;32mznew[0m
+ [01;32mdpkg-trigger[0m                         [01;36mlldb[0m                     [01;32mnetworkctl[0m                         [01;32mswig3.0[0m                     [01;32mzrun[0m
+ [01;32mdpkg-vendor[0m                          [01;36mlldb-10[0m                  [37;41mnewgrp[0m                             [01;32msymcryptrun[0m                 [01;32mzsh[0m
+ [01;36mdsymutil[0m                             [01;36mlldb-argdumper[0m           [01;32mngettext[0m                           [01;32msync[0m                        [01;32mzsh5[0m
+ [01;36mdsymutil-10[0m                          [01;36mlldb-argdumper-10[0m        [01;32mnice[0m                               [01;32msystemctl[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ which gzip
+/usr/bin/gzip
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ whereis gzip
+gzip: /usr/bin/gzip /usr/share/man/man1/gzip.1.gz /usr/share/info/gzip.info.gz
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ sudo apt-get locate
+E: Invalid operation locate
+[0;32m@K-sip [1;31m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ free
+              total        used        free      shared  buff/cache   available
+Mem:        8119864     1488204      153084       67796     6478576     6241452
+Swap:             0           0           0
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ uptime
+ 06:36:49 up  2:44,  0 users,  load average: 0.03, 0.06, 0.09
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ top
+[?1h=[?25l[H[2J(B[mtop - 06:36:56 up  2:44,  0 users,  load average: 0.03, 0.06, 0.08(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  23 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  22 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  3.3 (B[m[39;49mus,(B[m[39;49m[1m  3.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 93.3 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7929.6 (B[m[39;49mtotal,(B[m[39;49m[1m    152.4 (B[m[39;49mfree,(B[m[39;49m[1m   1450.0 (B[m[39;49mused,(B[m[39;49m[1m   6327.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   6098.5 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                            (B[m[39;49m[K
+(B[m      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.22 docker-init                                                                                        (B[m[39;49m[K
+(B[m      8 codespa+  20   0    7236   1664   1664 S   0.0   0.0   0:00.02 sleep                                                                                              (B[m[39;49m[K
+(B[m     36 root      20   0   12196   3476   2560 S   0.0   0.0   0:00.00 sshd                                                                                               (B[m[39;49m[K
+(B[m    148 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                 (B[m[39;49m[K
+(B[m    176 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                 (B[m[39;49m[K
+(B[m    352 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                 (B[m[39;49m[K
+(B[m    360 codespa+  20   0 1340712 116548  45440 S   0.0   1.4   0:11.27 node                                                                                               (B[m[39;49m[K
+(B[m    389 codespa+  20   0 1241076  56548  41472 S   0.0   0.7   0:01.31 node                                                                                               (B[m[39;49m[K
+(B[m    557 codespa+  20   0   21.5g 336192  50048 S   0.0   4.1   1:32.89 node                                                                                               (B[m[39;49m[K
+(B[m   1027 codespa+  20   0 1142124  74208  42496 S   0.0   0.9   0:12.34 node                                                                                               (B[m[39;49m[K
+(B[m   1057 codespa+  20   0  995176  54416  40192 S   0.0   0.7   0:00.44 node                                                                                               (B[m[39;49m[K
+(B[m   1694 codespa+  20   0   17164  12160   3456 S   0.0   0.1   0:00.97 bash                                                                                               (B[m[39;49m[K
+(B[m   1696 codespa+  20   0   16496  11392   3328 S   0.0   0.1   0:00.14 bash                                                                                               (B[m[39;49m[K
+(B[m   2538 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                 (B[m[39;49m[K
+(B[m   2629 root      20   0    2616   1408   1408 S   0.0   0.0   0:00.00 sh                                                                                                 (B[m[39;49m[K
+(B[m   3274 root      20   0 1983432  87912  52864 S   0.0   1.1   0:01.12 dockerd                                                                                            (B[m[39;49m[K
+(B[m   3281 root      20   0 1798832  46256  30976 S   0.0   0.6   0:02.33 containerd                                                                                         (B[m[39;49m[K
+(B[m  54116 codespa+  20   0    7368   2432   2304 S   0.0   0.0   0:00.10 script                                                                                             (B[m[39;49m[K
+(B[m  54117 codespa+  20   0   17036  12032   3328 S   0.0   0.1   0:00.92 bash                                                                                               (B[m[39;49m[K
+(B[m  77538 codespa+  20   0    2620   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                 (B[m[39;49m[K
+(B[m  77539 codespa+  20   0    8628   3072   2816 S   0.0   0.0   0:00.00 cpuUsage.sh                                                                                        (B[m[39;49m[K
+(B[m  77544 codespa+  20   0    7240   1792   1792 S   0.0   0.0   0:00.00 sleep                                                                                              (B[m[39;49m[K
+(B[m[1m  77545 codespa+  20   0   11028   3840   3200 R   0.0   0.0   0:00.00 top                                                                                                (B[m[39;49m[K
+[J[H(B[mtop - 06:36:59 up  2:44,  0 users,  load average: 0.03, 0.06, 0.08(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  3.2 (B[m[39;49mus,(B[m[39;49m[1m  4.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 92.6 (B[m[39;49mid,(B[m[39;49m[1m  0.2 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m   7929.6 (B[m[39;49mtotal,(B[m[39;49m[1m    142.0 (B[m[39;49mfree,(B[m[39;49m[1m   1460.3 (B[m[39;49mused,(B[m[39;49m[1m   6327.2 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m   6088.2 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+(B[m    557 codespa+  20   0   21.5g 337520  50048 S   1.3   4.2   1:32.93 node                                                                                               (B[m[39;49m[K
+(B[m    389 codespa+  20   0 1241076  56548  41472 S   0.3   0.7   0:01.32 node                                                                                               (B[m[39;49m[K
+(B[m   1027 codespa+  20   0 1142124  74592  42496 S   0.3   0.9   0:12.35 node                                                                                               (B[m[39;49m[K
+(B[m      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.22 docker-init                                                                                        (B[m[39;49m[K
+(B[m      8 codespa+  20   0    7236   1664   1664 S   0.0   0.0   0:00.02 sleep                                                                                              (B[m[39;49m[K
+(B[m     36 root      20   0   12196   3476   2560 S   0.0   0.0   0:00.00 sshd                                                                                               (B[m[39;49m[K
+(B[m    148 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                 (B[m[39;49m[K
+(B[m    176 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                 (B[m[39;49m[K
+(B[m    352 codespa+  20   0    2624   1536   1536 S   0.0   0.0   0:00.01 sh                                                                                                 (B[m[39;49m[K
+(B[m    360 codespa+  20   0 1340712 116676  45440 S   0.0   1.4   0:11.27 node                                                                                               (B[m[39;49m[K
+
+
+
+
+
+
+
+
+
+(B[m[1m  77545 codespa+  20   0   10996   3840   3200 R   0.0   0.0   0:00.00 top                                                                                                (B[m[39;49m[K
+(B[m  77596 codespa+  20   0    2620   1536   1536 S   0.0   0.0   0:00.00 sh                                                                                                 (B[m[39;49m[K
+(B[m  77597 codespa+  20   0    8628   3200   2944 S   0.0   0.0   0:00.00 cpuUsage.sh                                                                                        (B[m[39;49m[K
+(B[m  77603 codespa+  20   0    7240   1792   1792 S   0.0   0.0   0:00.00 sleep                                                                                              (B[m[39;49m[K
+[J[?1l>[70;1H
+[?12l[?25h[K[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ htop
+[?1049h[22;0;0t[1;69r(B[m[4l[?7h[?1h=[?25l[39;49m[?1000h[39;49m(B[m[H[2J[2d  [36m1  [39m(B[0;1m[[90m[71X[2;78H0.0%[39m](B[m   [36mTasks: (B[0;1m[36m20(B[0m[36m, (B[0;1m[32m67(B[0m[32m thr[36m; (B[0;1m[32m1(B[0m[36m running[3;3H2  [39m(B[0;1m[[90m[71X[3;78H0.0%[39m](B[m   [36mLoad average: [39m(B[0;1m0.03 [36m0.06 (B[0m[36m0.08 [4;3HMem[39m(B[0;1m[(B[0m[32m|||||||||||||||[34m||[33m|||||||||||||||||||||||||||||||||||||||||||||||1.49G/7.74G[39m(B[0;1m](B[m   [36mUptime: (B[0;1m[36m02:44:47[5;3H(B[0m[36mSwp[39m(B[0;1m[[90m[70X[5;77H0K/0K[39m][7d(B[0m[30m[42m    PID USER      PRI  NI  VIRT   RES   SHR S [30m[46mCPU% [30m[42mMEM%   TIME+  Command[K[8;6H[30m[46m[1K 1 codespace  20   0  1136   640   640 S  0.0  0.0  0:00.22 /sbin/docker-init -- /bin/sh -c echo Container started trap "exit 0" 15 /usr/local/share/ssh-init.sh /usr[9;7H[39;49m(B[m8 codespace  20   0 [36m 7[39m(B[m236 [36m 1[39m(B[m664 [36m 1[39m(B[m664 S  0.0  0.0  0:00.02 sleep infinity[10;6H36 (B[0;1m[90mroot      [39m(B[m 20   0 [36m12[39m(B[m196 [36m 3[39m(B[m476 [36m 2[39m(B[m560 S  0.0  0.0  0:00.00 sshd: /usr/sbin/sshd [listener] 0 of 10-100 startups[11;5H148 codespace  20   0 [36m 2[39m(B[m616 [36m 1[39m(B[m536 [36m 1[39m(B[m536 S  0.0  0.0  0:00.01 /bin/sh[12;5H176 (B[0;1m[90mroot      [39m(B[m 20   0 [36m 2[39m(B[m616 [36m 1[39m(B[m536 [36m 1[39m(B[m536 S  0.0  0.0  0:00.00 /bin/sh[13;5H352 codespace  20   0 [36m 2[39m(B[m624 [36m 1[39m(B[m536 [36m 1[39m(B[m536 S  0.0  0.0  0:00.01 sh /home/codespace/.vscode-remote/bin/f1e16e1e6214d7c44d078b1f0607b2388f29d729/bin/code-server --log trac[14;5H361 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[15;5H[39m(B[m362 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.39 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[16;5H[39m(B[m363 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.42 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[17;5H[39m(B[m364 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.45 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[18;5H[39m(B[m365 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.40 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[19;5H[39m(B[m366 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[20;5H[39m(B[m368 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.12 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[21;5H[39m(B[m369 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.12 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[22;5H[39m(B[m370 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.12 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[23;5H[39m(B[m371 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:00.11 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[24;5H[39m(B[m360 codespace  20   0 [36m1309M  113M 45[39m(B[m440 S  0.0  1.4  0:11.28 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[25;5H390 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[26;5H[39m(B[m391 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.03 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[27;5H[39m(B[m392 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[28;5H[39m(B[m393 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[29;5H[39m(B[m394 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[30;5H[39m(B[m395 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[31;5H[39m(B[m400 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[32;5H[39m(B[m401 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[33;5H[39m(B[m402 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[34;5H[39m(B[m403 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[35;5H[39m(B[m413 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.04 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[36;5H[39m(B[m414 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:00.54 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[37;5H[39m(B[m389 codespace  20   0 [36m1211M 56[39m(B[m548 [36m41[39m(B[m472 S  0.0  0.7  0:01.32 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[38;5H565 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[39;5H[39m(B[m567 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:02.22 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[40;5H[39m(B[m568 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:02.40 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[41;5H[39m(B[m569 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:02.26 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[42;5H[39m(B[m570 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:02.17 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[43;5H[39m(B[m576 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[44;5H[39m(B[m600 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:03.82 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[45;5H[39m(B[m601 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:03.80 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[46;5H[39m(B[m602 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:03.81 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[47;5H[39m(B[m603 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:03.82 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[48;5H[39m(B[m748 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  0:00.21 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[49;5H[39m(B[m557 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.0  4.2  1:32.99 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[50;4H1028 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[51;4H[39m(B[m1029 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.23 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[52;4H[39m(B[m1030 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.21 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[53;4H[39m(B[m1031 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.20 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[54;4H[39m(B[m1032 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.25 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[55;4H[39m(B[m1033 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[56;4H[39m(B[m1034 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[57;4H[39m(B[m1035 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[58;4H[39m(B[m1036 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[59;4H[39m(B[m1037 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[60;4H[39m(B[m1695 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[61;4H[39m(B[m1697 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[62;4H[39m(B[m1027 codespace  20   0 [36m1115M 74[39m(B[m284 [36m42[39m(B[m496 S  0.0  0.9  0:12.36 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[63;4H1062 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[64;4H[39m(B[m1064 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[65;4H[39m(B[m1065 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.01 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[66;4H[39m(B[m1066 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[67;4H[39m(B[m1067 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[68;4H[39m(B[m1074 codespace  20   0 [36m 971M 54[39m(B[m416 [36m40[39m(B[m192 S  0.0  0.7  0:00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[69;1H[39m(B[mF1[30m[46mHelp  [39;49m(B[mF2[30m[46mSetup [39;49m(B[mF3[30m[46mSearch[39;49m(B[mF4[30m[46mFilter[39;49m(B[mF5[30m[46mTree  [39;49m(B[mF6[30m[46mSortBy[39;49m(B[mF7[30m[46mNice -[39;49m(B[mF8[30m[46mNice +[39;49m(B[mF9[30m[46mKill  [39;49m(B[mF10[30m[46mQuit[K[H[39;49m(B[m[56;68r[56;1HM[1;69r[8;51r[8;1H[4T[1;69r[2;7H[31m|||[2;78H(B[0;1m[90m2.7[2;94H[36m3[3;7H(B[0m[32m|[31m|[3;78H(B[0;1m[90m2.7[4;101H[36m9[8d(B[0m[30m[46m    557 codespace  20   0 21.5G  329M 50048 S  1.3  4.2  1:33.01 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[9;5H[39;49m(B[m602 codespace  20   0 (B[0;1m[31m21.5G (B[0m[36m 329M 50[39m(B[m048 S  0.7  4.2  0:03.82 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node --dns-result-order=ipv4first /vscode/[10;4H[39m(B[m1027 codespace  20   0 [36m1115M 74[39m(B[m540 [36m42[39m(B[m496 S  0.7  0.9  0:12.37 /vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[11;3H77665 codespace  20   0 [36m 8[39m(B[m840 [36m 4[39m(B[m352 [36m 2[39m(B[m944 [32mR [39m(B[m 0.7  0.1  0:00.01 htop[12;6H[1K 1 codespace  20   0 [36m 1[39m(B[m136   640   640 S  0.0  0.0  0:00.22 /sbin/docker-init -- /bin/sh -c echo Container started trap "exit 0" 15 /usr/local/share/ssh-init.sh /usr[29;35H676[30;35H676[31;35H676[32;35H676[33;35H676[34;35H676[35;35H676[36;35H676[37;35H676[38;35H676[39;35H676[40;35H676[41;35H676[50;7H3[50;64H2[51;5H748[51;61H0.21[52;6H28[52;35H540[52;63H00[53;6H29[53;35H540[53;64H3[54;7H0[54;35H540[54;64H1[55;7H1[55;35H540[55;63H2[56;4H1032 codespace  20   0 [36m1115M 74[39m(B[m540 [36m42[39m(B[m496 S  0.0  0.9  0:00.25 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[57;7H[39m(B[m3[57;35H540[58;7H4[58;35H540[59;7H5[59;35H540[60;7H6[60;35H540[61;5H037[61;35H540[62;7H5[62;35H540[63;5H69[63;35H540[63;60H00.00 [32m/vscode/bin/linux-x64/f1e16e1e6214d7c44d078b1f0607b2388f29d729/node /vscode/bin/linux-x64/f1e16e1e6214d7c[1;1H[39m(B[m[2;7H[32m||||[31m|||||[2;77H(B[0;1m[90m10[3;8H(B[0m[32m||||[31m||||[3;77H(B[0;1m[90m10.2[4;73H(B[0m[33m50[4;100H(B[0;1m[36m51[8;50H(B[0m[30m[46m0[8;64H3[9;50H[39;49m(B[m0[10;35H032[10;50H5[10;64H8[11;50H0[52;35H032[53;35H032[54;35H032[55;35H032[56;35H032[57;35H032[58;35H032[59;35H032[60;35H032[61;35H032[62;35H032[63;35H032[H[69d[J[?12l[?25h[?1000l[69;1H[?1049l[23;0;0t[?1l>[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/lab04 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2024-07-15 06:37:15+00:00 [COMMAND_EXIT_CODE="0"]
