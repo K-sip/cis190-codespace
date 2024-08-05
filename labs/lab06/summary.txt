@@ -1,0 +1,4 @@
+In this lab I learned that no matter how many times I try tar -xrf it will not work because it is suppose to be -xzf.
+I also learned sleep is import and my children want to take it away from me.
+Also typing in vi without autocorrect sucks, my typing fingers and brain have gotten lazy.
+But seriously, I need to practice these commands more.  Luckly google is your friend and helps whenever I get stuck or want to figure out the best way to use commands together.
