@@ -1,0 +1,1571 @@
+Script started on 2024-08-12 01:35:38+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="219" LINES="54"]
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ wget https://boss.vvc.edu/tonning/classes/cis190/resources/final_configs.tgz
+--2024-08-12 01:36:11--  https://boss.vvc.edu/tonning/classes/cis190/resources/final_configs.tgz
+Resolving boss.vvc.edu (boss.vvc.edu)... 207.233.102.33
+Connecting to boss.vvc.edu (boss.vvc.edu)|207.233.102.33|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12435 (12K) [application/octet-stream]
+Saving to: ‘final_configs.tgz’
+
+final_configs.tgz                                        0%[                                                                                                                            ]       0  --.-KB/s               final_configs.tgz                                      100%[===========================================================================================================================>]  12.14K  --.-KB/s    in 0.01s   
+
+2024-08-12 01:36:11 (1017 KB/s) - ‘final_configs.tgz’ saved [12435/12435]
+
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ tar -xvzf final_configs.tgz 
+configs/
+configs/n112op/
+configs/n112op/config_3.ini
+configs/n112op/config_5.ini
+configs/n112op/config_1.ini
+configs/n112op/config_2.ini
+configs/n112op/config_4.ini
+configs/n890mn/
+configs/n890mn/config_3.ini
+configs/n890mn/config_5.ini
+configs/n890mn/config_1.ini
+configs/n890mn/config_2.ini
+configs/n890mn/config_4.ini
+configs/n101gh/
+configs/n101gh/config_3.ini
+configs/n101gh/config_5.ini
+configs/n101gh/config_1.ini
+configs/n101gh/config_1a.ini
+configs/n101gh/config_2.ini
+configs/n101gh/config_4.ini
+configs/n678st/
+configs/n678st/config_3.ini
+configs/n678st/config_5.ini
+configs/n678st/config_1.ini
+configs/n678st/config_2.ini
+configs/n678st/config_4.ini
+configs/n567kl/
+configs/n567kl/config_3.ini
+configs/n567kl/config_5.ini
+configs/n567kl/config_1.ini
+configs/n567kl/config_2.ini
+configs/n567kl/config_4.ini
+configs/tailnumbers.txt
+configs/n789ef/
+configs/n789ef/config_3.ini
+configs/n789ef/config_5.ini
+configs/n789ef/config_1.ini
+configs/n789ef/config_2.ini
+configs/n789ef/config_4.ini
+configs/n456cd/
+configs/n456cd/config_3.ini
+configs/n456cd/config_5.ini
+configs/n456cd/config_1.ini
+configs/n456cd/config_2.ini
+configs/n456cd/config_4.ini
+configs/n123ab/
+configs/n123ab/config_3.ini
+configs/n123ab/config_5.ini
+configs/n123ab/config_1.ini
+configs/n123ab/config_2.ini
+configs/n123ab/config_4.ini
+configs/n234ij/
+configs/n234ij/config_3.ini
+configs/n234ij/config_5.ini
+configs/n234ij/config_1.ini
+configs/n234ij/config_2.ini
+configs/n234ij/config_4.ini
+configs/n223wx/
+configs/n223wx/config_3.ini
+configs/n223wx/config_5.ini
+configs/n223wx/config_1.ini
+configs/n223wx/config_2.ini
+configs/n223wx/config_4.ini
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mconfigs[0m  [01;31mfinal_configs.tgz[0m  final_typescript
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ mkdir data
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ mkdir data/aircraft
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ mv configs/ data/aircraft
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ ls data/aircraft/
+[0m[01;34mconfigs[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ cd data/aircraft/
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mconfigs[0m
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ cd configs/
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/configs [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mn101gh[0m  [01;34mn112op[0m  [01;34mn123ab[0m  [01;34mn223wx[0m  [01;34mn234ij[0m  [01;34mn456cd[0m  [01;34mn567kl[0m  [01;34mn678st[0m  [01;34mn789ef[0m  [01;34mn890mn[0m  tailnumbers.txt
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/configs [0;36m([1;31mmain[0;36m) [0m$ cd n123ab/
+[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ ls
+config_1.ini  config_2.ini  config_3.ini  config_4.ini  config_5.ini
+[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ vi config_1.ini 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;54r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[54;1H"config_1.ini" 38L, 809C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m[mission][m
+[32mmission_id[m =[31m MISS-8692[m
+[32mobjective[m =[31m Mapping[m
+[32mstart_time[m =[31m 20:15[m
+[32mduration_minutes[m =[31m 360[m
+
+[35m[drone][m
+[32mtail_number[m =[31m n123ab[m
+[32mmax_altitude[m =[31m 10000[m
+[32mmax_speed[m =[31m 300[m
+[32mpayload_capacity[m =[31m 625[m
+
+[35m[camera][m
+[32mresolution[m =[31m 720p[m
+[32mframe_rate[m =[31m 30[m
+[32minfrared[m =[31m False[m
+[32mlidar[m =[31m True[m
+
+[35m[communication][m
+[32mfrequency[m =[31m 5.77[m
+[32mencryption[m =[31m AES-128[m
+
+[35m[logging][m
+[32mlog_level[m =[31m ERROR[m
+[32mlog_file[m =[31m /data/logs/n123ab-MISS-8692.log[m
+
+[35m[waypoints][m
+[32mwaypoint_1[m =[31m -7.94085, 71.927998, 418[m
+[32mwaypoint_2[m =[31m -25.047837, -64.252971, 1038[m
+[32mwaypoint_3[m =[31m 19.013184, -96.396127, 1269[m
+[32mwaypoint_4[m =[31m 3.231508, -177.37585, 108[m
+[32mwaypoint_5[m =[31m -54.309493, -88.692402, 855[m
+[32mwaypoint_6[m =[31m 44.736732, 173.595894, 363[m
+[32mwaypoint_7[m =[31m -37.46829, -70.535238, 114[m
+[32mwaypoint_8[m =[31m 34.357269, 176.244412, 1701[m
+[32mwaypoint_9[m =[31m -68.980644, -162.020635, 1500[m
+[32mwaypoint_10[m =[31m -66.547623, -139.624019, 1760[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H9,16[10CAll[9;16H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[54;192H/[9;16H[54;193He[9;16H[54;194Hd[9;16H[54;195He[9;16H[54;196Hd[9;16H[54;197H/[9;16H[54;198Hf[9;16H[54;199H3[9;16H[54;200Hf[9;16H[54;201H3[9;16H[54;192H          [9;16H[?25h[?25l[54;192H/[9;16H[54;193H0[9;16H[54;194H4[9;16H[54;195H0[9;16H[54;196H4[9;16H[54;197H/[9;16H[54;198H0[9;16H[54;199H9[9;16H[54;200H0[9;16H[54;201H9[9;16H[54;192H          [9;16H[27m[23m[29m[m[H[2J[1;1H[38;5;224m[mission][m
+[38;5;121mmission_id[m =[95m MISS-8692[m
+[38;5;121mobjective[m =[95m Mapping[m
+[38;5;121mstart_time[m =[95m 20:15[m
+[38;5;121mduration_minutes[m =[95m 360[m
+
+[38;5;224m[drone][m
+[38;5;121mtail_number[m =[95m n123ab[m
+[38;5;121mmax_altitude[m =[95m 10000[m
+[38;5;121mmax_speed[m =[95m 300[m
+[38;5;121mpayload_capacity[m =[95m 625[m
+
+[38;5;224m[camera][m
+[38;5;121mresolution[m =[95m 720p[m
+[38;5;121mframe_rate[m =[95m 30[m
+[38;5;121minfrared[m =[95m False[m
+[38;5;121mlidar[m =[95m True[m
+
+[38;5;224m[communication][m
+[38;5;121mfrequency[m =[95m 5.77[m
+[38;5;121mencryption[m =[95m AES-128[m
+
+[38;5;224m[logging][m
+[38;5;121mlog_level[m =[95m ERROR[m
+[38;5;121mlog_file[m =[95m /data/logs/n123ab-MISS-8692.log[m
+
+[38;5;224m[waypoints][m
+[38;5;121mwaypoint_1[m =[95m -7.94085, 71.927998, 418[m
+[38;5;121mwaypoint_2[m =[95m -25.047837, -64.252971, 1038[m
+[38;5;121mwaypoint_3[m =[95m 19.013184, -96.396127, 1269[m
+[38;5;121mwaypoint_4[m =[95m 3.231508, -177.37585, 108[m
+[38;5;121mwaypoint_5[m =[95m -54.309493, -88.692402, 855[m
+[38;5;121mwaypoint_6[m =[95m 44.736732, 173.595894, 363[m
+[38;5;121mwaypoint_7[m =[95m -37.46829, -70.535238, 114[m
+[38;5;121mwaypoint_8[m =[95m 34.357269, 176.244412, 1701[m
+[38;5;121mwaypoint_9[m =[95m -68.980644, -162.020635, 1500[m
+[38;5;121mwaypoint_10[m =[95m -66.547623, -139.624019, 1760[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H9,16[10CAll"config_1.ini" 38L, 809C[9;16H[?25h[?25l[54;192Hi[9;16H[54;192H [9;16H[54;1H[1m-- INSERT --[m[54;13H[K[54;202H9,16[10CAll[9;16H[?25h[?25l[95mh10000[m[54;205H7[9;17H[?25h[?25l[95m0[m[9;21H[K[9;17H[?25h[?25l[95m0[m[9;20H[K[54;205H6[9;16H[?25h[?25l[95m30000[m[54;205H7[9;17H[?25h[54;1H[K[9;16H[?25l[54;192H^[[9;16H[54;192H  [9;17H[54;202H9,16[10CAll[9;16H[?25h[?25l[54;192H:[9;16H[54;192H[K[54;1H:[?2004h[?25hw[?25l"config_1.ini" 38L, 809C written[9;16H[54;202H9,16[10CAll[54;202H[K[54;202H9,16[10CAll[9;16H[?25h[?25l[54;192H:[9;16H[54;1H[K[54;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[54;1H[K[54;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ vi config_1.ini [1@2[1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;54r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[54;1H"config_2.ini" 38L, 803C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m[106m[[m[35mmission[m[35m[106m][m
+[32mmission_id[m =[31m MISS-4879[m
+[32mobjective[m =[31m Engagement[m
+[32mstart_time[m =[31m 02:45[m
+[32mduration_minutes[m =[31m 90[m
+
+[35m[drone][m
+[32mtail_number[m =[31m n123ab[m
+[32mmax_altitude[m =[31m 50000[m
+[32mmax_speed[m =[31m 250[m
+[32mpayload_capacity[m =[31m 600[m
+
+[35m[camera][m
+[32mresolution[m =[31m 1080p[m
+[32mframe_rate[m =[31m 24[m
+[32minfrared[m =[31m True[m
+[32mlidar[m =[31m True[m
+
+[35m[communication][m
+[32mfrequency[m =[31m 2.9[m
+[32mencryption[m =[31m None[m
+
+[35m[logging][m
+[32mlog_level[m =[31m DEBUG[m
+[32mlog_file[m =[31m /data/logs/n123ab-MISS-4879.log[m
+
+[35m[waypoints][m
+[32mwaypoint_1[m =[31m 23.695311, 8.488492, 1162[m
+[32mwaypoint_2[m =[31m -22.370626, 2.288185, 1719[m
+[32mwaypoint_3[m =[31m -60.876411, -16.316544, 628[m
+[32mwaypoint_4[m =[31m -73.466589, 120.994067, 879[m
+[32mwaypoint_5[m =[31m 76.749445, 113.738315, 1912[m
+[32mwaypoint_6[m =[31m -39.829873, 33.826342, 1586[m
+[32mwaypoint_7[m =[31m 62.622789, 42.665519, 1879[m
+[32mwaypoint_8[m =[31m -64.629633, 84.920533, 1069[m
+[32mwaypoint_9[m =[31m 9.453238, -145.110354, 211[m
+[32mwaypoint_10[m =[31m 81.20267, 139.251564, 1161[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[54;192H/[1;1H[54;193He[1;1H[54;194Hd[1;1H[54;195He[1;1H[54;196Hd[1;1H[54;197H/[1;1H[54;198Hf[1;1H[54;199H3[1;1H[54;200Hf[1;1H[54;201H3[1;1H[54;192H          [1;1H[?25h[?25l[54;192H/[1;1H[54;193H0[1;1H[54;194H4[1;1H[54;195H0[1;1H[54;196H4[1;1H[54;197H/[1;1H[54;198H0[1;1H[54;199H9[1;1H[54;200H0[1;1H[54;201H9[1;1H[54;192H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;224m[46m[[m[38;5;224mmission[m[38;5;224m[46m][m
+[38;5;121mmission_id[m =[95m MISS-4879[m
+[38;5;121mobjective[m =[95m Engagement[m
+[38;5;121mstart_time[m =[95m 02:45[m
+[38;5;121mduration_minutes[m =[95m 90[m
+
+[38;5;224m[drone][m
+[38;5;121mtail_number[m =[95m n123ab[m
+[38;5;121mmax_altitude[m =[95m 50000[m
+[38;5;121mmax_speed[m =[95m 250[m
+[38;5;121mpayload_capacity[m =[95m 600[m
+
+[38;5;224m[camera][m
+[38;5;121mresolution[m =[95m 1080p[m
+[38;5;121mframe_rate[m =[95m 24[m
+[38;5;121minfrared[m =[95m True[m
+[38;5;121mlidar[m =[95m True[m
+
+[38;5;224m[communication][m
+[38;5;121mfrequency[m =[95m 2.9[m
+[38;5;121mencryption[m =[95m None[m
+
+[38;5;224m[logging][m
+[38;5;121mlog_level[m =[95m DEBUG[m
+[38;5;121mlog_file[m =[95m /data/logs/n123ab-MISS-4879.log[m
+
+[38;5;224m[waypoints][m
+[38;5;121mwaypoint_1[m =[95m 23.695311, 8.488492, 1162[m
+[38;5;121mwaypoint_2[m =[95m -22.370626, 2.288185, 1719[m
+[38;5;121mwaypoint_3[m =[95m -60.876411, -16.316544, 628[m
+[38;5;121mwaypoint_4[m =[95m -73.466589, 120.994067, 879[m
+[38;5;121mwaypoint_5[m =[95m 76.749445, 113.738315, 1912[m
+[38;5;121mwaypoint_6[m =[95m -39.829873, 33.826342, 1586[m
+[38;5;121mwaypoint_7[m =[95m 62.622789, 42.665519, 1879[m
+[38;5;121mwaypoint_8[m =[95m -64.629633, 84.920533, 1069[m
+[38;5;121mwaypoint_9[m =[95m 9.453238, -145.110354, 211[m
+[38;5;121mwaypoint_10[m =[95m 81.20267, 139.251564, 1161[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll"config_2.ini" 38L, 803C[1;1H[?25h[?25l[54;192Hi[1;1H[54;192H [1;1H[54;1H[1m-- INSERT --[m[54;13H[K[54;202H1,1[11CAll[1;1H[?25h[?25l[38;5;224m[[7C][m[54;202H2[2;1H[?25h[?25l[54;202H3[3;1H[?25h[?25l[54;202H4[4;1H[?25h[?25l[54;202H5[5;1H[?25h[?25l[54;202H6[6;1H[?25h[?25l
+[38;5;224m[46m[[5C][m[54;202H7[7;1H[?25h[?25l[38;5;224m[drone][m[54;202H8[8;1H[?25h[?25l[54;202H9[9;1H[?25h[?25l[54;204H2[9;2H[?25h[?25l[54;204H3[9;3H[?25h[?25l[54;204H4[9;4H[?25h[?25l[54;204H5[9;5H[?25h[?25l[54;204H6[9;6H[?25h[?25l[54;204H7[9;7H[?25h[?25l[54;204H8[9;8H[?25h[?25l[54;204H9[9;9H[?25h[?25l[54;204H10[9;10H[?25h[?25l[54;205H1[9;11H[?25h[?25l[54;205H2[9;12H[?25h[?25l[54;205H3[9;13H[?25h[?25l[54;205H4[9;14H[?25h[?25l[54;205H5[9;15H[?25h[?25l[54;205H6[9;16H[?25h[?25l[54;205H7[9;17H[?25h[?25l[95m0[m[9;20H[K[54;205H6[9;16H[?25h[?25l[95m30000[m[54;205H7[9;17H[?25h[?25l[95m:0000[m[54;205H8[9;18H[?25h[?25l[95mw0000[m[54;205H9[9;19H[?25h[?25l[95m0[m[9;22H[K[54;205H8[9;18H[?25h[?25l[95m0[m[9;21H[K[54;205H7[9;17H[?25h[54;1H[K[9;16H[?25l[54;192H^[[9;16H[54;192H  [9;17H[54;202H9,16[10CAll[9;16H[?25h[?25l[54;192H:[9;16H[54;192H[K[54;1H:[?2004h[?25hw[?25l"config_2.ini" 38L, 803C written[9;16H[54;202H9,16[10CAll[54;202H[K[54;202H9,16[10CAll[9;16H[?25h[?25l[54;192H:[9;16H[54;1H[K[54;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[54;1H[K[54;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ vi config_2.ini [1@3[1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;54r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[54;1H"config_3.ini" 38L, 809C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m[106m[[m[35mmission[m[35m[106m][m
+[32mmission_id[m =[31m MISS-4901[m
+[32mobjective[m =[31m Delivery[m
+[32mstart_time[m =[31m 17:30[m
+[32mduration_minutes[m =[31m 120[m
+
+[35m[drone][m
+[32mtail_number[m =[31m n123ab[m
+[32mmax_altitude[m =[31m 35000[m
+[32mmax_speed[m =[31m 250[m
+[32mpayload_capacity[m =[31m 700[m
+
+[35m[camera][m
+[32mresolution[m =[31m 1080p[m
+[32mframe_rate[m =[31m 24[m
+[32minfrared[m =[31m True[m
+[32mlidar[m =[31m False[m
+
+[35m[communication][m
+[32mfrequency[m =[31m 5.18[m
+[32mencryption[m =[31m AES-256[m
+
+[35m[logging][m
+[32mlog_level[m =[31m ERROR[m
+[32mlog_file[m =[31m /data/logs/n123ab-MISS-4901.log[m
+
+[35m[waypoints][m
+[32mwaypoint_1[m =[31m -34.760137, 1.853969, 244[m
+[32mwaypoint_2[m =[31m 15.502031, 93.221997, 1813[m
+[32mwaypoint_3[m =[31m 42.621715, 7.335771, 1396[m
+[32mwaypoint_4[m =[31m 71.632636, -101.032309, 1479[m
+[32mwaypoint_5[m =[31m 85.553904, 81.119861, 620[m
+[32mwaypoint_6[m =[31m -47.409775, -115.736535, 996[m
+[32mwaypoint_7[m =[31m 44.387758, 74.291912, 1724[m
+[32mwaypoint_8[m =[31m -84.916736, -71.129553, 1045[m
+[32mwaypoint_9[m =[31m 84.638587, 154.381035, 1688[m
+[32mwaypoint_10[m =[31m 55.323739, -160.917301, 1267[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[54;192H/[1;1H[54;193He[1;1H[54;194Hd[1;1H[54;195He[1;1H[54;196Hd[1;1H[54;197H/[1;1H[54;198Hf[1;1H[54;199H3[1;1H[54;200Hf[1;1H[54;201H3[1;1H[54;192H          [1;1H[?25h[?25l[54;192H/[1;1H[54;193H0[1;1H[54;194H4[1;1H[54;195H0[1;1H[54;196H4[1;1H[54;197H/[1;1H[54;198H0[1;1H[54;199H9[1;1H[54;200H0[1;1H[54;201H9[1;1H[54;192H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;224m[46m[[m[38;5;224mmission[m[38;5;224m[46m][m
+[38;5;121mmission_id[m =[95m MISS-4901[m
+[38;5;121mobjective[m =[95m Delivery[m
+[38;5;121mstart_time[m =[95m 17:30[m
+[38;5;121mduration_minutes[m =[95m 120[m
+
+[38;5;224m[drone][m
+[38;5;121mtail_number[m =[95m n123ab[m
+[38;5;121mmax_altitude[m =[95m 35000[m
+[38;5;121mmax_speed[m =[95m 250[m
+[38;5;121mpayload_capacity[m =[95m 700[m
+
+[38;5;224m[camera][m
+[38;5;121mresolution[m =[95m 1080p[m
+[38;5;121mframe_rate[m =[95m 24[m
+[38;5;121minfrared[m =[95m True[m
+[38;5;121mlidar[m =[95m False[m
+
+[38;5;224m[communication][m
+[38;5;121mfrequency[m =[95m 5.18[m
+[38;5;121mencryption[m =[95m AES-256[m
+
+[38;5;224m[logging][m
+[38;5;121mlog_level[m =[95m ERROR[m
+[38;5;121mlog_file[m =[95m /data/logs/n123ab-MISS-4901.log[m
+
+[38;5;224m[waypoints][m
+[38;5;121mwaypoint_1[m =[95m -34.760137, 1.853969, 244[m
+[38;5;121mwaypoint_2[m =[95m 15.502031, 93.221997, 1813[m
+[38;5;121mwaypoint_3[m =[95m 42.621715, 7.335771, 1396[m
+[38;5;121mwaypoint_4[m =[95m 71.632636, -101.032309, 1479[m
+[38;5;121mwaypoint_5[m =[95m 85.553904, 81.119861, 620[m
+[38;5;121mwaypoint_6[m =[95m -47.409775, -115.736535, 996[m
+[38;5;121mwaypoint_7[m =[95m 44.387758, 74.291912, 1724[m
+[38;5;121mwaypoint_8[m =[95m -84.916736, -71.129553, 1045[m
+[38;5;121mwaypoint_9[m =[95m 84.638587, 154.381035, 1688[m
+[38;5;121mwaypoint_10[m =[95m 55.323739, -160.917301, 1267[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll"config_3.ini" 38L, 809C[1;1H[?25h[?25l[54;192Hi[1;1H[54;192H [1;1H[54;1H[1m-- INSERT --[m[54;13H[K[54;202H1,1[11CAll[1;1H[?25h[?25l[38;5;224m[[7C][m[54;202H2[2;1H[?25h[?25l[54;202H3[3;1H[?25h[?25l[54;202H4[4;1H[?25h[?25l[54;202H5[5;1H[?25h[?25l[54;202H6[6;1H[?25h[?25l
+[38;5;224m[46m[[5C][m[54;202H7[7;1H[?25h[?25l[38;5;224m[drone][m[54;202H8[8;1H[?25h[?25l[54;202H9[9;1H[?25h[?25l[54;204H2[9;2H[?25h[?25l[54;204H3[9;3H[?25h[?25l[54;204H4[9;4H[?25h[?25l[54;204H5[9;5H[?25h[?25l[54;204H6[9;6H[?25h[?25l[54;204H7[9;7H[?25h[?25l[54;204H8[9;8H[?25h[?25l[54;204H9[9;9H[?25h[?25l[54;204H10[9;10H[?25h[?25l[54;205H1[9;11H[?25h[?25l[54;205H2[9;12H[?25h[?25l[54;205H3[9;13H[?25h[?25l[54;205H4[9;14H[?25h[?25l[54;205H5[9;15H[?25h[?25l[54;205H6[9;16H[?25h[?25l[54;205H7[9;17H[?25h[?25l[54;205H6[9;16H[?25h[?25l[95m50[m[9;20H[K[9;16H[?25h[?25l[95m05000[m[54;205H7[9;17H[?25h[?25l[95m05000[m[54;205H8[9;18H[?25h[?25l[95m0[m[9;21H[K[9;18H[?25h[?25l[9;20H[K[9;18H[?25h[?25l[9;19H[K[54;205H7[9;17H[?25h[?25l[9;18H[K[54;205H6[9;16H[?25h[?25l[95m300[m[54;205H7[9;17H[?25h[?25l[2C[95m0[m[54;205H8[9;18H[?25h[?25l[2C[95m0[m[54;205H9[9;19H[?25h[54;1H[K[9;18H[?25l[54;192H^[[9;18H[54;192H  [9;19H[54;202H9,18[10CAll[9;18H[?25h[?25l[54;192H:[9;18H[54;192H[K[54;1H:[?2004h[?25hw[?25l"config_3.ini" 38L, 809C written[9;18H[54;202H9,18[10CAll[54;202H[K[54;202H9,18[10CAll[9;18H[?25h[?25l[54;192H:[9;18H[54;1H[K[54;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[54;1H[K[54;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ vi config_3.ini [1@4[1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;54r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[54;1H"config_4.ini" 38L, 806C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m[106m[[m[35mmission[m[35m[106m][m
+[32mmission_id[m =[31m MISS-2856[m
+[32mobjective[m =[31m Mapping[m
+[32mstart_time[m =[31m 22:30[m
+[32mduration_minutes[m =[31m 90[m
+
+[35m[drone][m
+[32mtail_number[m =[31m n123ab[m
+[32mmax_altitude[m =[31m 35000[m
+[32mmax_speed[m =[31m 250[m
+[32mpayload_capacity[m =[31m 475[m
+
+[35m[camera][m
+[32mresolution[m =[31m 4K[m
+[32mframe_rate[m =[31m 30[m
+[32minfrared[m =[31m True[m
+[32mlidar[m =[31m True[m
+
+[35m[communication][m
+[32mfrequency[m =[31m 4.88[m
+[32mencryption[m =[31m AES-256[m
+
+[35m[logging][m
+[32mlog_level[m =[31m DEBUG[m
+[32mlog_file[m =[31m /data/logs/n123ab-MISS-2856.log[m
+
+[35m[waypoints][m
+[32mwaypoint_1[m =[31m 77.088781, 94.131458, 157[m
+[32mwaypoint_2[m =[31m -75.532994, -102.046755, 1917[m
+[32mwaypoint_3[m =[31m -44.476098, -77.716091, 810[m
+[32mwaypoint_4[m =[31m 47.649224, -121.459297, 739[m
+[32mwaypoint_5[m =[31m 64.736373, 0.133086, 1205[m
+[32mwaypoint_6[m =[31m -71.085248, -42.863777, 1704[m
+[32mwaypoint_7[m =[31m 48.426382, 151.583432, 691[m
+[32mwaypoint_8[m =[31m 61.817694, -153.150876, 1286[m
+[32mwaypoint_9[m =[31m -56.154916, -142.908445, 731[m
+[32mwaypoint_10[m =[31m -38.809603, -7.321311, 708[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[54;192H/[1;1H[54;193He[1;1H[54;194Hd[1;1H[54;195He[1;1H[54;196Hd[1;1H[54;197H/[1;1H[54;198Hf[1;1H[54;199H3[1;1H[54;200Hf[1;1H[54;201H3[1;1H[54;192H          [1;1H[?25h[?25l[54;192H/[1;1H[54;193H0[1;1H[54;194H4[1;1H[54;195H0[1;1H[54;196H4[1;1H[54;197H/[1;1H[54;198H0[1;1H[54;199H9[1;1H[54;200H0[1;1H[54;201H9[1;1H[54;192H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;224m[46m[[m[38;5;224mmission[m[38;5;224m[46m][m
+[38;5;121mmission_id[m =[95m MISS-2856[m
+[38;5;121mobjective[m =[95m Mapping[m
+[38;5;121mstart_time[m =[95m 22:30[m
+[38;5;121mduration_minutes[m =[95m 90[m
+
+[38;5;224m[drone][m
+[38;5;121mtail_number[m =[95m n123ab[m
+[38;5;121mmax_altitude[m =[95m 35000[m
+[38;5;121mmax_speed[m =[95m 250[m
+[38;5;121mpayload_capacity[m =[95m 475[m
+
+[38;5;224m[camera][m
+[38;5;121mresolution[m =[95m 4K[m
+[38;5;121mframe_rate[m =[95m 30[m
+[38;5;121minfrared[m =[95m True[m
+[38;5;121mlidar[m =[95m True[m
+
+[38;5;224m[communication][m
+[38;5;121mfrequency[m =[95m 4.88[m
+[38;5;121mencryption[m =[95m AES-256[m
+
+[38;5;224m[logging][m
+[38;5;121mlog_level[m =[95m DEBUG[m
+[38;5;121mlog_file[m =[95m /data/logs/n123ab-MISS-2856.log[m
+
+[38;5;224m[waypoints][m
+[38;5;121mwaypoint_1[m =[95m 77.088781, 94.131458, 157[m
+[38;5;121mwaypoint_2[m =[95m -75.532994, -102.046755, 1917[m
+[38;5;121mwaypoint_3[m =[95m -44.476098, -77.716091, 810[m
+[38;5;121mwaypoint_4[m =[95m 47.649224, -121.459297, 739[m
+[38;5;121mwaypoint_5[m =[95m 64.736373, 0.133086, 1205[m
+[38;5;121mwaypoint_6[m =[95m -71.085248, -42.863777, 1704[m
+[38;5;121mwaypoint_7[m =[95m 48.426382, 151.583432, 691[m
+[38;5;121mwaypoint_8[m =[95m 61.817694, -153.150876, 1286[m
+[38;5;121mwaypoint_9[m =[95m -56.154916, -142.908445, 731[m
+[38;5;121mwaypoint_10[m =[95m -38.809603, -7.321311, 708[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll"config_4.ini" 38L, 806C[1;1H[?25h[?25l[54;192Hi[1;1H[54;192H [1;1H[54;1H[1m-- INSERT --[m[54;13H[K[54;202H1,1[11CAll[1;1H[?25h[?25l[38;5;224m[[7C][m[54;202H2[2;1H[?25h[?25l[54;202H3[3;1H[?25h[?25l[54;202H4[4;1H[?25h[?25l[54;202H5[5;1H[?25h[?25l[54;202H6[6;1H[?25h[?25l
+[38;5;224m[46m[[5C][m[54;202H7[7;1H[?25h[?25l[38;5;224m[drone][m[54;202H8[8;1H[?25h[?25l[54;204H2[8;2H[?25h[?25l[54;204H3[8;3H[?25h[?25l[54;204H4[8;4H[?25h[?25l[54;204H5[8;5H[?25h[?25l[54;204H6[8;6H[?25h[?25l[54;202H9[9;6H[?25h[?25l[54;202H10,6[10;6H[?25h[?25l[54;202H9,6 [9;6H[?25h[?25l[54;204H7[9;7H[?25h[?25l[54;204H8[9;8H[?25h[?25l[54;204H9[9;9H[?25h[?25l[54;204H10[9;10H[?25h[?25l[54;205H1[9;11H[?25h[?25l[54;205H2[9;12H[?25h[?25l[54;205H3[9;13H[?25h[?25l[54;205H4[9;14H[?25h[?25l[54;205H5[9;15H[?25h[?25l[54;205H6[9;16H[?25h[?25l[54;205H7[9;17H[?25h[?25l[95m0[m[9;20H[K[9;17H[?25h[?25l[3C[95m0[m[54;205H8[9;18H[?25h[54;1H[K[9;17H[?25l[54;192H^[[9;17H[54;192H  [9;18H[54;202H9,17[10CAll[9;17H[?25h[?25l[54;192H:[9;17H[54;192H[K[54;1H:[?2004h[?25hw:[?25l[54;3H[K[54;3H[?25h[?25l"config_4.ini" 38L, 806C written[9;17H[54;202H9,17[10CAll[54;202H[K[54;202H9,17[10CAll[9;17H[?25h[?25l[54;192H:[9;17H[54;1H[K[54;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[54;1H[K[54;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ vi config_4.ini [C[1@5[1P
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;54r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[54;1H"config_5.ini" 38L, 808C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[35m[106m[[m[35mmission[m[35m[106m][m
+[32mmission_id[m =[31m MISS-8637[m
+[32mobjective[m =[31m Engagement[m
+[32mstart_time[m =[31m 06:00[m
+[32mduration_minutes[m =[31m 180[m
+
+[35m[drone][m
+[32mtail_number[m =[31m n123ab[m
+[32mmax_altitude[m =[31m 15000[m
+[32mmax_speed[m =[31m 300[m
+[32mpayload_capacity[m =[31m 625[m
+
+[35m[camera][m
+[32mresolution[m =[31m 720p[m
+[32mframe_rate[m =[31m 30[m
+[32minfrared[m =[31m True[m
+[32mlidar[m =[31m False[m
+
+[35m[communication][m
+[32mfrequency[m =[31m 4.71[m
+[32mencryption[m =[31m None[m
+
+[35m[logging][m
+[32mlog_level[m =[31m DEBUG[m
+[32mlog_file[m =[31m /data/logs/n123ab-MISS-8637.log[m
+
+[35m[waypoints][m
+[32mwaypoint_1[m =[31m -87.99274, 104.162158, 1668[m
+[32mwaypoint_2[m =[31m -13.311878, -84.779037, 1958[m
+[32mwaypoint_3[m =[31m 60.95737, 161.862808, 1269[m
+[32mwaypoint_4[m =[31m 4.586076, 146.240605, 1213[m
+[32mwaypoint_5[m =[31m 89.286738, 166.835195, 596[m
+[32mwaypoint_6[m =[31m 59.733724, -37.324704, 1136[m
+[32mwaypoint_7[m =[31m -72.777202, -150.320335, 819[m
+[32mwaypoint_8[m =[31m -84.909701, 166.335245, 362[m
+[32mwaypoint_9[m =[31m -3.985176, -132.105555, 813[m
+[32mwaypoint_10[m =[31m 68.599431, 53.540754, 473[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[54;192H/[1;1H[54;193He[1;1H[54;194Hd[1;1H[54;195He[1;1H[54;196Hd[1;1H[54;197H/[1;1H[54;198Hf[1;1H[54;199H3[1;1H[54;200Hf[1;1H[54;201H3[1;1H[54;192H          [1;1H[?25h[?25l[54;192H/[1;1H[54;193H0[1;1H[54;194H4[1;1H[54;195H0[1;1H[54;196H4[1;1H[54;197H/[1;1H[54;198H0[1;1H[54;199H9[1;1H[54;200H0[1;1H[54;201H9[1;1H[54;192H          [1;1H[27m[23m[29m[m[H[2J[1;1H[38;5;224m[46m[[m[38;5;224mmission[m[38;5;224m[46m][m
+[38;5;121mmission_id[m =[95m MISS-8637[m
+[38;5;121mobjective[m =[95m Engagement[m
+[38;5;121mstart_time[m =[95m 06:00[m
+[38;5;121mduration_minutes[m =[95m 180[m
+
+[38;5;224m[drone][m
+[38;5;121mtail_number[m =[95m n123ab[m
+[38;5;121mmax_altitude[m =[95m 15000[m
+[38;5;121mmax_speed[m =[95m 300[m
+[38;5;121mpayload_capacity[m =[95m 625[m
+
+[38;5;224m[camera][m
+[38;5;121mresolution[m =[95m 720p[m
+[38;5;121mframe_rate[m =[95m 30[m
+[38;5;121minfrared[m =[95m True[m
+[38;5;121mlidar[m =[95m False[m
+
+[38;5;224m[communication][m
+[38;5;121mfrequency[m =[95m 4.71[m
+[38;5;121mencryption[m =[95m None[m
+
+[38;5;224m[logging][m
+[38;5;121mlog_level[m =[95m DEBUG[m
+[38;5;121mlog_file[m =[95m /data/logs/n123ab-MISS-8637.log[m
+
+[38;5;224m[waypoints][m
+[38;5;121mwaypoint_1[m =[95m -87.99274, 104.162158, 1668[m
+[38;5;121mwaypoint_2[m =[95m -13.311878, -84.779037, 1958[m
+[38;5;121mwaypoint_3[m =[95m 60.95737, 161.862808, 1269[m
+[38;5;121mwaypoint_4[m =[95m 4.586076, 146.240605, 1213[m
+[38;5;121mwaypoint_5[m =[95m 89.286738, 166.835195, 596[m
+[38;5;121mwaypoint_6[m =[95m 59.733724, -37.324704, 1136[m
+[38;5;121mwaypoint_7[m =[95m -72.777202, -150.320335, 819[m
+[38;5;121mwaypoint_8[m =[95m -84.909701, 166.335245, 362[m
+[38;5;121mwaypoint_9[m =[95m -3.985176, -132.105555, 813[m
+[38;5;121mwaypoint_10[m =[95m 68.599431, 53.540754, 473[m
+
+[94m~                                                                                                                                                                                                                          [40;1H~                                                                                                                                                                                                                          [41;1H~                                                                                                                                                                                                                          [42;1H~                                                                                                                                                                                                                          [43;1H~                                                                                                                                                                                                                          [44;1H~                                                                                                                                                                                                                          [45;1H~                                                                                                                                                                                                                          [46;1H~                                                                                                                                                                                                                          [47;1H~                                                                                                                                                                                                                          [48;1H~                                                                                                                                                                                                                          [49;1H~                                                                                                                                                                                                                          [50;1H~                                                                                                                                                                                                                          [51;1H~                                                                                                                                                                                                                          [52;1H~                                                                                                                                                                                                                          [53;1H~                                                                                                                                                                                                                          [m[54;202H1,1[11CAll"config_5.ini" 38L, 808C[1;1H[?25h[?25l[54;192Hi[1;1H[54;192H [1;1H[54;1H[1m-- INSERT --[m[54;13H[K[54;202H1,1[11CAll[1;1H[?25h[?25l[38;5;224m[[7C][m[54;202H2[2;1H[?25h[?25l[54;202H3[3;1H[?25h[?25l[54;202H4[4;1H[?25h[?25l[54;202H5[5;1H[?25h[?25l[54;202H6[6;1H[?25h[?25l
+[38;5;224m[46m[[5C][m[54;202H7[7;1H[?25h[?25l[38;5;224m[drone][m[54;202H8[8;1H[?25h[?25l[54;202H9[9;1H[?25h[?25l[54;204H2[9;2H[?25h[?25l[54;204H3[9;3H[?25h[?25l[54;204H4[9;4H[?25h[?25l[54;204H5[9;5H[?25h[?25l[54;204H6[9;6H[?25h[?25l[54;204H7[9;7H[?25h[?25l[54;204H8[9;8H[?25h[?25l[54;204H9[9;9H[?25h[?25l[54;204H10[9;10H[?25h[?25l[54;205H1[9;11H[?25h[?25l[54;205H2[9;12H[?25h[?25l[54;205H3[9;13H[?25h[?25l[54;205H4[9;14H[?25h[?25l[54;205H5[9;15H[?25h[?25l[54;205H6[9;16H[?25h[?25l[95m315000[m[54;205H7[9;17H[?25h[?25l[95m015000[m[54;205H8[9;18H[?25h[?25l[95m50[m[9;22H[K[9;18H[?25h[?25l[95m0[m[9;21H[K[9;18H[?25h[54;1H[K[9;17H[?25l[54;192H^[[9;17H[54;192H  [9;18H[54;202H9,17[10CAll[9;17H[?25h[?25l[54;192H:[9;17H[54;192H[K[54;1H:[?2004h[?25hw[?25l"config_5.ini" 38L, 808C written[9;17H[54;202H9,17[10CAll[54;202H[K[54;202H9,17[10CAll[9;17H[?25h[?25l[54;192H:[9;17H[54;1H[K[54;1H:[?2004h[?25hq[?25l[?2004l[23;2t[23;1t[54;1H[K[54;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[0;32m@K-sip [0m➜ [1;34m.../data/aircraft/configs/n123ab [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/configs [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ wget https://boss.vvc.edu/tonning/classes/cis190/resources/final_logs.tgz 
+--2024-08-12 01:43:00--  https://boss.vvc.edu/tonning/classes/cis190/resources/final_logs.tgz
+Resolving boss.vvc.edu (boss.vvc.edu)... 207.233.102.33
+Connecting to boss.vvc.edu (boss.vvc.edu)|207.233.102.33|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 10561 (10K) [application/octet-stream]
+Saving to: ‘final_logs.tgz’
+
+final_logs.tgz                                           0%[                                                                                                                            ]       0  --.-KB/s               final_logs.tgz                                         100%[===========================================================================================================================>]  10.31K  --.-KB/s    in 0s      
+
+2024-08-12 01:43:00 (88.0 MB/s) - ‘final_logs.tgz’ saved [10561/10561]
+
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ tar -xvzf final_logs.tgz 
+logs/
+logs/n101gh_telemetry.log
+logs/n123ab_telemetry.log
+logs/n567kl_telemetry.log
+logs/n112op_telemetry.log
+logs/n456cd_telemetry.log
+logs/n890mn_telemetry.log
+logs/n234ij_telemetry.log
+logs/n789ef_telemetry.log
+logs/n223wx_telemetry.log
+logs/n678st_telemetry.log
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ ls
+[0m[01;34mconfigs[0m  [01;31mfinal_logs.tgz[0m  [01;34mlogs[0m
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ grep GPS *[K[K[K[K[K[K[K[K[K[Kcd logs/
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ ls
+n101gh_telemetry.log  n112op_telemetry.log  n123ab_telemetry.log  n223wx_telemetry.log  n234ij_telemetry.log  n456cd_telemetry.log  n567kl_telemetry.log  n678st_telemetry.log  n789ef_telemetry.log  n890mn_telemetry.log
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ grap[K[Kep GPS * >>gps_summary.txt
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ ls
+gps_summary.txt       n112op_telemetry.log  n223wx_telemetry.log  n456cd_telemetry.log  n678st_telemetry.log  n890mn_telemetry.log
+n101gh_telemetry.log  n123ab_telemetry.log  n234ij_telemetry.log  n567kl_telemetry.log  n789ef_telemetry.log
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ cat gps_summary.txt 
+n101gh_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0524, Longitude: -118.2435
+n101gh_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0526, Longitude: -118.2433
+n101gh_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0528, Longitude: -118.2430
+n101gh_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0531, Longitude: -118.2426
+n101gh_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0533, Longitude: -118.2424
+n101gh_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0537, Longitude: -118.2423
+n101gh_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0542, Longitude: -118.2420
+n101gh_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0544, Longitude: -118.2419
+n101gh_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0546, Longitude: -118.2417
+n101gh_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0548, Longitude: -118.2413
+n101gh_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0552, Longitude: -118.2410
+n101gh_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0554, Longitude: -118.2406
+n101gh_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0558, Longitude: -118.2405
+n101gh_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0563, Longitude: -118.2401
+n101gh_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0567, Longitude: -118.2399
+n101gh_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0569, Longitude: -118.2398
+n101gh_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0572, Longitude: -118.2393
+n101gh_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0575, Longitude: -118.2390
+n101gh_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0577, Longitude: -118.2388
+n101gh_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0580, Longitude: -118.2383
+n101gh_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0584, Longitude: -118.2380
+n101gh_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0588, Longitude: -118.2376
+n101gh_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0592, Longitude: -118.2372
+n101gh_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0595, Longitude: -118.2369
+n101gh_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0596, Longitude: -118.2366
+n101gh_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0601, Longitude: -118.2364
+n101gh_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0605, Longitude: -118.2359
+n101gh_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0606, Longitude: -118.2357
+n101gh_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0610, Longitude: -118.2354
+n101gh_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0613, Longitude: -118.2351
+n101gh_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0608, Longitude: -118.2353
+n101gh_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0604, Longitude: -118.2357
+n101gh_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0600, Longitude: -118.2360
+n101gh_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0596, Longitude: -118.2363
+n101gh_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0592, Longitude: -118.2367
+n112op_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0525, Longitude: -118.2434
+n112op_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0527, Longitude: -118.2432
+n112op_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0529, Longitude: -118.2428
+n112op_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0533, Longitude: -118.2424
+n112op_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0535, Longitude: -118.2419
+n112op_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0536, Longitude: -118.2415
+n112op_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0539, Longitude: -118.2410
+n112op_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0543, Longitude: -118.2408
+n112op_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0548, Longitude: -118.2403
+n112op_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0551, Longitude: -118.2399
+n112op_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0554, Longitude: -118.2396
+n112op_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0558, Longitude: -118.2393
+n112op_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0560, Longitude: -118.2389
+n112op_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0565, Longitude: -118.2385
+n112op_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0568, Longitude: -118.2380
+n112op_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0571, Longitude: -118.2376
+n112op_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0573, Longitude: -118.2372
+n112op_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0576, Longitude: -118.2371
+n112op_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0580, Longitude: -118.2368
+n112op_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0582, Longitude: -118.2365
+n112op_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0583, Longitude: -118.2360
+n112op_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0585, Longitude: -118.2358
+n112op_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0588, Longitude: -118.2356
+n112op_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0591, Longitude: -118.2354
+n112op_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0593, Longitude: -118.2350
+n112op_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0596, Longitude: -118.2348
+n112op_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0598, Longitude: -118.2347
+n112op_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0603, Longitude: -118.2345
+n112op_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0606, Longitude: -118.2341
+n112op_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0610, Longitude: -118.2338
+n112op_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0608, Longitude: -118.2340
+n112op_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0604, Longitude: -118.2342
+n112op_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0600, Longitude: -118.2344
+n112op_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0598, Longitude: -118.2347
+n112op_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0595, Longitude: -118.2349
+n123ab_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0524, Longitude: -118.2434
+n123ab_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2430
+n123ab_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0532, Longitude: -118.2426
+n123ab_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0536, Longitude: -118.2425
+n123ab_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0538, Longitude: -118.2421
+n123ab_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0541, Longitude: -118.2416
+n123ab_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0543, Longitude: -118.2414
+n123ab_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0547, Longitude: -118.2410
+n123ab_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0550, Longitude: -118.2407
+n123ab_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0554, Longitude: -118.2405
+n123ab_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0555, Longitude: -118.2400
+n123ab_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0558, Longitude: -118.2399
+n123ab_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0559, Longitude: -118.2395
+n123ab_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0563, Longitude: -118.2391
+n123ab_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0564, Longitude: -118.2390
+n123ab_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0568, Longitude: -118.2389
+n123ab_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0570, Longitude: -118.2387
+n123ab_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0575, Longitude: -118.2383
+n123ab_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0577, Longitude: -118.2378
+n123ab_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0581, Longitude: -118.2377
+n123ab_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0584, Longitude: -118.2375
+n123ab_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0588, Longitude: -118.2371
+n123ab_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0592, Longitude: -118.2368
+n123ab_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0597, Longitude: -118.2364
+n123ab_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0600, Longitude: -118.2360
+n123ab_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0601, Longitude: -118.2356
+n123ab_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0605, Longitude: -118.2354
+n123ab_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0609, Longitude: -118.2349
+n123ab_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0610, Longitude: -118.2346
+n123ab_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0614, Longitude: -118.2342
+n123ab_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0609, Longitude: -118.2346
+n123ab_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0607, Longitude: -118.2349
+n123ab_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0604, Longitude: -118.2350
+n123ab_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0600, Longitude: -118.2355
+n123ab_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0595, Longitude: -118.2359
+n223wx_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0525, Longitude: -118.2436
+n223wx_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2431
+n223wx_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0532, Longitude: -118.2428
+n223wx_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0535, Longitude: -118.2423
+n223wx_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0538, Longitude: -118.2420
+n223wx_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0541, Longitude: -118.2416
+n223wx_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0546, Longitude: -118.2413
+n223wx_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0548, Longitude: -118.2409
+n223wx_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0549, Longitude: -118.2404
+n223wx_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0554, Longitude: -118.2401
+n223wx_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0556, Longitude: -118.2399
+n223wx_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0558, Longitude: -118.2398
+n223wx_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0560, Longitude: -118.2393
+n223wx_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0563, Longitude: -118.2389
+n223wx_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0565, Longitude: -118.2387
+n223wx_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0567, Longitude: -118.2383
+n223wx_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0569, Longitude: -118.2381
+n223wx_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0574, Longitude: -118.2376
+n223wx_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0577, Longitude: -118.2373
+n223wx_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0581, Longitude: -118.2370
+n223wx_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0585, Longitude: -118.2368
+n223wx_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0588, Longitude: -118.2366
+n223wx_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0591, Longitude: -118.2365
+n223wx_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0594, Longitude: -118.2361
+n223wx_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0596, Longitude: -118.2357
+n223wx_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0597, Longitude: -118.2353
+n223wx_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0602, Longitude: -118.2352
+n223wx_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0605, Longitude: -118.2349
+n223wx_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0609, Longitude: -118.2347
+n223wx_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0611, Longitude: -118.2344
+n223wx_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0607, Longitude: -118.2347
+n223wx_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0604, Longitude: -118.2351
+n223wx_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0602, Longitude: -118.2353
+n223wx_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0598, Longitude: -118.2354
+n223wx_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0593, Longitude: -118.2357
+n234ij_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0527, Longitude: -118.2432
+n234ij_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2430
+n234ij_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0530, Longitude: -118.2428
+n234ij_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0534, Longitude: -118.2425
+n234ij_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0537, Longitude: -118.2421
+n234ij_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0540, Longitude: -118.2417
+n234ij_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0544, Longitude: -118.2415
+n234ij_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0546, Longitude: -118.2412
+n234ij_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0551, Longitude: -118.2407
+n234ij_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0553, Longitude: -118.2405
+n234ij_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0555, Longitude: -118.2404
+n234ij_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0556, Longitude: -118.2399
+n234ij_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0558, Longitude: -118.2397
+n234ij_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0560, Longitude: -118.2392
+n234ij_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0564, Longitude: -118.2389
+n234ij_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0566, Longitude: -118.2387
+n234ij_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0571, Longitude: -118.2385
+n234ij_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0572, Longitude: -118.2382
+n234ij_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0574, Longitude: -118.2378
+n234ij_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0577, Longitude: -118.2374
+n234ij_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0582, Longitude: -118.2370
+n234ij_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0583, Longitude: -118.2369
+n234ij_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0588, Longitude: -118.2364
+n234ij_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0589, Longitude: -118.2361
+n234ij_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0592, Longitude: -118.2356
+n234ij_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0595, Longitude: -118.2351
+n234ij_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0598, Longitude: -118.2349
+n234ij_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0603, Longitude: -118.2347
+n234ij_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0607, Longitude: -118.2343
+n234ij_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0610, Longitude: -118.2339
+n234ij_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0609, Longitude: -118.2344
+n234ij_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0607, Longitude: -118.2345
+n234ij_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0605, Longitude: -118.2346
+n234ij_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0604, Longitude: -118.2350
+n234ij_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0599, Longitude: -118.2355
+n456cd_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0524, Longitude: -118.2434
+n456cd_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2433
+n456cd_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0532, Longitude: -118.2430
+n456cd_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0537, Longitude: -118.2427
+n456cd_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0538, Longitude: -118.2426
+n456cd_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0540, Longitude: -118.2421
+n456cd_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0544, Longitude: -118.2419
+n456cd_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0548, Longitude: -118.2417
+n456cd_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0551, Longitude: -118.2413
+n456cd_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0555, Longitude: -118.2411
+n456cd_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0558, Longitude: -118.2408
+n456cd_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0561, Longitude: -118.2404
+n456cd_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0563, Longitude: -118.2402
+n456cd_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0567, Longitude: -118.2400
+n456cd_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0569, Longitude: -118.2398
+n456cd_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0571, Longitude: -118.2394
+n456cd_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0572, Longitude: -118.2391
+n456cd_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0574, Longitude: -118.2388
+n456cd_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0576, Longitude: -118.2385
+n456cd_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0581, Longitude: -118.2383
+n456cd_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0584, Longitude: -118.2380
+n456cd_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0586, Longitude: -118.2377
+n456cd_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0591, Longitude: -118.2372
+n456cd_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0594, Longitude: -118.2369
+n456cd_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0598, Longitude: -118.2367
+n456cd_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0603, Longitude: -118.2362
+n456cd_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0605, Longitude: -118.2359
+n456cd_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0609, Longitude: -118.2356
+n456cd_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0614, Longitude: -118.2351
+n456cd_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0617, Longitude: -118.2348
+n456cd_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0614, Longitude: -118.2350
+n456cd_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0610, Longitude: -118.2353
+n456cd_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0607, Longitude: -118.2358
+n456cd_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0606, Longitude: -118.2360
+n456cd_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0603, Longitude: -118.2362
+n567kl_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0527, Longitude: -118.2436
+n567kl_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0529, Longitude: -118.2433
+n567kl_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0533, Longitude: -118.2431
+n567kl_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0537, Longitude: -118.2426
+n567kl_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0541, Longitude: -118.2424
+n567kl_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0545, Longitude: -118.2422
+n567kl_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0549, Longitude: -118.2418
+n567kl_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0553, Longitude: -118.2414
+n567kl_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0556, Longitude: -118.2412
+n567kl_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0558, Longitude: -118.2409
+n567kl_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0560, Longitude: -118.2406
+n567kl_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0563, Longitude: -118.2403
+n567kl_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0567, Longitude: -118.2400
+n567kl_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0571, Longitude: -118.2396
+n567kl_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0573, Longitude: -118.2392
+n567kl_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0574, Longitude: -118.2389
+n567kl_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0578, Longitude: -118.2386
+n567kl_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0582, Longitude: -118.2382
+n567kl_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0586, Longitude: -118.2378
+n567kl_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0588, Longitude: -118.2376
+n567kl_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0589, Longitude: -118.2372
+n567kl_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0591, Longitude: -118.2368
+n567kl_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0594, Longitude: -118.2365
+n567kl_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0595, Longitude: -118.2364
+n567kl_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0596, Longitude: -118.2359
+n567kl_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0601, Longitude: -118.2355
+n567kl_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0604, Longitude: -118.2352
+n567kl_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0608, Longitude: -118.2349
+n567kl_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0609, Longitude: -118.2347
+n567kl_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0610, Longitude: -118.2344
+n567kl_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0608, Longitude: -118.2349
+n567kl_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0606, Longitude: -118.2350
+n567kl_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0603, Longitude: -118.2354
+n567kl_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0598, Longitude: -118.2358
+n567kl_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0593, Longitude: -118.2361
+n678st_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0526, Longitude: -118.2434
+n678st_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2431
+n678st_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0530, Longitude: -118.2428
+n678st_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0533, Longitude: -118.2425
+n678st_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0535, Longitude: -118.2422
+n678st_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0538, Longitude: -118.2420
+n678st_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0541, Longitude: -118.2418
+n678st_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0543, Longitude: -118.2414
+n678st_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0545, Longitude: -118.2410
+n678st_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0547, Longitude: -118.2408
+n678st_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0549, Longitude: -118.2407
+n678st_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0550, Longitude: -118.2405
+n678st_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0554, Longitude: -118.2403
+n678st_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0555, Longitude: -118.2401
+n678st_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0560, Longitude: -118.2398
+n678st_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0561, Longitude: -118.2393
+n678st_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0564, Longitude: -118.2391
+n678st_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0567, Longitude: -118.2388
+n678st_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0571, Longitude: -118.2387
+n678st_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0576, Longitude: -118.2386
+n678st_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0581, Longitude: -118.2381
+n678st_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0584, Longitude: -118.2379
+n678st_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0588, Longitude: -118.2377
+n678st_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0589, Longitude: -118.2376
+n678st_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0591, Longitude: -118.2372
+n678st_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0593, Longitude: -118.2370
+n678st_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0596, Longitude: -118.2365
+n678st_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0600, Longitude: -118.2361
+n678st_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0603, Longitude: -118.2358
+n678st_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0608, Longitude: -118.2354
+n678st_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0607, Longitude: -118.2358
+n678st_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0604, Longitude: -118.2361
+n678st_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0601, Longitude: -118.2364
+n678st_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0596, Longitude: -118.2365
+n678st_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0594, Longitude: -118.2368
+n789ef_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0526, Longitude: -118.2434
+n789ef_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2432
+n789ef_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0530, Longitude: -118.2431
+n789ef_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0533, Longitude: -118.2429
+n789ef_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0537, Longitude: -118.2426
+n789ef_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0542, Longitude: -118.2424
+n789ef_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0543, Longitude: -118.2420
+n789ef_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0548, Longitude: -118.2418
+n789ef_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0551, Longitude: -118.2414
+n789ef_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0552, Longitude: -118.2411
+n789ef_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0553, Longitude: -118.2406
+n789ef_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0557, Longitude: -118.2405
+n789ef_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0559, Longitude: -118.2403
+n789ef_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0561, Longitude: -118.2400
+n789ef_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0563, Longitude: -118.2398
+n789ef_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0566, Longitude: -118.2397
+n789ef_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0570, Longitude: -118.2393
+n789ef_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0574, Longitude: -118.2392
+n789ef_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0578, Longitude: -118.2390
+n789ef_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0580, Longitude: -118.2387
+n789ef_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0583, Longitude: -118.2385
+n789ef_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0586, Longitude: -118.2382
+n789ef_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0590, Longitude: -118.2377
+n789ef_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0595, Longitude: -118.2373
+n789ef_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0598, Longitude: -118.2369
+n789ef_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0601, Longitude: -118.2366
+n789ef_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0606, Longitude: -118.2361
+n789ef_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0609, Longitude: -118.2358
+n789ef_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0611, Longitude: -118.2357
+n789ef_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0613, Longitude: -118.2352
+n789ef_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0612, Longitude: -118.2357
+n789ef_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0610, Longitude: -118.2359
+n789ef_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0607, Longitude: -118.2361
+n789ef_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0605, Longitude: -118.2363
+n789ef_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0603, Longitude: -118.2365
+n890mn_telemetry.log:[2024-06-26 14:33:10] GPS: Latitude: 34.0526, Longitude: -118.2432
+n890mn_telemetry.log:[2024-06-26 14:34:10] GPS: Latitude: 34.0529, Longitude: -118.2430
+n890mn_telemetry.log:[2024-06-26 14:35:10] GPS: Latitude: 34.0531, Longitude: -118.2428
+n890mn_telemetry.log:[2024-06-26 14:36:10] GPS: Latitude: 34.0536, Longitude: -118.2425
+n890mn_telemetry.log:[2024-06-26 14:37:10] GPS: Latitude: 34.0541, Longitude: -118.2421
+n890mn_telemetry.log:[2024-06-26 14:38:10] GPS: Latitude: 34.0544, Longitude: -118.2419
+n890mn_telemetry.log:[2024-06-26 14:39:10] GPS: Latitude: 34.0548, Longitude: -118.2415
+n890mn_telemetry.log:[2024-06-26 14:40:10] GPS: Latitude: 34.0553, Longitude: -118.2414
+n890mn_telemetry.log:[2024-06-26 14:41:10] GPS: Latitude: 34.0555, Longitude: -118.2411
+n890mn_telemetry.log:[2024-06-26 14:42:10] GPS: Latitude: 34.0558, Longitude: -118.2409
+n890mn_telemetry.log:[2024-06-26 14:43:10] GPS: Latitude: 34.0561, Longitude: -118.2406
+n890mn_telemetry.log:[2024-06-26 14:44:10] GPS: Latitude: 34.0566, Longitude: -118.2405
+n890mn_telemetry.log:[2024-06-26 14:45:10] GPS: Latitude: 34.0567, Longitude: -118.2402
+n890mn_telemetry.log:[2024-06-26 14:46:10] GPS: Latitude: 34.0571, Longitude: -118.2399
+n890mn_telemetry.log:[2024-06-26 14:47:10] GPS: Latitude: 34.0574, Longitude: -118.2396
+n890mn_telemetry.log:[2024-06-26 14:48:10] GPS: Latitude: 34.0575, Longitude: -118.2393
+n890mn_telemetry.log:[2024-06-26 14:49:10] GPS: Latitude: 34.0576, Longitude: -118.2390
+n890mn_telemetry.log:[2024-06-26 14:50:10] GPS: Latitude: 34.0580, Longitude: -118.2386
+n890mn_telemetry.log:[2024-06-26 14:51:10] GPS: Latitude: 34.0583, Longitude: -118.2384
+n890mn_telemetry.log:[2024-06-26 14:52:10] GPS: Latitude: 34.0585, Longitude: -118.2380
+n890mn_telemetry.log:[2024-06-26 14:53:10] GPS: Latitude: 34.0589, Longitude: -118.2376
+n890mn_telemetry.log:[2024-06-26 14:54:10] GPS: Latitude: 34.0591, Longitude: -118.2374
+n890mn_telemetry.log:[2024-06-26 14:55:10] GPS: Latitude: 34.0595, Longitude: -118.2370
+n890mn_telemetry.log:[2024-06-26 14:56:10] GPS: Latitude: 34.0596, Longitude: -118.2368
+n890mn_telemetry.log:[2024-06-26 14:57:10] GPS: Latitude: 34.0597, Longitude: -118.2366
+n890mn_telemetry.log:[2024-06-26 14:58:10] GPS: Latitude: 34.0602, Longitude: -118.2364
+n890mn_telemetry.log:[2024-06-26 14:59:10] GPS: Latitude: 34.0605, Longitude: -118.2359
+n890mn_telemetry.log:[2024-06-26 15:00:10] GPS: Latitude: 34.0609, Longitude: -118.2357
+n890mn_telemetry.log:[2024-06-26 15:01:10] GPS: Latitude: 34.0614, Longitude: -118.2353
+n890mn_telemetry.log:[2024-06-26 15:02:10] GPS: Latitude: 34.0615, Longitude: -118.2352
+n890mn_telemetry.log:[2024-06-26 15:03:10] GPS: Latitude: 34.0613, Longitude: -118.2356
+n890mn_telemetry.log:[2024-06-26 15:04:10] GPS: Latitude: 34.0610, Longitude: -118.2361
+n890mn_telemetry.log:[2024-06-26 15:05:10] GPS: Latitude: 34.0607, Longitude: -118.2363
+n890mn_telemetry.log:[2024-06-26 15:06:10] GPS: Latitude: 34.0602, Longitude: -118.2366
+n890mn_telemetry.log:[2024-06-26 15:07:10] GPS: Latitude: 34.0599, Longitude: -118.2370
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ cat gps_summary.txt [1@B[1@A[1@T[1P[1P[1Pls[Kgrep GPS * >>gps_summary.txt[1P[1P[1P[1@B[1@A[1@T[C[C[C[C[Cbgps_summary.txtagps_summary.txttgps_summary.txt[1Pps_summary.txt[1Ps_summary.txt[1P_summary.txt[C[C[C[Ct_summary.txte_summary.txtr_summary.txty_summary.txt
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ cat battery_summary.txt 
+n101gh_telemetry.log:[2024-06-26 14:33:10] BAT: 99.3 %
+n101gh_telemetry.log:[2024-06-26 14:34:10] BAT: 98.4 %
+n101gh_telemetry.log:[2024-06-26 14:35:10] BAT: 97.8 %
+n101gh_telemetry.log:[2024-06-26 14:36:10] BAT: 96.9 %
+n101gh_telemetry.log:[2024-06-26 14:37:10] BAT: 96.0 %
+n101gh_telemetry.log:[2024-06-26 14:38:10] BAT: 95.3 %
+n101gh_telemetry.log:[2024-06-26 14:39:10] BAT: 94.6 %
+n101gh_telemetry.log:[2024-06-26 14:40:10] BAT: 93.9 %
+n101gh_telemetry.log:[2024-06-26 14:41:10] BAT: 93.2 %
+n101gh_telemetry.log:[2024-06-26 14:42:10] BAT: 92.5 %
+n101gh_telemetry.log:[2024-06-26 14:43:10] BAT: 91.9 %
+n101gh_telemetry.log:[2024-06-26 14:44:10] BAT: 91.0 %
+n101gh_telemetry.log:[2024-06-26 14:45:10] BAT: 90.4 %
+n101gh_telemetry.log:[2024-06-26 14:46:10] BAT: 89.8 %
+n101gh_telemetry.log:[2024-06-26 14:47:10] BAT: 88.9 %
+n101gh_telemetry.log:[2024-06-26 14:48:10] BAT: 88.1 %
+n101gh_telemetry.log:[2024-06-26 14:49:10] BAT: 87.5 %
+n101gh_telemetry.log:[2024-06-26 14:50:10] BAT: 86.6 %
+n101gh_telemetry.log:[2024-06-26 14:51:10] BAT: 85.6 %
+n101gh_telemetry.log:[2024-06-26 14:52:10] BAT: 85.1 %
+n101gh_telemetry.log:[2024-06-26 14:53:10] BAT: 84.4 %
+n101gh_telemetry.log:[2024-06-26 14:54:10] BAT: 83.7 %
+n101gh_telemetry.log:[2024-06-26 14:55:10] BAT: 82.9 %
+n101gh_telemetry.log:[2024-06-26 14:56:10] BAT: 82.1 %
+n101gh_telemetry.log:[2024-06-26 14:57:10] BAT: 81.4 %
+n101gh_telemetry.log:[2024-06-26 14:58:10] BAT: 80.6 %
+n101gh_telemetry.log:[2024-06-26 14:59:10] BAT: 79.8 %
+n101gh_telemetry.log:[2024-06-26 15:00:10] BAT: 78.9 %
+n101gh_telemetry.log:[2024-06-26 15:01:10] BAT: 77.9 %
+n101gh_telemetry.log:[2024-06-26 15:02:10] BAT: 77.3 %
+n101gh_telemetry.log:[2024-06-26 15:03:10] BAT: 76.4%
+n101gh_telemetry.log:[2024-06-26 15:04:10] BAT: 75.6%
+n101gh_telemetry.log:[2024-06-26 15:05:10] BAT: 74.9%
+n101gh_telemetry.log:[2024-06-26 15:06:10] BAT: 74.2%
+n101gh_telemetry.log:[2024-06-26 15:07:10] BAT: 73.7%
+n112op_telemetry.log:[2024-06-26 14:33:10] BAT: 99.5 %
+n112op_telemetry.log:[2024-06-26 14:34:10] BAT: 98.8 %
+n112op_telemetry.log:[2024-06-26 14:35:10] BAT: 98.2 %
+n112op_telemetry.log:[2024-06-26 14:36:10] BAT: 97.5 %
+n112op_telemetry.log:[2024-06-26 14:37:10] BAT: 96.9 %
+n112op_telemetry.log:[2024-06-26 14:38:10] BAT: 96.2 %
+n112op_telemetry.log:[2024-06-26 14:39:10] BAT: 95.4 %
+n112op_telemetry.log:[2024-06-26 14:40:10] BAT: 94.8 %
+n112op_telemetry.log:[2024-06-26 14:41:10] BAT: 94.2 %
+n112op_telemetry.log:[2024-06-26 14:42:10] BAT: 93.3 %
+n112op_telemetry.log:[2024-06-26 14:43:10] BAT: 92.5 %
+n112op_telemetry.log:[2024-06-26 14:44:10] BAT: 91.8 %
+n112op_telemetry.log:[2024-06-26 14:45:10] BAT: 90.9 %
+n112op_telemetry.log:[2024-06-26 14:46:10] BAT: 90.2 %
+n112op_telemetry.log:[2024-06-26 14:47:10] BAT: 89.4 %
+n112op_telemetry.log:[2024-06-26 14:48:10] BAT: 88.8 %
+n112op_telemetry.log:[2024-06-26 14:49:10] BAT: 88.1 %
+n112op_telemetry.log:[2024-06-26 14:50:10] BAT: 87.4 %
+n112op_telemetry.log:[2024-06-26 14:51:10] BAT: 86.6 %
+n112op_telemetry.log:[2024-06-26 14:52:10] BAT: 86.1 %
+n112op_telemetry.log:[2024-06-26 14:53:10] BAT: 85.2 %
+n112op_telemetry.log:[2024-06-26 14:54:10] BAT: 84.7 %
+n112op_telemetry.log:[2024-06-26 14:55:10] BAT: 83.8 %
+n112op_telemetry.log:[2024-06-26 14:56:10] BAT: 83.3 %
+n112op_telemetry.log:[2024-06-26 14:57:10] BAT: 82.7 %
+n112op_telemetry.log:[2024-06-26 14:58:10] BAT: 81.8 %
+n112op_telemetry.log:[2024-06-26 14:59:10] BAT: 81.2 %
+n112op_telemetry.log:[2024-06-26 15:00:10] BAT: 80.7 %
+n112op_telemetry.log:[2024-06-26 15:01:10] BAT: 80.0 %
+n112op_telemetry.log:[2024-06-26 15:02:10] BAT: 79.3 %
+n112op_telemetry.log:[2024-06-26 15:03:10] BAT: 78.4%
+n112op_telemetry.log:[2024-06-26 15:04:10] BAT: 77.5%
+n112op_telemetry.log:[2024-06-26 15:05:10] BAT: 76.6%
+n112op_telemetry.log:[2024-06-26 15:06:10] BAT: 75.8%
+n112op_telemetry.log:[2024-06-26 15:07:10] BAT: 75.2%
+n123ab_telemetry.log:[2024-06-26 14:33:10] BAT: 99.2 %
+n123ab_telemetry.log:[2024-06-26 14:34:10] BAT: 98.4 %
+n123ab_telemetry.log:[2024-06-26 14:35:10] BAT: 97.6 %
+n123ab_telemetry.log:[2024-06-26 14:36:10] BAT: 96.7 %
+n123ab_telemetry.log:[2024-06-26 14:37:10] BAT: 96.0 %
+n123ab_telemetry.log:[2024-06-26 14:38:10] BAT: 95.3 %
+n123ab_telemetry.log:[2024-06-26 14:39:10] BAT: 94.6 %
+n123ab_telemetry.log:[2024-06-26 14:40:10] BAT: 93.9 %
+n123ab_telemetry.log:[2024-06-26 14:41:10] BAT: 93.0 %
+n123ab_telemetry.log:[2024-06-26 14:42:10] BAT: 92.4 %
+n123ab_telemetry.log:[2024-06-26 14:43:10] BAT: 91.7 %
+n123ab_telemetry.log:[2024-06-26 14:44:10] BAT: 91.0 %
+n123ab_telemetry.log:[2024-06-26 14:45:10] BAT: 90.0 %
+n123ab_telemetry.log:[2024-06-26 14:46:10] BAT: 89.3 %
+n123ab_telemetry.log:[2024-06-26 14:47:10] BAT: 88.7 %
+n123ab_telemetry.log:[2024-06-26 14:48:10] BAT: 87.9 %
+n123ab_telemetry.log:[2024-06-26 14:49:10] BAT: 87.2 %
+n123ab_telemetry.log:[2024-06-26 14:50:10] BAT: 86.3 %
+n123ab_telemetry.log:[2024-06-26 14:51:10] BAT: 85.3 %
+n123ab_telemetry.log:[2024-06-26 14:52:10] BAT: 84.7 %
+n123ab_telemetry.log:[2024-06-26 14:53:10] BAT: 84.0 %
+n123ab_telemetry.log:[2024-06-26 14:54:10] BAT: 83.0 %
+n123ab_telemetry.log:[2024-06-26 14:55:10] BAT: 82.3 %
+n123ab_telemetry.log:[2024-06-26 14:56:10] BAT: 81.5 %
+n123ab_telemetry.log:[2024-06-26 14:57:10] BAT: 80.7 %
+n123ab_telemetry.log:[2024-06-26 14:58:10] BAT: 79.9 %
+n123ab_telemetry.log:[2024-06-26 14:59:10] BAT: 79.4 %
+n123ab_telemetry.log:[2024-06-26 15:00:10] BAT: 78.5 %
+n123ab_telemetry.log:[2024-06-26 15:01:10] BAT: 78.0 %
+n123ab_telemetry.log:[2024-06-26 15:02:10] BAT: 77.5 %
+n123ab_telemetry.log:[2024-06-26 15:03:10] BAT: 77.0%
+n123ab_telemetry.log:[2024-06-26 15:04:10] BAT: 76.1%
+n123ab_telemetry.log:[2024-06-26 15:05:10] BAT: 75.4%
+n123ab_telemetry.log:[2024-06-26 15:06:10] BAT: 74.9%
+n123ab_telemetry.log:[2024-06-26 15:07:10] BAT: 74.1%
+n223wx_telemetry.log:[2024-06-26 14:33:10] BAT: 99.3 %
+n223wx_telemetry.log:[2024-06-26 14:34:10] BAT: 98.4 %
+n223wx_telemetry.log:[2024-06-26 14:35:10] BAT: 97.6 %
+n223wx_telemetry.log:[2024-06-26 14:36:10] BAT: 97.1 %
+n223wx_telemetry.log:[2024-06-26 14:37:10] BAT: 96.4 %
+n223wx_telemetry.log:[2024-06-26 14:38:10] BAT: 95.7 %
+n223wx_telemetry.log:[2024-06-26 14:39:10] BAT: 95.0 %
+n223wx_telemetry.log:[2024-06-26 14:40:10] BAT: 94.0 %
+n223wx_telemetry.log:[2024-06-26 14:41:10] BAT: 93.3 %
+n223wx_telemetry.log:[2024-06-26 14:42:10] BAT: 92.7 %
+n223wx_telemetry.log:[2024-06-26 14:43:10] BAT: 91.9 %
+n223wx_telemetry.log:[2024-06-26 14:44:10] BAT: 91.0 %
+n223wx_telemetry.log:[2024-06-26 14:45:10] BAT: 90.3 %
+n223wx_telemetry.log:[2024-06-26 14:46:10] BAT: 89.7 %
+n223wx_telemetry.log:[2024-06-26 14:47:10] BAT: 88.9 %
+n223wx_telemetry.log:[2024-06-26 14:48:10] BAT: 88.4 %
+n223wx_telemetry.log:[2024-06-26 14:49:10] BAT: 87.8 %
+n223wx_telemetry.log:[2024-06-26 14:50:10] BAT: 87.2 %
+n223wx_telemetry.log:[2024-06-26 14:51:10] BAT: 86.4 %
+n223wx_telemetry.log:[2024-06-26 14:52:10] BAT: 85.6 %
+n223wx_telemetry.log:[2024-06-26 14:53:10] BAT: 84.7 %
+n223wx_telemetry.log:[2024-06-26 14:54:10] BAT: 84.0 %
+n223wx_telemetry.log:[2024-06-26 14:55:10] BAT: 83.1 %
+n223wx_telemetry.log:[2024-06-26 14:56:10] BAT: 82.5 %
+n223wx_telemetry.log:[2024-06-26 14:57:10] BAT: 81.8 %
+n223wx_telemetry.log:[2024-06-26 14:58:10] BAT: 81.1 %
+n223wx_telemetry.log:[2024-06-26 14:59:10] BAT: 80.3 %
+n223wx_telemetry.log:[2024-06-26 15:00:10] BAT: 79.4 %
+n223wx_telemetry.log:[2024-06-26 15:01:10] BAT: 78.7 %
+n223wx_telemetry.log:[2024-06-26 15:02:10] BAT: 78.1 %
+n223wx_telemetry.log:[2024-06-26 15:03:10] BAT: 77.5%
+n223wx_telemetry.log:[2024-06-26 15:04:10] BAT: 76.8%
+n223wx_telemetry.log:[2024-06-26 15:05:10] BAT: 76.1%
+n223wx_telemetry.log:[2024-06-26 15:06:10] BAT: 75.3%
+n223wx_telemetry.log:[2024-06-26 15:07:10] BAT: 74.4%
+n234ij_telemetry.log:[2024-06-26 14:33:10] BAT: 99.4 %
+n234ij_telemetry.log:[2024-06-26 14:34:10] BAT: 98.7 %
+n234ij_telemetry.log:[2024-06-26 14:35:10] BAT: 98.2 %
+n234ij_telemetry.log:[2024-06-26 14:36:10] BAT: 97.4 %
+n234ij_telemetry.log:[2024-06-26 14:37:10] BAT: 96.6 %
+n234ij_telemetry.log:[2024-06-26 14:38:10] BAT: 95.9 %
+n234ij_telemetry.log:[2024-06-26 14:39:10] BAT: 95.1 %
+n234ij_telemetry.log:[2024-06-26 14:40:10] BAT: 94.5 %
+n234ij_telemetry.log:[2024-06-26 14:41:10] BAT: 94.0 %
+n234ij_telemetry.log:[2024-06-26 14:42:10] BAT: 93.4 %
+n234ij_telemetry.log:[2024-06-26 14:43:10] BAT: 92.8 %
+n234ij_telemetry.log:[2024-06-26 14:44:10] BAT: 92.1 %
+n234ij_telemetry.log:[2024-06-26 14:45:10] BAT: 91.5 %
+n234ij_telemetry.log:[2024-06-26 14:46:10] BAT: 90.7 %
+n234ij_telemetry.log:[2024-06-26 14:47:10] BAT: 90.0 %
+n234ij_telemetry.log:[2024-06-26 14:48:10] BAT: 89.5 %
+n234ij_telemetry.log:[2024-06-26 14:49:10] BAT: 88.8 %
+n234ij_telemetry.log:[2024-06-26 14:50:10] BAT: 88.0 %
+n234ij_telemetry.log:[2024-06-26 14:51:10] BAT: 87.3 %
+n234ij_telemetry.log:[2024-06-26 14:52:10] BAT: 86.7 %
+n234ij_telemetry.log:[2024-06-26 14:53:10] BAT: 85.9 %
+n234ij_telemetry.log:[2024-06-26 14:54:10] BAT: 85.0 %
+n234ij_telemetry.log:[2024-06-26 14:55:10] BAT: 84.2 %
+n234ij_telemetry.log:[2024-06-26 14:56:10] BAT: 83.3 %
+n234ij_telemetry.log:[2024-06-26 14:57:10] BAT: 82.3 %
+n234ij_telemetry.log:[2024-06-26 14:58:10] BAT: 81.6 %
+n234ij_telemetry.log:[2024-06-26 14:59:10] BAT: 81.0 %
+n234ij_telemetry.log:[2024-06-26 15:00:10] BAT: 80.2 %
+n234ij_telemetry.log:[2024-06-26 15:01:10] BAT: 79.4 %
+n234ij_telemetry.log:[2024-06-26 15:02:10] BAT: 78.8 %
+n234ij_telemetry.log:[2024-06-26 15:03:10] BAT: 77.8%
+n234ij_telemetry.log:[2024-06-26 15:04:10] BAT: 76.9%
+n234ij_telemetry.log:[2024-06-26 15:05:10] BAT: 75.9%
+n234ij_telemetry.log:[2024-06-26 15:06:10] BAT: 75.2%
+n234ij_telemetry.log:[2024-06-26 15:07:10] BAT: 74.6%
+n456cd_telemetry.log:[2024-06-26 14:33:10] BAT: 99.4 %
+n456cd_telemetry.log:[2024-06-26 14:34:10] BAT: 98.9 %
+n456cd_telemetry.log:[2024-06-26 14:35:10] BAT: 98.3 %
+n456cd_telemetry.log:[2024-06-26 14:36:10] BAT: 97.7 %
+n456cd_telemetry.log:[2024-06-26 14:37:10] BAT: 96.9 %
+n456cd_telemetry.log:[2024-06-26 14:38:10] BAT: 96.0 %
+n456cd_telemetry.log:[2024-06-26 14:39:10] BAT: 95.3 %
+n456cd_telemetry.log:[2024-06-26 14:40:10] BAT: 94.8 %
+n456cd_telemetry.log:[2024-06-26 14:41:10] BAT: 94.0 %
+n456cd_telemetry.log:[2024-06-26 14:42:10] BAT: 93.0 %
+n456cd_telemetry.log:[2024-06-26 14:43:10] BAT: 92.2 %
+n456cd_telemetry.log:[2024-06-26 14:44:10] BAT: 91.5 %
+n456cd_telemetry.log:[2024-06-26 14:45:10] BAT: 90.9 %
+n456cd_telemetry.log:[2024-06-26 14:46:10] BAT: 90.2 %
+n456cd_telemetry.log:[2024-06-26 14:47:10] BAT: 89.3 %
+n456cd_telemetry.log:[2024-06-26 14:48:10] BAT: 88.4 %
+n456cd_telemetry.log:[2024-06-26 14:49:10] BAT: 87.5 %
+n456cd_telemetry.log:[2024-06-26 14:50:10] BAT: 86.5 %
+n456cd_telemetry.log:[2024-06-26 14:51:10] BAT: 85.7 %
+n456cd_telemetry.log:[2024-06-26 14:52:10] BAT: 84.8 %
+n456cd_telemetry.log:[2024-06-26 14:53:10] BAT: 84.3 %
+n456cd_telemetry.log:[2024-06-26 14:54:10] BAT: 83.5 %
+n456cd_telemetry.log:[2024-06-26 14:55:10] BAT: 82.7 %
+n456cd_telemetry.log:[2024-06-26 14:56:10] BAT: 81.8 %
+n456cd_telemetry.log:[2024-06-26 14:57:10] BAT: 81.1 %
+n456cd_telemetry.log:[2024-06-26 14:58:10] BAT: 80.3 %
+n456cd_telemetry.log:[2024-06-26 14:59:10] BAT: 79.6 %
+n456cd_telemetry.log:[2024-06-26 15:00:10] BAT: 78.6 %
+n456cd_telemetry.log:[2024-06-26 15:01:10] BAT: 77.8 %
+n456cd_telemetry.log:[2024-06-26 15:02:10] BAT: 77.1 %
+n456cd_telemetry.log:[2024-06-26 15:03:10] BAT: 76.4%
+n456cd_telemetry.log:[2024-06-26 15:04:10] BAT: 75.7%
+n456cd_telemetry.log:[2024-06-26 15:05:10] BAT: 74.7%
+n456cd_telemetry.log:[2024-06-26 15:06:10] BAT: 74.1%
+n456cd_telemetry.log:[2024-06-26 15:07:10] BAT: 73.5%
+n567kl_telemetry.log:[2024-06-26 14:33:10] BAT: 99.4 %
+n567kl_telemetry.log:[2024-06-26 14:34:10] BAT: 98.7 %
+n567kl_telemetry.log:[2024-06-26 14:35:10] BAT: 97.7 %
+n567kl_telemetry.log:[2024-06-26 14:36:10] BAT: 96.9 %
+n567kl_telemetry.log:[2024-06-26 14:37:10] BAT: 96.0 %
+n567kl_telemetry.log:[2024-06-26 14:38:10] BAT: 95.4 %
+n567kl_telemetry.log:[2024-06-26 14:39:10] BAT: 94.9 %
+n567kl_telemetry.log:[2024-06-26 14:40:10] BAT: 94.1 %
+n567kl_telemetry.log:[2024-06-26 14:41:10] BAT: 93.3 %
+n567kl_telemetry.log:[2024-06-26 14:42:10] BAT: 92.6 %
+n567kl_telemetry.log:[2024-06-26 14:43:10] BAT: 91.7 %
+n567kl_telemetry.log:[2024-06-26 14:44:10] BAT: 90.7 %
+n567kl_telemetry.log:[2024-06-26 14:45:10] BAT: 90.1 %
+n567kl_telemetry.log:[2024-06-26 14:46:10] BAT: 89.2 %
+n567kl_telemetry.log:[2024-06-26 14:47:10] BAT: 88.6 %
+n567kl_telemetry.log:[2024-06-26 14:48:10] BAT: 88.0 %
+n567kl_telemetry.log:[2024-06-26 14:49:10] BAT: 87.1 %
+n567kl_telemetry.log:[2024-06-26 14:50:10] BAT: 86.6 %
+n567kl_telemetry.log:[2024-06-26 14:51:10] BAT: 85.6 %
+n567kl_telemetry.log:[2024-06-26 14:52:10] BAT: 84.7 %
+n567kl_telemetry.log:[2024-06-26 14:53:10] BAT: 84.2 %
+n567kl_telemetry.log:[2024-06-26 14:54:10] BAT: 83.5 %
+n567kl_telemetry.log:[2024-06-26 14:55:10] BAT: 82.7 %
+n567kl_telemetry.log:[2024-06-26 14:56:10] BAT: 81.8 %
+n567kl_telemetry.log:[2024-06-26 14:57:10] BAT: 81.2 %
+n567kl_telemetry.log:[2024-06-26 14:58:10] BAT: 80.7 %
+n567kl_telemetry.log:[2024-06-26 14:59:10] BAT: 79.7 %
+n567kl_telemetry.log:[2024-06-26 15:00:10] BAT: 78.9 %
+n567kl_telemetry.log:[2024-06-26 15:01:10] BAT: 78.2 %
+n567kl_telemetry.log:[2024-06-26 15:02:10] BAT: 77.7 %
+n567kl_telemetry.log:[2024-06-26 15:03:10] BAT: 76.8%
+n567kl_telemetry.log:[2024-06-26 15:04:10] BAT: 75.9%
+n567kl_telemetry.log:[2024-06-26 15:05:10] BAT: 75.2%
+n567kl_telemetry.log:[2024-06-26 15:06:10] BAT: 74.4%
+n567kl_telemetry.log:[2024-06-26 15:07:10] BAT: 73.9%
+n678st_telemetry.log:[2024-06-26 14:33:10] BAT: 99.2 %
+n678st_telemetry.log:[2024-06-26 14:34:10] BAT: 98.7 %
+n678st_telemetry.log:[2024-06-26 14:35:10] BAT: 97.7 %
+n678st_telemetry.log:[2024-06-26 14:36:10] BAT: 97.0 %
+n678st_telemetry.log:[2024-06-26 14:37:10] BAT: 96.2 %
+n678st_telemetry.log:[2024-06-26 14:38:10] BAT: 95.7 %
+n678st_telemetry.log:[2024-06-26 14:39:10] BAT: 94.8 %
+n678st_telemetry.log:[2024-06-26 14:40:10] BAT: 94.3 %
+n678st_telemetry.log:[2024-06-26 14:41:10] BAT: 93.4 %
+n678st_telemetry.log:[2024-06-26 14:42:10] BAT: 92.8 %
+n678st_telemetry.log:[2024-06-26 14:43:10] BAT: 91.9 %
+n678st_telemetry.log:[2024-06-26 14:44:10] BAT: 91.2 %
+n678st_telemetry.log:[2024-06-26 14:45:10] BAT: 90.5 %
+n678st_telemetry.log:[2024-06-26 14:46:10] BAT: 89.9 %
+n678st_telemetry.log:[2024-06-26 14:47:10] BAT: 89.3 %
+n678st_telemetry.log:[2024-06-26 14:48:10] BAT: 88.4 %
+n678st_telemetry.log:[2024-06-26 14:49:10] BAT: 87.6 %
+n678st_telemetry.log:[2024-06-26 14:50:10] BAT: 86.8 %
+n678st_telemetry.log:[2024-06-26 14:51:10] BAT: 86.2 %
+n678st_telemetry.log:[2024-06-26 14:52:10] BAT: 85.6 %
+n678st_telemetry.log:[2024-06-26 14:53:10] BAT: 84.9 %
+n678st_telemetry.log:[2024-06-26 14:54:10] BAT: 84.3 %
+n678st_telemetry.log:[2024-06-26 14:55:10] BAT: 83.7 %
+n678st_telemetry.log:[2024-06-26 14:56:10] BAT: 83.2 %
+n678st_telemetry.log:[2024-06-26 14:57:10] BAT: 82.2 %
+n678st_telemetry.log:[2024-06-26 14:58:10] BAT: 81.5 %
+n678st_telemetry.log:[2024-06-26 14:59:10] BAT: 80.8 %
+n678st_telemetry.log:[2024-06-26 15:00:10] BAT: 80.3 %
+n678st_telemetry.log:[2024-06-26 15:01:10] BAT: 79.7 %
+n678st_telemetry.log:[2024-06-26 15:02:10] BAT: 79.0 %
+n678st_telemetry.log:[2024-06-26 15:03:10] BAT: 78.0%
+n678st_telemetry.log:[2024-06-26 15:04:10] BAT: 77.4%
+n678st_telemetry.log:[2024-06-26 15:05:10] BAT: 76.5%
+n678st_telemetry.log:[2024-06-26 15:06:10] BAT: 75.7%
+n678st_telemetry.log:[2024-06-26 15:07:10] BAT: 75.0%
+n789ef_telemetry.log:[2024-06-26 14:33:10] BAT: 99.3 %
+n789ef_telemetry.log:[2024-06-26 14:34:10] BAT: 98.3 %
+n789ef_telemetry.log:[2024-06-26 14:35:10] BAT: 97.3 %
+n789ef_telemetry.log:[2024-06-26 14:36:10] BAT: 96.8 %
+n789ef_telemetry.log:[2024-06-26 14:37:10] BAT: 96.2 %
+n789ef_telemetry.log:[2024-06-26 14:38:10] BAT: 95.6 %
+n789ef_telemetry.log:[2024-06-26 14:39:10] BAT: 94.8 %
+n789ef_telemetry.log:[2024-06-26 14:40:10] BAT: 94.0 %
+n789ef_telemetry.log:[2024-06-26 14:41:10] BAT: 93.3 %
+n789ef_telemetry.log:[2024-06-26 14:42:10] BAT: 92.5 %
+n789ef_telemetry.log:[2024-06-26 14:43:10] BAT: 92.0 %
+n789ef_telemetry.log:[2024-06-26 14:44:10] BAT: 91.5 %
+n789ef_telemetry.log:[2024-06-26 14:45:10] BAT: 90.8 %
+n789ef_telemetry.log:[2024-06-26 14:46:10] BAT: 89.9 %
+n789ef_telemetry.log:[2024-06-26 14:47:10] BAT: 89.2 %
+n789ef_telemetry.log:[2024-06-26 14:48:10] BAT: 88.4 %
+n789ef_telemetry.log:[2024-06-26 14:49:10] BAT: 87.8 %
+n789ef_telemetry.log:[2024-06-26 14:50:10] BAT: 87.1 %
+n789ef_telemetry.log:[2024-06-26 14:51:10] BAT: 86.6 %
+n789ef_telemetry.log:[2024-06-26 14:52:10] BAT: 86.0 %
+n789ef_telemetry.log:[2024-06-26 14:53:10] BAT: 85.3 %
+n789ef_telemetry.log:[2024-06-26 14:54:10] BAT: 84.8 %
+n789ef_telemetry.log:[2024-06-26 14:55:10] BAT: 84.1 %
+n789ef_telemetry.log:[2024-06-26 14:56:10] BAT: 83.5 %
+n789ef_telemetry.log:[2024-06-26 14:57:10] BAT: 82.9 %
+n789ef_telemetry.log:[2024-06-26 14:58:10] BAT: 82.0 %
+n789ef_telemetry.log:[2024-06-26 14:59:10] BAT: 81.1 %
+n789ef_telemetry.log:[2024-06-26 15:00:10] BAT: 80.6 %
+n789ef_telemetry.log:[2024-06-26 15:01:10] BAT: 79.8 %
+n789ef_telemetry.log:[2024-06-26 15:02:10] BAT: 79.0 %
+n789ef_telemetry.log:[2024-06-26 15:03:10] BAT: 78.5%
+n789ef_telemetry.log:[2024-06-26 15:04:10] BAT: 77.8%
+n789ef_telemetry.log:[2024-06-26 15:05:10] BAT: 76.9%
+n789ef_telemetry.log:[2024-06-26 15:06:10] BAT: 76.0%
+n789ef_telemetry.log:[2024-06-26 15:07:10] BAT: 75.1%
+n890mn_telemetry.log:[2024-06-26 14:33:10] BAT: 99.3 %
+n890mn_telemetry.log:[2024-06-26 14:34:10] BAT: 98.7 %
+n890mn_telemetry.log:[2024-06-26 14:35:10] BAT: 97.9 %
+n890mn_telemetry.log:[2024-06-26 14:36:10] BAT: 97.1 %
+n890mn_telemetry.log:[2024-06-26 14:37:10] BAT: 96.3 %
+n890mn_telemetry.log:[2024-06-26 14:38:10] BAT: 95.7 %
+n890mn_telemetry.log:[2024-06-26 14:39:10] BAT: 95.0 %
+n890mn_telemetry.log:[2024-06-26 14:40:10] BAT: 94.0 %
+n890mn_telemetry.log:[2024-06-26 14:41:10] BAT: 93.2 %
+n890mn_telemetry.log:[2024-06-26 14:42:10] BAT: 92.6 %
+n890mn_telemetry.log:[2024-06-26 14:43:10] BAT: 91.9 %
+n890mn_telemetry.log:[2024-06-26 14:44:10] BAT: 91.3 %
+n890mn_telemetry.log:[2024-06-26 14:45:10] BAT: 90.5 %
+n890mn_telemetry.log:[2024-06-26 14:46:10] BAT: 89.7 %
+n890mn_telemetry.log:[2024-06-26 14:47:10] BAT: 88.9 %
+n890mn_telemetry.log:[2024-06-26 14:48:10] BAT: 88.0 %
+n890mn_telemetry.log:[2024-06-26 14:49:10] BAT: 87.4 %
+n890mn_telemetry.log:[2024-06-26 14:50:10] BAT: 86.4 %
+n890mn_telemetry.log:[2024-06-26 14:51:10] BAT: 85.4 %
+n890mn_telemetry.log:[2024-06-26 14:52:10] BAT: 84.5 %
+n890mn_telemetry.log:[2024-06-26 14:53:10] BAT: 83.7 %
+n890mn_telemetry.log:[2024-06-26 14:54:10] BAT: 83.1 %
+n890mn_telemetry.log:[2024-06-26 14:55:10] BAT: 82.6 %
+n890mn_telemetry.log:[2024-06-26 14:56:10] BAT: 81.8 %
+n890mn_telemetry.log:[2024-06-26 14:57:10] BAT: 81.0 %
+n890mn_telemetry.log:[2024-06-26 14:58:10] BAT: 80.1 %
+n890mn_telemetry.log:[2024-06-26 14:59:10] BAT: 79.3 %
+n890mn_telemetry.log:[2024-06-26 15:00:10] BAT: 78.3 %
+n890mn_telemetry.log:[2024-06-26 15:01:10] BAT: 77.6 %
+n890mn_telemetry.log:[2024-06-26 15:02:10] BAT: 76.6 %
+n890mn_telemetry.log:[2024-06-26 15:03:10] BAT: 76.1%
+n890mn_telemetry.log:[2024-06-26 15:04:10] BAT: 75.1%
+n890mn_telemetry.log:[2024-06-26 15:05:10] BAT: 74.5%
+n890mn_telemetry.log:[2024-06-26 15:06:10] BAT: 73.7%
+n890mn_telemetry.log:[2024-06-26 15:07:10] BAT: 73.0%
+[0;32m@K-sip [0m➜ [1;34m.../final/data/aircraft/logs [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../labs/final/data/aircraft [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m.../cis190-codespace/labs/final/data [0;36m([1;31mmain[0;36m) [0m$ cd ..
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ tar -cvf backup.tgz data/
+data/
+data/aircraft/
+data/aircraft/final_logs.tgz
+data/aircraft/configs/
+data/aircraft/configs/n567kl/
+data/aircraft/configs/n567kl/config_1.ini
+data/aircraft/configs/n567kl/config_4.ini
+data/aircraft/configs/n567kl/config_2.ini
+data/aircraft/configs/n567kl/config_3.ini
+data/aircraft/configs/n567kl/config_5.ini
+data/aircraft/configs/n223wx/
+data/aircraft/configs/n223wx/config_1.ini
+data/aircraft/configs/n223wx/config_4.ini
+data/aircraft/configs/n223wx/config_2.ini
+data/aircraft/configs/n223wx/config_3.ini
+data/aircraft/configs/n223wx/config_5.ini
+data/aircraft/configs/n678st/
+data/aircraft/configs/n678st/config_1.ini
+data/aircraft/configs/n678st/config_4.ini
+data/aircraft/configs/n678st/config_2.ini
+data/aircraft/configs/n678st/config_3.ini
+data/aircraft/configs/n678st/config_5.ini
+data/aircraft/configs/n101gh/
+data/aircraft/configs/n101gh/config_1.ini
+data/aircraft/configs/n101gh/config_4.ini
+data/aircraft/configs/n101gh/config_2.ini
+data/aircraft/configs/n101gh/config_3.ini
+data/aircraft/configs/n101gh/config_5.ini
+data/aircraft/configs/n101gh/config_1a.ini
+data/aircraft/configs/n456cd/
+data/aircraft/configs/n456cd/config_1.ini
+data/aircraft/configs/n456cd/config_4.ini
+data/aircraft/configs/n456cd/config_2.ini
+data/aircraft/configs/n456cd/config_3.ini
+data/aircraft/configs/n456cd/config_5.ini
+data/aircraft/configs/n789ef/
+data/aircraft/configs/n789ef/config_1.ini
+data/aircraft/configs/n789ef/config_4.ini
+data/aircraft/configs/n789ef/config_2.ini
+data/aircraft/configs/n789ef/config_3.ini
+data/aircraft/configs/n789ef/config_5.ini
+data/aircraft/configs/n890mn/
+data/aircraft/configs/n890mn/config_1.ini
+data/aircraft/configs/n890mn/config_4.ini
+data/aircraft/configs/n890mn/config_2.ini
+data/aircraft/configs/n890mn/config_3.ini
+data/aircraft/configs/n890mn/config_5.ini
+data/aircraft/configs/tailnumbers.txt
+data/aircraft/configs/n123ab/
+data/aircraft/configs/n123ab/config_1.ini
+data/aircraft/configs/n123ab/config_4.ini
+data/aircraft/configs/n123ab/config_2.ini
+data/aircraft/configs/n123ab/config_3.ini
+data/aircraft/configs/n123ab/config_5.ini
+data/aircraft/configs/n112op/
+data/aircraft/configs/n112op/config_1.ini
+data/aircraft/configs/n112op/config_4.ini
+data/aircraft/configs/n112op/config_2.ini
+data/aircraft/configs/n112op/config_3.ini
+data/aircraft/configs/n112op/config_5.ini
+data/aircraft/configs/n234ij/
+data/aircraft/configs/n234ij/config_1.ini
+data/aircraft/configs/n234ij/config_4.ini
+data/aircraft/configs/n234ij/config_2.ini
+data/aircraft/configs/n234ij/config_3.ini
+data/aircraft/configs/n234ij/config_5.ini
+data/aircraft/logs/
+data/aircraft/logs/gps_summary.txt
+data/aircraft/logs/n223wx_telemetry.log
+data/aircraft/logs/n112op_telemetry.log
+data/aircraft/logs/n123ab_telemetry.log
+data/aircraft/logs/n789ef_telemetry.log
+data/aircraft/logs/n567kl_telemetry.log
+data/aircraft/logs/battery_summary.txt
+data/aircraft/logs/n678st_telemetry.log
+data/aircraft/logs/n456cd_telemetry.log
+data/aircraft/logs/n101gh_telemetry.log
+data/aircraft/logs/n890mn_telemetry.log
+data/aircraft/logs/n234ij_telemetry.log
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ tar -cvf backup.tgz data/[1P[1@t
+drwxrwxrwx codespace/codespace 0 2024-08-12 01:37 data/
+drwxrwxrwx codespace/codespace 0 2024-08-12 01:43 data/aircraft/
+-rw-rw-rw- codespace/codespace 10561 2024-07-30 14:36 data/aircraft/final_logs.tgz
+drwxr-xr-x codespace/codespace     0 2024-07-05 17:51 data/aircraft/configs/
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n567kl/
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n567kl/config_1.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n567kl/config_4.ini
+-rw-r--r-- codespace/codespace   799 2024-07-05 16:24 data/aircraft/configs/n567kl/config_2.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n567kl/config_3.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n567kl/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n223wx/
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n223wx/config_1.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n223wx/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:26 data/aircraft/configs/n223wx/config_2.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n223wx/config_3.ini
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n223wx/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n678st/
+-rw-r--r-- codespace/codespace   809 2024-07-05 16:24 data/aircraft/configs/n678st/config_1.ini
+-rw-r--r-- codespace/codespace   819 2024-07-05 16:24 data/aircraft/configs/n678st/config_4.ini
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n678st/config_2.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n678st/config_3.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n678st/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n101gh/
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n101gh/config_1.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n101gh/config_4.ini
+-rw-r--r-- codespace/codespace   793 2024-07-05 16:24 data/aircraft/configs/n101gh/config_2.ini
+-rw-r--r-- codespace/codespace   801 2024-07-05 16:24 data/aircraft/configs/n101gh/config_3.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n101gh/config_5.ini
+-rw-r--r-- codespace/codespace   572 2024-07-05 14:43 data/aircraft/configs/n101gh/config_1a.ini
+drwxr-xr-x codespace/codespace     0 2024-07-05 17:54 data/aircraft/configs/n456cd/
+-rw-r--r-- codespace/codespace   802 2024-07-05 16:24 data/aircraft/configs/n456cd/config_1.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n456cd/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n456cd/config_2.ini
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n456cd/config_3.ini
+-rw-r--r-- codespace/codespace   811 2024-07-05 16:24 data/aircraft/configs/n456cd/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n789ef/
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n789ef/config_1.ini
+-rw-r--r-- codespace/codespace   800 2024-07-05 16:24 data/aircraft/configs/n789ef/config_4.ini
+-rw-r--r-- codespace/codespace   802 2024-07-05 16:24 data/aircraft/configs/n789ef/config_2.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n789ef/config_3.ini
+-rw-r--r-- codespace/codespace   817 2024-07-05 16:24 data/aircraft/configs/n789ef/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n890mn/
+-rw-r--r-- codespace/codespace   498 2024-07-05 16:24 data/aircraft/configs/n890mn/config_1.ini
+-rw-r--r-- codespace/codespace   811 2024-07-05 16:24 data/aircraft/configs/n890mn/config_4.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n890mn/config_2.ini
+-rw-r--r-- codespace/codespace   803 2024-07-05 16:24 data/aircraft/configs/n890mn/config_3.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n890mn/config_5.ini
+-rw-r--r-- codespace/codespace   287 2024-07-05 17:51 data/aircraft/configs/tailnumbers.txt
+drwxr-xr-x codespace/codespace     0 2024-08-12 01:41 data/aircraft/configs/n123ab/
+-rw-r--r-- codespace/codespace   809 2024-08-12 01:39 data/aircraft/configs/n123ab/config_1.ini
+-rw-r--r-- codespace/codespace   806 2024-08-12 01:41 data/aircraft/configs/n123ab/config_4.ini
+-rw-r--r-- codespace/codespace   803 2024-08-12 01:40 data/aircraft/configs/n123ab/config_2.ini
+-rw-r--r-- codespace/codespace   809 2024-08-12 01:40 data/aircraft/configs/n123ab/config_3.ini
+-rw-r--r-- codespace/codespace   808 2024-08-12 01:41 data/aircraft/configs/n123ab/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n112op/
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n112op/config_1.ini
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n112op/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n112op/config_2.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n112op/config_3.ini
+-rw-r--r-- codespace/codespace   815 2024-07-05 16:24 data/aircraft/configs/n112op/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n234ij/
+-rw-r--r-- codespace/codespace   799 2024-07-05 16:24 data/aircraft/configs/n234ij/config_1.ini
+-rw-r--r-- codespace/codespace   798 2024-07-05 16:24 data/aircraft/configs/n234ij/config_4.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n234ij/config_2.ini
+-rw-r--r-- codespace/codespace   805 2024-07-05 16:24 data/aircraft/configs/n234ij/config_3.ini
+-rw-r--r-- codespace/codespace   809 2024-07-05 16:24 data/aircraft/configs/n234ij/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-08-12 01:46 data/aircraft/logs/
+-rw-rw-rw- codespace/codespace 31150 2024-08-12 01:45 data/aircraft/logs/gps_summary.txt
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n223wx_telemetry.log
+-rw-r--r-- codespace/codespace  9800 2024-07-29 22:57 data/aircraft/logs/n112op_telemetry.log
+-rw-r--r-- codespace/codespace  9742 2024-07-29 22:57 data/aircraft/logs/n123ab_telemetry.log
+-rw-r--r-- codespace/codespace  9803 2024-07-29 22:57 data/aircraft/logs/n789ef_telemetry.log
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n567kl_telemetry.log
+-rw-rw-rw- codespace/codespace 19550 2024-08-12 01:46 data/aircraft/logs/battery_summary.txt
+-rw-r--r-- codespace/codespace  9803 2024-07-29 22:57 data/aircraft/logs/n678st_telemetry.log
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n456cd_telemetry.log
+-rw-r--r-- codespace/codespace  9830 2024-07-29 22:57 data/aircraft/logs/n101gh_telemetry.log
+-rw-r--r-- codespace/codespace  9828 2024-07-29 22:57 data/aircraft/logs/n890mn_telemetry.log
+-rw-r--r-- codespace/codespace  9829 2024-07-29 22:57 data/aircraft/logs/n234ij_telemetry.log
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ nano backup.sh
+[?2004h[?1049h[22;0;0t[1;54r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[52;104H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                                                                             backup.sh                                                                                                       [1;218H(B[m[53d(B[0;7m^G(B[m Get Help[19G(B[0;7m^O(B[m Write Out[37G(B[0;7m^W(B[m Where Is[55G(B[0;7m^K(B[m Cut Text[73G(B[0;7m^J(B[m Justify[53;91H(B[0;7m^C(B[m Cur Pos[53;109H(B[0;7mM-U(B[m Undo[53;127H(B[0;7mM-A(B[m Mark Text     (B[0;7mM-](B[m To Bracket    (B[0;7mM-Q(B[m Previous[181G(B[0;7m^B(B[m Back[53;199H(B[0;7m^◀(B[m Prev Word[54d(B[0;7m^X(B[m Exit[54;19H(B[0;7m^R(B[m Read File[37G(B[0;7m^\(B[m Replace[54;55H(B[0;7m^U(B[m Paste Text     (B[0;7m^T(B[m To Spell[91G(B[0;7m^_(B[m Go To Line     (B[0;7mM-E(B[m Redo[54;127H(B[0;7mM-6(B[m Copy Text     (B[0;7m^Q(B[m Where Was[163G(B[0;7mM-W(B[m Next[54;181H(B[0;7m^F(B[m Forward[54;199H(B[0;7m^▶(B[m Next Word[52d[2d[39;49m(B[m[?12l[?25h[?25l[1;210H(B[0;7mModified(B[m[2de[?12l[?25h[?25l[K[?12l[?25h[?25l[36m#[39m(B[m[?12l[?25h[?25l[36m![39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l[36m /[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36mi[39m(B[m[?12l[?25h[?25l[36mn[39m(B[m[?12l[?25h[?25l[36m/[39m(B[m[?12l[?25h[?25l[36mb[39m(B[m[?12l[?25h[?25l[36ma[39m(B[m[?12l[?25h[?25l[36mc[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[36ms[39m(B[m[?12l[?25h[?25l[36mh[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25lb[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l+[?12l[?25h[?25l [52d[K[4;7H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25lb[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l+[?12l[?25h[?25l [?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l'[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l[8G(B[0;1m[33m"/data"[39m(B[m[?12l[?25h[?25l[5d[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l"[?12l[?25h[?25l/[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l/[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lf[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l/[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mtar[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -c[39m(B[m[?12l[?25h[?25l -cv[?12l[?25h[?25lf[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$f[39m(B[m[?12l[?25h[?25l(B[0;1m[31mi[39m(B[m[?12l[?25h[?25l(B[0;1m[31ml[39m(B[m[?12l[?25h[?25l(B[0;1m[31me[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$d[39m(B[m[?12l[?25h[?25l(B[0;1m[31mi[39m(B[m[?12l[?25h[?25l(B[0;1m[31mr[39m(B[m[?12l[?25h[?25l(B[0;1m[31me[39m(B[m[?12l[?25h[?25l(B[0;1m[31mc[39m(B[m[?12l[?25h[?25l(B[0;1m[31mt[39m(B[m[?12l[?25h[?25l(B[0;1m[31mo[39m(B[m[?12l[?25h[?25l(B[0;1m[31mr[39m(B[m[?12l[?25h[?25l(B[0;1m[31my[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[5;20H[?12l[?25h[?25l[4;15H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[C[?12l[?25h[?25l[?12l[?25h[?25l[5d[?12l[?25h[?25l"[?12l[?25h[?25l/[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l/[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[5;52r[52;1H
+[1;54r[4;15H[?12l[?25h[?25l[8G"/data[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25lf[?12l[?25h[?25l[32mfi[39m(B[m[?12l[?25h[?25lfil[?12l[?25h[?25le[?12l[?25h[?25l+[?12l[?25h[?25l [?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lb[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l.[?12l[?25h[?25lt[?12l[?25h[?25lg[?12l[?25h[?25lx[?12l[?25h[?25l [?12l[?25h[?25lz[?12l[?25h[?25l[7G(B[0;1m[33m"backup.tgz"[39m(B[m[?12l[?25h[?25l7[5;52r8[5dM[1;54r[5;1H[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[32m=[39m(B[m[?12l[?25h[?25l"[?12l[?25h[?25l[A[?12l[?25h[?25l[1P[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[A[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l[C[?12l[?25h[?25l"[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l/[?12l[?25h[?25l[5G(B[0;1m[33m"data/"[39m(B[m[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25lc[?12l[?25h[?25lv[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[8d[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l(B[0;1m[34mtar[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l -[?12l[?25h[?25l(B[0;1m[35m -t[39m(B[m[?12l[?25h[?25l -tv[?12l[?25h[?25lf[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l [32m$[39m(B[m[?12l[?25h[?25l(B[0;1m[31m$f[39m(B[m[?12l[?25h[?25l(B[0;1m[31mi[39m(B[m[?12l[?25h[?25l(B[0;1m[31ml[39m(B[m[?12l[?25h[?25l(B[0;1m[31me[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[A[?12l[?25h[?25l7[6;52r8M[1;54r[7;1H[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l W[?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25lW[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l B[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l[6G(B[0;1m[33m"Writting Backup"[39m(B[m[?12l[?25h[?25l[8;20H[?12l[?25h[?25l7[9;52r8[9dM[1;54r[9;1H[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l B[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25lB[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l C[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25l[32m:[39m(B[m[?12l[?25h[?25l [?12l[?25h[?25l[6G(B[0;1m[33m"Backup Complete"[39m(B[m[?12l[?25h[?25l7[10;52r8[10dM[1;54r[10;1H[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l "[?12l[?25h[?25lB[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lk[?12l[?25h[?25lu[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l V[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l[6G(B[0;1m[33m"Backup Verification"[39m(B[m[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l(B[0;1m[33mDBackup Verification"[8G[39m(B[m[?12l[?25h[?25l(B[0;1m[33miBackup Verification"[10;9H[39m(B[m[?12l[?25h[?25l(B[0;1m[33msBackup Verification"[10;10H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mpBackup Verification"[10;11H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mlBackup Verification"[10;12H[39m(B[m[?12l[?25h[?25l(B[0;1m[33maBackup Verification"[10;13H[39m(B[m[?12l[?25h[?25l(B[0;1m[33myBackup Verification"[10;14H[39m(B[m[?12l[?25h[?25l(B[0;1m[33miBackup Verification"[10;15H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mnBackup Verification"[10;16H[39m(B[m[?12l[?25h[?25l(B[0;1m[33mgBackup Verification"[10;17H[39m(B[m[?12l[?25h[?25l(B[0;1m[33m Backup Verification"[10;18H[39m(B[m[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l7[8;52r8[8dM[1;54r[8;1H[?12l[?25h[?25ls[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 2[?12l[?25h[?25ls[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l[9d[?12l[?25h[?25l[A[?12l[?25h[?25l[9d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25lc[?12l[?25h[?25lv[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[10d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[11d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l7[12;52r8[12dM[1;54r[12;1H[?12l[?25h[?25ls[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l 2[?12l[?25h[?25ls[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[14d[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25l(B[0;1m[34mecho[39m(B[m[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l V[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lf[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l "[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lf[?12l[?25h[?25ly[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l F[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l[42m [49m(B[m[?12l[?25h[?25l C[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l[6G(B[0;1m[33m"Verify File Contents"[39m(B[m[?12l[?25h[?25l[52d(B[0;7mSave modified buffer?                                                                                                                                                                                                      [53;1H Y(B[m Yes[K[54d(B[0;7m N(B[m No  [54;17H(B[0;7m^C(B[m Cancel[K[52;23H[?12l[?25h[?25l[53d(B[0;7m^G(B[m Get Help[53;55H(B[0;7mM-D(B[m DOS Format[53;109H(B[0;7mM-A(B[m Append[53;163H(B[0;7mM-B(B[m Backup File[54d(B[0;7m^C(B[m Cancel[17G         [54;55H(B[0;7mM-M(B[m Mac Format[54;109H(B[0;7mM-P(B[m Prepend[54;163H(B[0;7m^T(B[m To Files[52d(B[0;7mFile Name to Write: backup.sh(B[m[52;30H[?12l[?25h[?25l[52;102H[1K (B[0;7m[ Writing... ](B[m[K[1;210H(B[0;7m        (B[m[52;101H(B[0;7m[ Wrote 13 lines ](B[m[J[54d[?12l[?25h[54;1H[?1049l[23;0;0t[?1l>[?2004l[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ ls -l
+total 428
+-rw-rw-rw-  1 codespace codespace    210 Aug 12 02:00 backup.sh
+-rw-rw-rw-  1 codespace codespace 266240 Aug 12 01:48 [0m[01;31mbackup.tgz[0m
+drwxrwxrwx+ 3 codespace codespace   4096 Aug 12 01:37 [34;42mdata[0m
+-rw-rw-rw-  1 codespace codespace  12435 Jul 30 14:18 [01;31mfinal_configs.tgz[0m
+-rw-rw-rw-  1 codespace codespace 143360 Aug 12 01:58 final_typescript
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ chmod 777 backup.sh 
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ ls -l
+total 428
+-rwxrwxrwx  1 codespace codespace    210 Aug 12 02:00 [0m[01;32mbackup.sh[0m
+-rw-rw-rw-  1 codespace codespace 266240 Aug 12 01:48 [01;31mbackup.tgz[0m
+drwxrwxrwx+ 3 codespace codespace   4096 Aug 12 01:37 [34;42mdata[0m
+-rw-rw-rw-  1 codespace codespace  12435 Jul 30 14:18 [01;31mfinal_configs.tgz[0m
+-rw-rw-rw-  1 codespace codespace 143360 Aug 12 01:58 final_typescript
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ bas[K[K[Kbash backup.sh 
+Writting Backup
+data/
+data/aircraft/
+data/aircraft/final_logs.tgz
+data/aircraft/configs/
+data/aircraft/configs/n567kl/
+data/aircraft/configs/n567kl/config_1.ini
+data/aircraft/configs/n567kl/config_4.ini
+data/aircraft/configs/n567kl/config_2.ini
+data/aircraft/configs/n567kl/config_3.ini
+data/aircraft/configs/n567kl/config_5.ini
+data/aircraft/configs/n223wx/
+data/aircraft/configs/n223wx/config_1.ini
+data/aircraft/configs/n223wx/config_4.ini
+data/aircraft/configs/n223wx/config_2.ini
+data/aircraft/configs/n223wx/config_3.ini
+data/aircraft/configs/n223wx/config_5.ini
+data/aircraft/configs/n678st/
+data/aircraft/configs/n678st/config_1.ini
+data/aircraft/configs/n678st/config_4.ini
+data/aircraft/configs/n678st/config_2.ini
+data/aircraft/configs/n678st/config_3.ini
+data/aircraft/configs/n678st/config_5.ini
+data/aircraft/configs/n101gh/
+data/aircraft/configs/n101gh/config_1.ini
+data/aircraft/configs/n101gh/config_4.ini
+data/aircraft/configs/n101gh/config_2.ini
+data/aircraft/configs/n101gh/config_3.ini
+data/aircraft/configs/n101gh/config_5.ini
+data/aircraft/configs/n101gh/config_1a.ini
+data/aircraft/configs/n456cd/
+data/aircraft/configs/n456cd/config_1.ini
+data/aircraft/configs/n456cd/config_4.ini
+data/aircraft/configs/n456cd/config_2.ini
+data/aircraft/configs/n456cd/config_3.ini
+data/aircraft/configs/n456cd/config_5.ini
+data/aircraft/configs/n789ef/
+data/aircraft/configs/n789ef/config_1.ini
+data/aircraft/configs/n789ef/config_4.ini
+data/aircraft/configs/n789ef/config_2.ini
+data/aircraft/configs/n789ef/config_3.ini
+data/aircraft/configs/n789ef/config_5.ini
+data/aircraft/configs/n890mn/
+data/aircraft/configs/n890mn/config_1.ini
+data/aircraft/configs/n890mn/config_4.ini
+data/aircraft/configs/n890mn/config_2.ini
+data/aircraft/configs/n890mn/config_3.ini
+data/aircraft/configs/n890mn/config_5.ini
+data/aircraft/configs/tailnumbers.txt
+data/aircraft/configs/n123ab/
+data/aircraft/configs/n123ab/config_1.ini
+data/aircraft/configs/n123ab/config_4.ini
+data/aircraft/configs/n123ab/config_2.ini
+data/aircraft/configs/n123ab/config_3.ini
+data/aircraft/configs/n123ab/config_5.ini
+data/aircraft/configs/n112op/
+data/aircraft/configs/n112op/config_1.ini
+data/aircraft/configs/n112op/config_4.ini
+data/aircraft/configs/n112op/config_2.ini
+data/aircraft/configs/n112op/config_3.ini
+data/aircraft/configs/n112op/config_5.ini
+data/aircraft/configs/n234ij/
+data/aircraft/configs/n234ij/config_1.ini
+data/aircraft/configs/n234ij/config_4.ini
+data/aircraft/configs/n234ij/config_2.ini
+data/aircraft/configs/n234ij/config_3.ini
+data/aircraft/configs/n234ij/config_5.ini
+data/aircraft/logs/
+data/aircraft/logs/gps_summary.txt
+data/aircraft/logs/n223wx_telemetry.log
+data/aircraft/logs/n112op_telemetry.log
+data/aircraft/logs/n123ab_telemetry.log
+data/aircraft/logs/n789ef_telemetry.log
+data/aircraft/logs/n567kl_telemetry.log
+data/aircraft/logs/battery_summary.txt
+data/aircraft/logs/n678st_telemetry.log
+data/aircraft/logs/n456cd_telemetry.log
+data/aircraft/logs/n101gh_telemetry.log
+data/aircraft/logs/n890mn_telemetry.log
+data/aircraft/logs/n234ij_telemetry.log
+Backup Complete
+Displaying Backup Verification
+drwxrwxrwx codespace/codespace 0 2024-08-12 01:37 data/
+drwxrwxrwx codespace/codespace 0 2024-08-12 01:43 data/aircraft/
+-rw-rw-rw- codespace/codespace 10561 2024-07-30 14:36 data/aircraft/final_logs.tgz
+drwxr-xr-x codespace/codespace     0 2024-07-05 17:51 data/aircraft/configs/
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n567kl/
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n567kl/config_1.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n567kl/config_4.ini
+-rw-r--r-- codespace/codespace   799 2024-07-05 16:24 data/aircraft/configs/n567kl/config_2.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n567kl/config_3.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n567kl/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n223wx/
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n223wx/config_1.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n223wx/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:26 data/aircraft/configs/n223wx/config_2.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n223wx/config_3.ini
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n223wx/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n678st/
+-rw-r--r-- codespace/codespace   809 2024-07-05 16:24 data/aircraft/configs/n678st/config_1.ini
+-rw-r--r-- codespace/codespace   819 2024-07-05 16:24 data/aircraft/configs/n678st/config_4.ini
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n678st/config_2.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n678st/config_3.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n678st/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n101gh/
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n101gh/config_1.ini
+-rw-r--r-- codespace/codespace   816 2024-07-05 16:24 data/aircraft/configs/n101gh/config_4.ini
+-rw-r--r-- codespace/codespace   793 2024-07-05 16:24 data/aircraft/configs/n101gh/config_2.ini
+-rw-r--r-- codespace/codespace   801 2024-07-05 16:24 data/aircraft/configs/n101gh/config_3.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n101gh/config_5.ini
+-rw-r--r-- codespace/codespace   572 2024-07-05 14:43 data/aircraft/configs/n101gh/config_1a.ini
+drwxr-xr-x codespace/codespace     0 2024-07-05 17:54 data/aircraft/configs/n456cd/
+-rw-r--r-- codespace/codespace   802 2024-07-05 16:24 data/aircraft/configs/n456cd/config_1.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n456cd/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n456cd/config_2.ini
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n456cd/config_3.ini
+-rw-r--r-- codespace/codespace   811 2024-07-05 16:24 data/aircraft/configs/n456cd/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n789ef/
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n789ef/config_1.ini
+-rw-r--r-- codespace/codespace   800 2024-07-05 16:24 data/aircraft/configs/n789ef/config_4.ini
+-rw-r--r-- codespace/codespace   802 2024-07-05 16:24 data/aircraft/configs/n789ef/config_2.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n789ef/config_3.ini
+-rw-r--r-- codespace/codespace   817 2024-07-05 16:24 data/aircraft/configs/n789ef/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n890mn/
+-rw-r--r-- codespace/codespace   498 2024-07-05 16:24 data/aircraft/configs/n890mn/config_1.ini
+-rw-r--r-- codespace/codespace   811 2024-07-05 16:24 data/aircraft/configs/n890mn/config_4.ini
+-rw-r--r-- codespace/codespace   808 2024-07-05 16:24 data/aircraft/configs/n890mn/config_2.ini
+-rw-r--r-- codespace/codespace   803 2024-07-05 16:24 data/aircraft/configs/n890mn/config_3.ini
+-rw-r--r-- codespace/codespace   807 2024-07-05 16:24 data/aircraft/configs/n890mn/config_5.ini
+-rw-r--r-- codespace/codespace   287 2024-07-05 17:51 data/aircraft/configs/tailnumbers.txt
+drwxr-xr-x codespace/codespace     0 2024-08-12 01:41 data/aircraft/configs/n123ab/
+-rw-r--r-- codespace/codespace   809 2024-08-12 01:39 data/aircraft/configs/n123ab/config_1.ini
+-rw-r--r-- codespace/codespace   806 2024-08-12 01:41 data/aircraft/configs/n123ab/config_4.ini
+-rw-r--r-- codespace/codespace   803 2024-08-12 01:40 data/aircraft/configs/n123ab/config_2.ini
+-rw-r--r-- codespace/codespace   809 2024-08-12 01:40 data/aircraft/configs/n123ab/config_3.ini
+-rw-r--r-- codespace/codespace   808 2024-08-12 01:41 data/aircraft/configs/n123ab/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n112op/
+-rw-r--r-- codespace/codespace   814 2024-07-05 16:24 data/aircraft/configs/n112op/config_1.ini
+-rw-r--r-- codespace/codespace   813 2024-07-05 16:24 data/aircraft/configs/n112op/config_4.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n112op/config_2.ini
+-rw-r--r-- codespace/codespace   806 2024-07-05 16:24 data/aircraft/configs/n112op/config_3.ini
+-rw-r--r-- codespace/codespace   815 2024-07-05 16:24 data/aircraft/configs/n112op/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-07-17 16:58 data/aircraft/configs/n234ij/
+-rw-r--r-- codespace/codespace   799 2024-07-05 16:24 data/aircraft/configs/n234ij/config_1.ini
+-rw-r--r-- codespace/codespace   798 2024-07-05 16:24 data/aircraft/configs/n234ij/config_4.ini
+-rw-r--r-- codespace/codespace   810 2024-07-05 16:24 data/aircraft/configs/n234ij/config_2.ini
+-rw-r--r-- codespace/codespace   805 2024-07-05 16:24 data/aircraft/configs/n234ij/config_3.ini
+-rw-r--r-- codespace/codespace   809 2024-07-05 16:24 data/aircraft/configs/n234ij/config_5.ini
+drwxr-xr-x codespace/codespace     0 2024-08-12 01:46 data/aircraft/logs/
+-rw-rw-rw- codespace/codespace 31150 2024-08-12 01:45 data/aircraft/logs/gps_summary.txt
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n223wx_telemetry.log
+-rw-r--r-- codespace/codespace  9800 2024-07-29 22:57 data/aircraft/logs/n112op_telemetry.log
+-rw-r--r-- codespace/codespace  9742 2024-07-29 22:57 data/aircraft/logs/n123ab_telemetry.log
+-rw-r--r-- codespace/codespace  9803 2024-07-29 22:57 data/aircraft/logs/n789ef_telemetry.log
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n567kl_telemetry.log
+-rw-rw-rw- codespace/codespace 19550 2024-08-12 01:46 data/aircraft/logs/battery_summary.txt
+-rw-r--r-- codespace/codespace  9803 2024-07-29 22:57 data/aircraft/logs/n678st_telemetry.log
+-rw-r--r-- codespace/codespace  9801 2024-07-29 22:57 data/aircraft/logs/n456cd_telemetry.log
+-rw-r--r-- codespace/codespace  9830 2024-07-29 22:57 data/aircraft/logs/n101gh_telemetry.log
+-rw-r--r-- codespace/codespace  9828 2024-07-29 22:57 data/aircraft/logs/n890mn_telemetry.log
+-rw-r--r-- codespace/codespace  9829 2024-07-29 22:57 data/aircraft/logs/n234ij_telemetry.log
+Verify File Contents
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ mkdir backups
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ mv backup.tgz backups/
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ ls backups/
+[0m[01;31mbackup.tgz[0m
+[0;32m@K-sip [0m➜ [1;34m/workspaces/cis190-codespace/labs/final [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2024-08-12 02:04:30+00:00 [COMMAND_EXIT_CODE="0"]

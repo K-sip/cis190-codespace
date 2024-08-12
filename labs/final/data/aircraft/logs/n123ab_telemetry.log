@@ -1,0 +1,208 @@
+[2024-06-26 14:32:10] INFO: Drone flight initiated. Tail Number: n123ab
+[2024-06-26 14:33:10] GPS: Latitude: 34.0524, Longitude: -118.2434
+[2024-06-26 14:33:10] ALT: 41 meters
+[2024-06-26 14:33:10] SPD: 2 m/s
+[2024-06-26 14:33:10] BAT: 99.2 %
+[2024-06-26 14:33:10] SYS: All systems nominal.
+[2024-06-26 14:33:10] DEBUG: SENSOR: radar VAL:21.11.
+[2024-06-26 14:34:10] GPS: Latitude: 34.0528, Longitude: -118.2430
+[2024-06-26 14:34:10] ALT: 82 meters
+[2024-06-26 14:34:10] SPD: 7 m/s
+[2024-06-26 14:34:10] BAT: 98.4 %
+[2024-06-26 14:34:10] SYS: All systems nominal.
+[2024-06-26 14:34:10] DEBUG: SENSOR: radar VAL:21.47.
+[2024-06-26 14:35:10] GPS: Latitude: 34.0532, Longitude: -118.2426
+[2024-06-26 14:35:10] ALT: 127 meters
+[2024-06-26 14:35:10] SPD: 12 m/s
+[2024-06-26 14:35:10] BAT: 97.6 %
+[2024-06-26 14:35:10] SYS: All systems nominal.
+[2024-06-26 14:35:10] DEBUG: SENSOR: radar VAL:24.81.
+[2024-06-26 14:36:10] GPS: Latitude: 34.0536, Longitude: -118.2425
+[2024-06-26 14:36:10] ALT: 176 meters
+[2024-06-26 14:36:10] SPD: 17 m/s
+[2024-06-26 14:36:10] BAT: 96.7 %
+[2024-06-26 14:36:10] SYS: All systems nominal.
+[2024-06-26 14:36:10] DEBUG: SENSOR: radar VAL:63.97.
+[2024-06-26 14:37:10] GPS: Latitude: 34.0538, Longitude: -118.2421
+[2024-06-26 14:37:10] ALT: 223 meters
+[2024-06-26 14:37:10] SPD: 18 m/s
+[2024-06-26 14:37:10] BAT: 96.0 %
+[2024-06-26 14:37:10] SYS: All systems nominal.
+[2024-06-26 14:37:10] DEBUG: SENSOR: radar VAL:27.76.
+[2024-06-26 14:38:10] GPS: Latitude: 34.0541, Longitude: -118.2416
+[2024-06-26 14:38:10] ALT: 235 meters
+[2024-06-26 14:38:10] SPD: 19 m/s
+[2024-06-26 14:38:10] BAT: 95.3 %
+[2024-06-26 14:38:10] SYS: All systems nominal.
+[2024-06-26 14:38:10] DEBUG: SENSOR: radar VAL:73.17.
+[2024-06-26 14:39:10] GPS: Latitude: 34.0543, Longitude: -118.2414
+[2024-06-26 14:39:10] ALT: 271 meters
+[2024-06-26 14:39:10] SPD: 20 m/s
+[2024-06-26 14:39:10] BAT: 94.6 %
+[2024-06-26 14:39:10] SYS: All systems nominal.
+[2024-06-26 14:39:10] DEBUG: SENSOR: radar VAL:67.84.
+[2024-06-26 14:40:10] GPS: Latitude: 34.0547, Longitude: -118.2410
+[2024-06-26 14:40:10] ALT: 286 meters
+[2024-06-26 14:40:10] SPD: 22 m/s
+[2024-06-26 14:40:10] BAT: 93.9 %
+[2024-06-26 14:40:10] SYS: All systems nominal.
+[2024-06-26 14:40:10] DEBUG: SENSOR: radar VAL:6.39.
+[2024-06-26 14:41:10] GPS: Latitude: 34.0550, Longitude: -118.2407
+[2024-06-26 14:41:10] ALT: 300 meters
+[2024-06-26 14:41:10] SPD: 27 m/s
+[2024-06-26 14:41:10] BAT: 93.0 %
+[2024-06-26 14:41:10] SYS: All systems nominal.
+[2024-06-26 14:41:10] DEBUG: SENSOR: radar VAL:56.58.
+[2024-06-26 14:42:10] GPS: Latitude: 34.0554, Longitude: -118.2405
+[2024-06-26 14:42:10] ALT: 310 meters
+[2024-06-26 14:42:10] SPD: 31 m/s
+[2024-06-26 14:42:10] BAT: 92.4 %
+[2024-06-26 14:42:10] SYS: All systems nominal.
+[2024-06-26 14:42:10] DEBUG: SENSOR: radar VAL:74.94.
+[2024-06-26 14:43:10] GPS: Latitude: 34.0555, Longitude: -118.2400
+[2024-06-26 14:43:10] ALT: 336 meters
+[2024-06-26 14:43:10] SPD: 36 m/s
+[2024-06-26 14:43:10] BAT: 91.7 %
+[2024-06-26 14:43:10] SYS: All systems nominal.
+[2024-06-26 14:43:10] DEBUG: SENSOR: radar VAL:50.86.
+[2024-06-26 14:44:10] GPS: Latitude: 34.0558, Longitude: -118.2399
+[2024-06-26 14:44:10] ALT: 385 meters
+[2024-06-26 14:44:10] SPD: 38 m/s
+[2024-06-26 14:44:10] BAT: 91.0 %
+[2024-06-26 14:44:10] SYS: All systems nominal.
+[2024-06-26 14:44:10] DEBUG: SENSOR: radar VAL:7.25.
+[2024-06-26 14:45:10] GPS: Latitude: 34.0559, Longitude: -118.2395
+[2024-06-26 14:45:10] ALT: 421 meters
+[2024-06-26 14:45:10] SPD: 40 m/s
+[2024-06-26 14:45:10] BAT: 90.0 %
+[2024-06-26 14:45:10] SYS: All systems nominal.
+[2024-06-26 14:45:10] DEBUG: SENSOR: radar VAL:93.50.
+[2024-06-26 14:46:10] GPS: Latitude: 34.0563, Longitude: -118.2391
+[2024-06-26 14:46:10] ALT: 455 meters
+[2024-06-26 14:46:10] SPD: 41 m/s
+[2024-06-26 14:46:10] BAT: 89.3 %
+[2024-06-26 14:46:10] SYS: All systems nominal.
+[2024-06-26 14:46:10] DEBUG: SENSOR: radar VAL:45.30.
+[2024-06-26 14:47:10] GPS: Latitude: 34.0564, Longitude: -118.2390
+[2024-06-26 14:47:10] ALT: 495 meters
+[2024-06-26 14:47:10] SPD: 44 m/s
+[2024-06-26 14:47:10] BAT: 88.7 %
+[2024-06-26 14:47:10] SYS: All systems nominal.
+[2024-06-26 14:47:10] DEBUG: SENSOR: radar VAL:25.38.
+[2024-06-26 14:48:10] GPS: Latitude: 34.0568, Longitude: -118.2389
+[2024-06-26 14:48:10] ALT: 544 meters
+[2024-06-26 14:48:10] SPD: 49 m/s
+[2024-06-26 14:48:10] BAT: 87.9 %
+[2024-06-26 14:48:10] SYS: All systems nominal.
+[2024-06-26 14:48:10] DEBUG: SENSOR: radar VAL:65.85.
+[2024-06-26 14:49:10] GPS: Latitude: 34.0570, Longitude: -118.2387
+[2024-06-26 14:49:10] ALT: 590 meters
+[2024-06-26 14:49:10] SPD: 53 m/s
+[2024-06-26 14:49:10] BAT: 87.2 %
+[2024-06-26 14:49:10] SYS: All systems nominal.
+[2024-06-26 14:49:10] DEBUG: SENSOR: radar VAL:30.76.
+[2024-06-26 14:50:10] GPS: Latitude: 34.0575, Longitude: -118.2383
+[2024-06-26 14:50:10] ALT: 637 meters
+[2024-06-26 14:50:10] SPD: 58 m/s
+[2024-06-26 14:50:10] BAT: 86.3 %
+[2024-06-26 14:50:10] SYS: All systems nominal.
+[2024-06-26 14:50:10] DEBUG: SENSOR: radar VAL:41.35.
+[2024-06-26 14:51:10] GPS: Latitude: 34.0577, Longitude: -118.2378
+[2024-06-26 14:51:10] ALT: 678 meters
+[2024-06-26 14:51:10] SPD: 61 m/s
+[2024-06-26 14:51:10] BAT: 85.3 %
+[2024-06-26 14:51:10] SYS: All systems nominal.
+[2024-06-26 14:51:10] DEBUG: SENSOR: radar VAL:39.45.
+[2024-06-26 14:52:10] GPS: Latitude: 34.0581, Longitude: -118.2377
+[2024-06-26 14:52:10] ALT: 716 meters
+[2024-06-26 14:52:10] SPD: 64 m/s
+[2024-06-26 14:52:10] BAT: 84.7 %
+[2024-06-26 14:52:10] SYS: All systems nominal.
+[2024-06-26 14:52:10] DEBUG: SENSOR: radar VAL:21.40.
+[2024-06-26 14:53:10] GPS: Latitude: 34.0584, Longitude: -118.2375
+[2024-06-26 14:53:10] ALT: 728 meters
+[2024-06-26 14:53:10] SPD: 67 m/s
+[2024-06-26 14:53:10] BAT: 84.0 %
+[2024-06-26 14:53:10] SYS: All systems nominal.
+[2024-06-26 14:53:10] DEBUG: SENSOR: radar VAL:43.34.
+[2024-06-26 14:54:10] GPS: Latitude: 34.0588, Longitude: -118.2371
+[2024-06-26 14:54:10] ALT: 767 meters
+[2024-06-26 14:54:10] SPD: 69 m/s
+[2024-06-26 14:54:10] BAT: 83.0 %
+[2024-06-26 14:54:10] SYS: All systems nominal.
+[2024-06-26 14:54:10] DEBUG: SENSOR: radar VAL:53.94.
+[2024-06-26 14:55:10] GPS: Latitude: 34.0592, Longitude: -118.2368
+[2024-06-26 14:55:10] ALT: 798 meters
+[2024-06-26 14:55:10] SPD: 72 m/s
+[2024-06-26 14:55:10] BAT: 82.3 %
+[2024-06-26 14:55:10] SYS: All systems nominal.
+[2024-06-26 14:55:10] DEBUG: SENSOR: radar VAL:71.97.
+[2024-06-26 14:56:10] GPS: Latitude: 34.0597, Longitude: -118.2364
+[2024-06-26 14:56:10] ALT: 824 meters
+[2024-06-26 14:56:10] SPD: 75 m/s
+[2024-06-26 14:56:10] BAT: 81.5 %
+[2024-06-26 14:56:10] SYS: All systems nominal.
+[2024-06-26 14:56:10] DEBUG: SENSOR: radar VAL:11.95.
+[2024-06-26 14:57:10] GPS: Latitude: 34.0600, Longitude: -118.2360
+[2024-06-26 14:57:10] ALT: 867 meters
+[2024-06-26 14:57:10] SPD: 76 m/s
+[2024-06-26 14:57:10] BAT: 80.7 %
+[2024-06-26 14:57:10] SYS: All systems nominal.
+[2024-06-26 14:57:10] DEBUG: SENSOR: radar VAL:83.42.
+[2024-06-26 14:58:10] GPS: Latitude: 34.0601, Longitude: -118.2356
+[2024-06-26 14:58:10] ALT: 877 meters
+[2024-06-26 14:58:10] SPD: 81 m/s
+[2024-06-26 14:58:10] BAT: 79.9 %
+[2024-06-26 14:58:10] SYS: All systems nominal.
+[2024-06-26 14:58:10] DEBUG: SENSOR: radar VAL:36.56.
+[2024-06-26 14:59:10] GPS: Latitude: 34.0605, Longitude: -118.2354
+[2024-06-26 14:59:10] ALT: 918 meters
+[2024-06-26 14:59:10] SPD: 86 m/s
+[2024-06-26 14:59:10] BAT: 79.4 %
+[2024-06-26 14:59:10] SYS: All systems nominal.
+[2024-06-26 14:59:10] DEBUG: SENSOR: radar VAL:61.44.
+[2024-06-26 15:00:10] GPS: Latitude: 34.0609, Longitude: -118.2349
+[2024-06-26 15:00:10] ALT: 929 meters
+[2024-06-26 15:00:10] SPD: 88 m/s
+[2024-06-26 15:00:10] BAT: 78.5 %
+[2024-06-26 15:00:10] SYS: All systems nominal.
+[2024-06-26 15:00:10] DEBUG: SENSOR: radar VAL:69.63.
+[2024-06-26 15:01:10] GPS: Latitude: 34.0610, Longitude: -118.2346
+[2024-06-26 15:01:10] ALT: 953 meters
+[2024-06-26 15:01:10] SPD: 91 m/s
+[2024-06-26 15:01:10] BAT: 78.0 %
+[2024-06-26 15:01:10] SYS: All systems nominal.
+[2024-06-26 15:01:10] DEBUG: SENSOR: radar VAL:60.49.
+[2024-06-26 15:02:10] GPS: Latitude: 34.0614, Longitude: -118.2342
+[2024-06-26 15:02:10] ALT: 979 meters
+[2024-06-26 15:02:10] SPD: 94 m/s
+[2024-06-26 15:02:10] BAT: 77.5 %
+[2024-06-26 15:02:10] SYS: All systems nominal.
+[2024-06-26 15:02:10] DEBUG: SENSOR: radar VAL:8.57.
+[2024-06-26 15:02:10] INFO: Beginning descent.
+[2024-06-26 15:03:10] GPS: Latitude: 34.0609, Longitude: -118.2346
+[2024-06-26 15:03:10] ALT: 938 meters
+[2024-06-26 15:03:10] SPD: 90 m/s
+[2024-06-26 15:03:10] BAT: 77.0%
+[2024-06-26 15:03:10] SYS: All systems nominal.
+[2024-06-26 15:04:10] GPS: Latitude: 34.0607, Longitude: -118.2349
+[2024-06-26 15:04:10] ALT: 893 meters
+[2024-06-26 15:04:10] SPD: 85 m/s
+[2024-06-26 15:04:10] BAT: 76.1%
+[2024-06-26 15:04:10] SYS: All systems nominal.
+[2024-06-26 15:05:10] GPS: Latitude: 34.0604, Longitude: -118.2350
+[2024-06-26 15:05:10] ALT: 860 meters
+[2024-06-26 15:05:10] SPD: 81 m/s
+[2024-06-26 15:05:10] BAT: 75.4%
+[2024-06-26 15:05:10] SYS: All systems nominal.
+[2024-06-26 15:06:10] GPS: Latitude: 34.0600, Longitude: -118.2355
+[2024-06-26 15:06:10] ALT: 850 meters
+[2024-06-26 15:06:10] SPD: 76 m/s
+[2024-06-26 15:06:10] BAT: 74.9%
+[2024-06-26 15:06:10] SYS: All systems nominal.
+[2024-06-26 15:07:10] GPS: Latitude: 34.0595, Longitude: -118.2359
+[2024-06-26 15:07:10] ALT: 815 meters
+[2024-06-26 15:07:10] SPD: 73 m/s
+[2024-06-26 15:07:10] BAT: 74.1%
+[2024-06-26 15:07:10] SYS: All systems nominal.
+[2024-06-26 15:07:10] INFO: Drone flight completed. Tail Number: n123ab
